@@ -42,4 +42,4 @@ jobs:
         run: aws s3 sync ./dist s3://sfgco.sa --delete
 
       - name: Invalidate CloudFront Cache ROOT
-        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID_ROOT }} --paths "/*"
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
