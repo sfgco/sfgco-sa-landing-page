@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "investments": "Investments",
+    "impact": "Impact",
+    "team": "Team",
+    "investNow": "Invest Now"
+  },
+  "hero": {
+    "badge": "Sustainable Investment Leaders",
+    "title1": "Invest in the",
+    "titleHighlight": "Future",
+    "title2": "of Green Earth",
+    "subtitle": "SFGCO pioneers sustainable investment — connecting visionary capital with transformative green projects across 42 countries. Build wealth. Restore the planet.",
+    "exploreBtn": "Explore Investments",
+    "missionBtn": "Our Mission",
+    "stat1": "$2.4B+",
+    "stat1Label": "Assets Managed",
+    "stat2": "150+",
+    "stat2Label": "Portfolio Companies",
+    "stat3": "42",
+    "stat3Label": "Countries",
+    "dashboardTitle": "2024 Live Impact Dashboard",
+    "live": "LIVE",
+    "scrollCue": "Discover"
+  },
+  "trust": {
+    "label": "Trusted Partners & Institutional Investors"
+  },
+  "about": {
+    "badge": "Our Mission",
+    "yearsValue": "15+",
+    "yearsLabel": "Years of Proven Impact",
+    "title": "Sustainability Is Not a Trend — It's the",
+    "titleHighlight": "Only Future",
+    "p1": "Founded on the conviction that financial returns and environmental stewardship are inseparable, SFGCO has pioneered a new model of investment — one that delivers strong risk-adjusted returns while driving measurable, verifiable positive impact on our planet.",
+    "p2": "We partner with institutional investors, family offices, and forward-thinking corporations to deploy capital into transformative green projects across renewable energy, ecosystem restoration, and clean technology.",
+    "check1": "UN Principles for Responsible Investment (PRI) signatory",
+    "check2": "TCFD-aligned reporting & real-time impact transparency",
+    "check3": "Science-based targets for net-zero portfolio by 2035",
+    "check4": "ISO 14001 certified environmental management system",
+    "discoverBtn": "Discover Opportunities"
+  },
+  "services": {
+    "badge": "What We Do",
+    "title": "Comprehensive Green Services",
+    "subtitle": "From strategic advisory to active portfolio management, we deliver end-to-end sustainability solutions for forward-thinking investors."
+  },
+  "impact": {
+    "badge": "Measurable Impact",
+    "title": "Numbers That Drive Real Change",
+    "subtitle": "Every figure represents verified, independently audited impact — not projections."
+  },
+  "investments": {
+    "badge": "Invest With Us",
+    "title1": "Choose Your Path to",
+    "title2": "Sustainable Returns",
+    "subtitle": "Three distinct investment vehicles designed to match your risk profile, return expectations, and impact ambitions.",
+    "requestBtn": "Request Investment Information",
+    "disclaimer": "All investments carry risk. Past performance is not indicative of future results. For qualified investors only. Please review our Risk Disclosure before investing."
+  },
+  "whySFGCO": {
+    "badge": "Why Choose SFGCO",
+    "title1": "Where Financial Excellence Meets",
+    "titleHighlight": "Green Purpose",
+    "subtitle": "We combine institutional-grade investment rigor with deep environmental expertise — delivering portfolios that consistently outperform while generating verifiable planet outcomes."
+  },
+  "projects": {
+    "badge": "Featured Projects",
+    "title": "Impact In Action",
+    "subtitle": "A selection from our $2.4B+ portfolio of active green investments delivering both returns and real-world transformation.",
+    "viewBtn": "View Full Project Details →",
+    "viewAllBtn": "View All 150+ Portfolio Projects"
+  },
+  "testimonials": {
+    "badge": "Investor Voices",
+    "title": "Trusted by Global Leaders"
+  },
+  "team": {
+    "badge": "Leadership",
+    "title": "The Minds Behind the Mission",
+    "subtitle": "A world-class team combining decades of institutional finance experience with deep environmental expertise.",
+    "recognition": "Industry Recognition"
+  },
+  "process": {
+    "badge": "How It Works",
+    "title": "Your Investment Journey"
+  },
+  "cta": {
+    "badge": "Begin Your Journey",
+    "title1": "Ready to Invest in",
+    "titleHighlight": "Tomorrow's World?",
+    "subtitle": "Join 150+ institutional investors, family offices, and corporations who are building wealth while building a better planet. Our team is ready to craft your personalized sustainable investment strategy.",
+    "emailPlaceholder": "Enter your email address",
+    "scheduleBtn": "Schedule a Strategy Call",
+    "perk1": "No commitment required",
+    "perk2": "Personalized strategy session",
+    "perk3": "Fully confidential",
+    "emailLabel": "Email Us",
+    "callLabel": "Call Us",
+    "officeLabel": "Head Office"
+  },
+  "footer": {
+    "tagline": "Leading the transition to a sustainable global economy through innovative investment strategies, rigorous impact measurement, and long-term partnerships.",
+    "newsletterTitle": "Stay Ahead of Sustainable Finance",
+    "newsletterSub": "Monthly insights on green investment, ESG trends, and impact reports.",
+    "newsletterPlaceholder": "your@email.com",
+    "subscribeBtn": "Subscribe",
+    "copyright": "© 2024 SFGCO Investments Ltd. All rights reserved. Registered Investment Advisor.",
+    "disclaimer": "Investment involves risk. Past performance is not indicative of future results. SFGCO products are intended for qualified institutional investors only. This website does not constitute an offer or solicitation to buy or sell any security in any jurisdiction where such activity would be prohibited. Please review our full Risk Disclosure before making any investment decisions."
+  },
+  "pages": {
+    "about": {
+      "title": "About SFGCO",
+      "subtitle": "Pioneering sustainable investment since 2009"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive green investment solutions"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "Get in touch with our team"
+    },
+    "notFound": {
+      "title": "404 — Page Not Found",
+      "subtitle": "The page you are looking for doesn't exist.",
+      "backBtn": "Back to Home"
+    }
+  }
+}

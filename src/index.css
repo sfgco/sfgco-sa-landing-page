@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700;800&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -116,6 +116,32 @@ button { font-family: inherit; cursor: pointer; }
   transform: translateY(-8px);
   box-shadow: 0 28px 72px rgba(14,99,61,0.12);
   border-color: #0e633d !important;
+}
+
+/* ── RTL / Arabic support ──────────────────────────────────────────────────── */
+[dir="rtl"] {
+  font-family: 'Cairo', 'Inter', system-ui, sans-serif;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4 {
+  font-family: 'Cairo', 'Playfair Display', Georgia, serif;
+  letter-spacing: 0; /* Arabic doesn't use letter-spacing */
+}
+
+/* Flip the left-side accent bar on service cards */
+[dir="rtl"] .hover-card [style*="left: 0"] {
+  left: auto;
+  right: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+  .nav-links    { display: none !important; }
+  .nav-hamburger { display: block !important; }
 }
 
 /* Scrollbar */
