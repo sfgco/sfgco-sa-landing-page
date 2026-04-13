@@ -34,8 +34,7 @@ const MEMBERS = [
 ];
 
 const AWARDS = [
-  "🏆 Best Green Fund GCC
- 2024",
+  "🏆 Best Green Fund GCC 2024",
   "🌍 UN PRI Gold Rating",
   "⭐ Bloomberg ESG Leader",
   "🔰 GIIN Impact Award 2023",
