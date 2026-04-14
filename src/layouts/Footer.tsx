@@ -12,10 +12,40 @@ const SOCIAL = [
 
 const CERTS = ['PRI', 'TCFD', 'GIIN', 'ISO'];
 
-const FOOTER_COLS = [
-  { headKey: 'Services', links: ['Renewable Energy','Green Infrastructure','ESG Advisory','Carbon Markets','Impact Funds','Circular Economy'] },
-  { headKey: 'Invest', links: ['Green Bond Fund','RE Portfolio Fund','Climate Ventures','Co-investments','Fund Performance','Risk Disclosure'] },
-  { headKey: 'Company', links: ['About SFGCO','Leadership Team','Careers','Press & Media','Partnerships','Contact Us'] },
+const FOOTER_COLS: { headKey: string; links: { label: string; to?: string }[] }[] = [
+  {
+    headKey: 'Services',
+    links: [
+      { label: 'Renewable Energy' },
+      { label: 'Green Infrastructure' },
+      { label: 'ESG Advisory' },
+      { label: 'Carbon Markets' },
+      { label: 'Impact Funds' },
+      { label: 'Circular Economy' },
+    ],
+  },
+  {
+    headKey: 'Invest',
+    links: [
+      { label: 'Green Bond Fund',    to: '/investments' },
+      { label: 'RE Portfolio Fund',  to: '/investments' },
+      { label: 'Climate Ventures',   to: '/investments' },
+      { label: 'Co-investments',     to: '/investments' },
+      { label: 'Fund Performance',   to: '/impact' },
+      { label: 'Risk Disclosure',    to: '/risk-disclosure' },
+    ],
+  },
+  {
+    headKey: 'Company',
+    links: [
+      { label: 'About SFGCO',    to: '/about' },
+      { label: 'Leadership Team', to: '/about' },
+      { label: 'Careers',        to: '/careers' },
+      { label: 'Press & Media',  to: '/press' },
+      { label: 'Partnerships',   to: '/partnerships' },
+      { label: 'Contact Us',     to: '/contact' },
+    ],
+  },
 ];
 
 const LEGAL_LINKS = [
@@ -78,14 +108,24 @@ export default function Footer() {
               <h5 style={{ fontWeight:800, color:'#efe6d8', fontSize:11, letterSpacing:2, textTransform:'uppercase', marginBottom:22 }}>{col.headKey}</h5>
               <div style={{ display:'flex', flexDirection:'column', gap:11 }}>
                 {col.links.map(l => (
-                  <button
-                    key={l}
-                    style={{ background:'none', border:'none', padding:0, textAlign:'start', color:'rgba(239,230,216,0.48)', fontSize:13, transition:'color 0.2s', cursor:'pointer', fontFamily:"'Inter', sans-serif" }}
-                    onMouseEnter={e => ((e.currentTarget as HTMLButtonElement).style.color='#c8a84b')}
-                    onMouseLeave={e => ((e.currentTarget as HTMLButtonElement).style.color='rgba(239,230,216,0.48)')}
-                  >
-                    {l}
-                  </button>
+                  l.to ? (
+                    <Link
+                      key={l.label}
+                      to={l.to}
+                      style={{ color:'rgba(239,230,216,0.48)', fontSize:13, textDecoration:'none', transition:'color 0.2s', fontFamily:"'Inter', sans-serif" }}
+                      onMouseEnter={e => ((e.currentTarget as HTMLAnchorElement).style.color='#c8a84b')}
+                      onMouseLeave={e => ((e.currentTarget as HTMLAnchorElement).style.color='rgba(239,230,216,0.48)')}
+                    >
+                      {l.label}
+                    </Link>
+                  ) : (
+                    <span
+                      key={l.label}
+                      style={{ color:'rgba(239,230,216,0.48)', fontSize:13, fontFamily:"'Inter', sans-serif" }}
+                    >
+                      {l.label}
+                    </span>
+                  )
                 ))}
               </div>
             </div>

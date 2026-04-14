@@ -9,6 +9,9 @@ const Services = lazy(() => import("../pages/Services"));
 const Investments = lazy(() => import("../pages/Investments"));
 const Impact = lazy(() => import("../pages/Impact"));
 const Contact = lazy(() => import("../pages/Contact"));
+const Careers = lazy(() => import("../pages/Careers"));
+const Press = lazy(() => import("../pages/Press"));
+const Partnerships = lazy(() => import("../pages/Partnerships"));
 const PrivacyPolicy = lazy(() => import("../pages/PrivacyPolicy"));
 const TermsOfService = lazy(() => import("../pages/TermsOfService"));
 const RiskDisclosure = lazy(() => import("../pages/RiskDisclosure"));
@@ -95,6 +98,18 @@ const router = createBrowserRouter([
             <Contact />
           </Suspense>
         ),
+      },
+      {
+        path: "careers",
+        element: <Suspense fallback={<PageLoader />}><Careers /></Suspense>,
+      },
+      {
+        path: "press",
+        element: <Suspense fallback={<PageLoader />}><Press /></Suspense>,
+      },
+      {
+        path: "partnerships",
+        element: <Suspense fallback={<PageLoader />}><Partnerships /></Suspense>,
       },
       {
         path: "privacy-policy",
