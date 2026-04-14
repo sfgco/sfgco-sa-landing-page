@@ -1,8 +1,8 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
-import en from './en.json';
-import ar from './ar.json';
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
+import en from "./en.json";
+import ar from "./ar.json";
 
 i18n
   .use(LanguageDetector)
@@ -12,14 +12,14 @@ i18n
       en: { translation: en },
       ar: { translation: ar },
     },
-    fallbackLng: 'en',
-    supportedLngs: ['en', 'ar'],
+    fallbackLng: "en",
+    supportedLngs: ["en", "ar"],
     interpolation: {
       escapeValue: false, // React already escapes values
     },
     detection: {
-      order: ['localStorage', 'navigator'],
-      caches: ['localStorage'],
+      order: ["localStorage", "navigator"],
+      caches: ["localStorage"],
     },
   });
 

@@ -1,7 +1,7 @@
-import { Outlet } from 'react-router-dom';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import { useLanguage } from '../hooks/useLanguage';
+import { Outlet } from "react-router-dom";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import { useLanguage } from "../hooks/useLanguage";
 
 /**
  * Root layout wrapping every page.
