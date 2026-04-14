@@ -6,6 +6,8 @@ import MainLayout from "../layouts/MainLayout";
 const Home = lazy(() => import("../pages/Home"));
 const About = lazy(() => import("../pages/About"));
 const Services = lazy(() => import("../pages/Services"));
+const Investments = lazy(() => import("../pages/Investments"));
+const Impact = lazy(() => import("../pages/Impact"));
 const Contact = lazy(() => import("../pages/Contact"));
 const NotFound = lazy(() => import("../pages/NotFound"));
 
@@ -63,6 +65,22 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<PageLoader />}>
             <Services />
+          </Suspense>
+        ),
+      },
+      {
+        path: "investments",
+        element: (
+          <Suspense fallback={<PageLoader />}>
+            <Investments />
+          </Suspense>
+        ),
+      },
+      {
+        path: "impact",
+        element: (
+          <Suspense fallback={<PageLoader />}>
+            <Impact />
           </Suspense>
         ),
       },

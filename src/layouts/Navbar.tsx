@@ -16,8 +16,8 @@ export default function Navbar() {
   const NAV_LINKS = [
     { key: 'nav.about', to: '/about' },
     { key: 'nav.services', to: '/services' },
-    { key: 'nav.investments', to: '/#investments' },
-    { key: 'nav.impact', to: '/#impact' },
+    { key: 'nav.investments', to: '/investments' },
+    { key: 'nav.impact', to: '/impact' },
     { key: 'nav.team', to: '/#team' },
   ];
 

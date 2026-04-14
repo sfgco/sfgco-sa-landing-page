@@ -60,6 +60,81 @@
     "requestBtn": "Request Investment Information",
     "disclaimer": "All investments carry risk. Past performance is not indicative of future results. For qualified investors only. Please review our Risk Disclosure before investing."
   },
+  "techAI": {
+    "badge": "Tech & AI Investment",
+    "title1": "Capitalizing on the",
+    "titleHighlight": "AI Revolution",
+    "title2": "Before the Crowd",
+    "subtitle": "Artificial intelligence and deep technology are rewriting every industry. SFGCO deploys institutional capital into the most defensible, high-conviction opportunities across the global AI and tech landscape.",
+    "stat1": "Global AI market size projected by 2030",
+    "stat2": "Average annual growth rate for AI infrastructure",
+    "stat3": "AI & deep-tech companies screened annually",
+    "stat4": "Of Fortune 500 accelerating AI adoption",
+    "areasLabel": "Investment Focus Areas",
+    "plansLabel": "Investment Vehicles",
+    "plansTitle": "Choose Your Tech & AI Exposure",
+    "minLabel": "Min. Investment",
+    "durLabel": "Duration",
+    "requestBtn": "Request Tech AI Briefing",
+    "disclaimer": "All investments carry risk. Past performance is not indicative of future results. For qualified investors only. Please review our Risk Disclosure before investing.",
+    "area1": {
+      "title": "AI Infrastructure & Compute",
+      "desc": "Data centers, AI-optimised chips, cloud hyperscalers, and the physical backbone powering every large language model and autonomous system at scale."
+    },
+    "area2": {
+      "title": "Semiconductors & Edge AI",
+      "desc": "Proprietary chip architectures, RISC-V ecosystems, and edge inference hardware that bring intelligence closer to the sensor — reducing latency and energy consumption."
+    },
+    "area3": {
+      "title": "AI-Powered Life Sciences",
+      "desc": "Generative biology, AI-driven drug discovery, genomics platforms, and digital-health applications that are compressing drug development timelines from decades to years."
+    },
+    "area4": {
+      "title": "Cybersecurity & AI Defense",
+      "desc": "Next-generation zero-trust architectures, post-quantum cryptography, and AI-native security operations centers protecting enterprises and critical national infrastructure."
+    },
+    "area5": {
+      "title": "Industrial AI & Robotics",
+      "desc": "Autonomous manufacturing systems, digital-twin platforms, AI-guided quality control, and collaborative robotics reshaping factory floors across automotive, aerospace, and logistics."
+    },
+    "area6": {
+      "title": "Sovereign AI & GovTech",
+      "desc": "National AI programs, smart-grid optimisation, AI-powered financial systems, and precision-agriculture platforms enabling governments to deploy intelligence at a country scale."
+    },
+    "plan1": {
+      "badge": "Diversified",
+      "name": "AI Growth Equity Fund",
+      "returnLabel": "Target Net IRR",
+      "risk": "Moderate Risk",
+      "f1": "Diversified basket of 25+ AI & tech equities",
+      "f2": "Series B–D entry points",
+      "f3": "Quarterly liquidity windows",
+      "f4": "Independent valuation committee",
+      "f5": "Annual LP tech summit access"
+    },
+    "plan2": {
+      "badge": "★ Most Popular",
+      "name": "Deep Tech Venture Fund",
+      "returnLabel": "Target Gross IRR",
+      "risk": "Growth Risk",
+      "f1": "Early-stage AI & deep-tech equity",
+      "f2": "Series A & B concentrated bets",
+      "f3": "Board-level representation rights",
+      "f4": "Proprietary deal-flow from 80+ accelerators",
+      "f5": "Co-investment rights on follow-on rounds"
+    },
+    "plan3": {
+      "badge": "Founders Access",
+      "name": "AI Unicorn Co-Invest",
+      "returnLabel": "Target Gross MOIC",
+      "risk": "High Conviction",
+      "f1": "Direct co-investment in unicorn rounds",
+      "f2": "Seed to pre-IPO continuum",
+      "f3": "Full information rights & ROFR",
+      "f4": "Access to secondary liquidity pool",
+      "f5": "Dedicated AI research analyst support"
+    }
+  },
   "whySFGCO": {
     "badge": "Why Choose SFGCO",
     "title1": "Where Financial Excellence Meets",
@@ -114,6 +189,23 @@
     "about": {
       "title": "About SFGCO",
       "subtitle": "Pioneering sustainable investment since 2009"
+    },
+    "investments": {
+      "badge": "Investment Opportunities",
+      "title": "Investment Strategies",
+      "subtitle": "Institutional-grade vehicles spanning green bonds, renewable energy equity, deep-tech ventures, and AI-driven portfolios.",
+      "metaDesc": "Explore SFGCO's investment strategies — green bonds, renewable energy, climate ventures, and Tech & AI funds for qualified investors."
+    },
+    "impact": {
+      "badge": "Verified Impact",
+      "title": "Our Global Impact",
+      "subtitle": "Every number is independently audited. Every project delivers real, measurable change — for investors and for the planet.",
+      "metaDesc": "Track SFGCO's verified environmental and social impact across 42 countries — CO₂ offset, clean energy deployed, and UN SDG alignment.",
+      "sdgLabel": "UN SDG Alignment",
+      "sdgTitle": "Aligned with 7 of 17 Global Goals",
+      "sdgSubtitle": "Our portfolio is designed around science-based targets and directly contributes to the UN Sustainable Development Goals most critical for climate and human wellbeing.",
+      "storiesLabel": "Impact Stories",
+      "storiesTitle": "Projects That Define Our Legacy"
     },
     "services": {
       "title": "Our Services",

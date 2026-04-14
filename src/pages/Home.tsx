@@ -4,6 +4,7 @@ import AboutSection from '../components/AboutSection';
 import ServicesSection from '../components/ServicesSection';
 import ImpactCounters from '../components/ImpactCounters';
 import InvestmentOpportunities from '../components/InvestmentOpportunities';
+import TechAISection from '../components/TechAISection';
 import WhySFGCO from '../components/WhySFGCO';
 import FeaturedProjects from '../components/FeaturedProjects';
 import Testimonials from '../components/Testimonials';
@@ -29,6 +30,7 @@ export default function Home() {
       <ServicesSection />
       <ImpactCounters />
       <InvestmentOpportunities />
+      <TechAISection />
       <WhySFGCO />
       <FeaturedProjects />
       <Testimonials />
