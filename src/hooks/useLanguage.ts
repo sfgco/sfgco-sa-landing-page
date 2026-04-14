@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 /**
  * Provides language state and a switcher function.
@@ -7,14 +7,14 @@ import { useTranslation } from 'react-i18next';
  */
 export function useLanguage() {
   const { i18n } = useTranslation();
-  const isRTL = i18n.language === 'ar';
+  const isRTL = i18n.language === "ar";
 
   useEffect(() => {
-    document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
+    document.documentElement.dir = isRTL ? "rtl" : "ltr";
     document.documentElement.lang = i18n.language;
   }, [i18n.language, isRTL]);
 
-  const changeLanguage = (lang: 'en' | 'ar') => {
+  const changeLanguage = (lang: "en" | "ar") => {
     i18n.changeLanguage(lang);
   };
 

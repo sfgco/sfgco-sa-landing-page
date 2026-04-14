@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 /**
  * Returns true once the page scrolls past `threshold` pixels.
@@ -9,8 +9,8 @@ export function useScrolled(threshold = 80): boolean {
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > threshold);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, [threshold]);
 
   return scrolled;

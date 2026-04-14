@@ -101,31 +101,59 @@ const router = createBrowserRouter([
       },
       {
         path: "careers",
-        element: <Suspense fallback={<PageLoader />}><Careers /></Suspense>,
+        element: (
+          <Suspense fallback={<PageLoader />}>
+            <Careers />
+          </Suspense>
+        ),
       },
       {
         path: "press",
-        element: <Suspense fallback={<PageLoader />}><Press /></Suspense>,
+        element: (
+          <Suspense fallback={<PageLoader />}>
+            <Press />
+          </Suspense>
+        ),
       },
       {
         path: "partnerships",
-        element: <Suspense fallback={<PageLoader />}><Partnerships /></Suspense>,
+        element: (
+          <Suspense fallback={<PageLoader />}>
+            <Partnerships />
+          </Suspense>
+        ),
       },
       {
         path: "privacy-policy",
-        element: <Suspense fallback={<PageLoader />}><PrivacyPolicy /></Suspense>,
+        element: (
+          <Suspense fallback={<PageLoader />}>
+            <PrivacyPolicy />
+          </Suspense>
+        ),
       },
       {
         path: "terms-of-service",
-        element: <Suspense fallback={<PageLoader />}><TermsOfService /></Suspense>,
+        element: (
+          <Suspense fallback={<PageLoader />}>
+            <TermsOfService />
+          </Suspense>
+        ),
       },
       {
         path: "risk-disclosure",
-        element: <Suspense fallback={<PageLoader />}><RiskDisclosure /></Suspense>,
+        element: (
+          <Suspense fallback={<PageLoader />}>
+            <RiskDisclosure />
+          </Suspense>
+        ),
       },
       {
         path: "cookie-policy",
-        element: <Suspense fallback={<PageLoader />}><CookiePolicy /></Suspense>,
+        element: (
+          <Suspense fallback={<PageLoader />}>
+            <CookiePolicy />
+          </Suspense>
+        ),
       },
       {
         path: "*",

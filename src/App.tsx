@@ -1,4 +1,4 @@
-import AppRouter from './routes';
+import AppRouter from "./routes";
 
 /**
  * App is now just a thin shell that mounts the router.
