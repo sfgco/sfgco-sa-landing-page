@@ -425,7 +425,7 @@ export default function HeroSection() {
                       marginTop: 2,
                     }}
                   >
-                    Returns Generated (2024)
+                    Returns Generated (2025)
                   </div>
                 </div>
                 <div style={{ textAlign: "right" }}>
