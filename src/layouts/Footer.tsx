@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import logoImg from '../assets/sfgco-logo.png';
 
@@ -17,7 +18,12 @@ const FOOTER_COLS = [
   { headKey: 'Company', links: ['About SFGCO','Leadership Team','Careers','Press & Media','Partnerships','Contact Us'] },
 ];
 
-const LEGAL_LINKS = ['Privacy Policy', 'Terms of Service', 'Risk Disclosure', 'Cookie Policy'];
+const LEGAL_LINKS = [
+  { label: 'Privacy Policy',   to: '/privacy-policy'   },
+  { label: 'Terms of Service', to: '/terms-of-service' },
+  { label: 'Risk Disclosure',  to: '/risk-disclosure'  },
+  { label: 'Cookie Policy',    to: '/cookie-policy'    },
+];
 
 /** Site-wide footer with newsletter signup, links, and legal copy. */
 export default function Footer() {
@@ -115,14 +121,15 @@ export default function Footer() {
           <p style={{ fontSize:12 }}>{t('footer.copyright')}</p>
           <div style={{ display:'flex', gap:28 }}>
             {LEGAL_LINKS.map(l => (
-              <button
-                key={l}
-                style={{ background:'none', border:'none', padding:0, color:'rgba(239,230,216,0.38)', fontSize:11, transition:'color 0.2s', cursor:'pointer', fontFamily:"'Inter', sans-serif" }}
-                onMouseEnter={e => ((e.currentTarget as HTMLButtonElement).style.color='rgba(239,230,216,0.7)')}
-                onMouseLeave={e => ((e.currentTarget as HTMLButtonElement).style.color='rgba(239,230,216,0.38)')}
+              <Link
+                key={l.to}
+                to={l.to}
+                style={{ color:'rgba(239,230,216,0.38)', fontSize:11, textDecoration:'none', transition:'color 0.2s', fontFamily:"'Inter', sans-serif" }}
+                onMouseEnter={e => ((e.currentTarget as HTMLAnchorElement).style.color='rgba(239,230,216,0.7)')}
+                onMouseLeave={e => ((e.currentTarget as HTMLAnchorElement).style.color='rgba(239,230,216,0.38)')}
               >
-                {l}
-              </button>
+                {l.label}
+              </Link>
             ))}
           </div>
         </div>

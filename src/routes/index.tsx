@@ -9,6 +9,10 @@ const Services = lazy(() => import("../pages/Services"));
 const Investments = lazy(() => import("../pages/Investments"));
 const Impact = lazy(() => import("../pages/Impact"));
 const Contact = lazy(() => import("../pages/Contact"));
+const PrivacyPolicy = lazy(() => import("../pages/PrivacyPolicy"));
+const TermsOfService = lazy(() => import("../pages/TermsOfService"));
+const RiskDisclosure = lazy(() => import("../pages/RiskDisclosure"));
+const CookiePolicy = lazy(() => import("../pages/CookiePolicy"));
 const NotFound = lazy(() => import("../pages/NotFound"));
 
 /** Full-page loading fallback shown while a lazy chunk is being fetched. */
@@ -91,6 +95,22 @@ const router = createBrowserRouter([
             <Contact />
           </Suspense>
         ),
+      },
+      {
+        path: "privacy-policy",
+        element: <Suspense fallback={<PageLoader />}><PrivacyPolicy /></Suspense>,
+      },
+      {
+        path: "terms-of-service",
+        element: <Suspense fallback={<PageLoader />}><TermsOfService /></Suspense>,
+      },
+      {
+        path: "risk-disclosure",
+        element: <Suspense fallback={<PageLoader />}><RiskDisclosure /></Suspense>,
+      },
+      {
+        path: "cookie-policy",
+        element: <Suspense fallback={<PageLoader />}><CookiePolicy /></Suspense>,
       },
       {
         path: "*",
