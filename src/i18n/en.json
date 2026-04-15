@@ -2,6 +2,7 @@
   "nav": {
     "about": "About",
     "services": "Services",
+    "technology": "Technology",
     "investments": "Investments",
     "impact": "Impact",
     "team": "Team",
@@ -215,10 +216,161 @@
       "title": "Contact Us",
       "subtitle": "Get in touch with our team"
     },
+    "technology": {
+      "badge": "Our Technology",
+      "titleLine1": "AI, Cloud &",
+      "titleHighlight": "Mobility",
+      "titleLine2": "Powering Tomorrow",
+      "subtitle": "SFGCO invests at the convergence of artificial intelligence, cloud infrastructure, and next-generation mobility — three forces reshaping every industry and unlocking unprecedented value.",
+      "ctaBtn": "Request Tech Briefing",
+      "viewInvestBtn": "View Investment Vehicles",
+      "cta": {
+        "badge": "Get Started",
+        "title": "Ready to Invest in Deep Tech?",
+        "subtitle": "Our technology investment team works with qualified investors to build high-conviction exposure across AI, cloud, and mobility.",
+        "btn": "Schedule a Tech Briefing",
+        "secondary": "Explore Investment Vehicles"
+      }
+    },
     "notFound": {
       "title": "404 — Page Not Found",
       "subtitle": "The page you are looking for doesn't exist.",
       "backBtn": "Back to Home"
+    }
+  },
+  "tech": {
+    "pillars": {
+      "badge": "Three Technology Pillars",
+      "title": "Where We See the Next Decade",
+      "subtitle": "Three converging forces are rewriting how the world works. We invest at the frontier of each.",
+      "ai": {
+        "label": "Artificial Intelligence",
+        "title": "Machines That Think, Learn & Create",
+        "desc": "From large language models to computer vision and autonomous decision-making, AI is transitioning from research curiosity to the foundational layer of every enterprise. We invest across the full AI stack."
+      },
+      "cloud": {
+        "label": "Cloud Infrastructure",
+        "title": "The Backbone of the Digital Economy",
+        "desc": "Hyperscale cloud, edge compute, and sovereign infrastructure are becoming as critical as electricity. We back the platforms, tooling, and services powering the next wave of digital transformation."
+      },
+      "mobility": {
+        "label": "Smart Mobility",
+        "title": "Reimagining How the World Moves",
+        "desc": "Electric vehicles, autonomous systems, connected cities, and sustainable logistics are converging into an entirely new mobility paradigm. We invest in the companies defining that future."
+      }
+    },
+    "ai": {
+      "badge": "Artificial Intelligence",
+      "title": "Intelligence at Every Layer of the Stack",
+      "desc1": "Artificial intelligence is no longer a future technology — it is the defining infrastructure of our era. From foundation models and autonomous agents to AI-powered drug discovery and precision manufacturing, the scope of impact is unprecedented.",
+      "desc2": "SFGCO deploys institutional capital across the full AI value chain: compute and infrastructure, model development, enterprise applications, and the data ecosystems that make AI increasingly powerful over time.",
+      "stat1": "AI market size by 2030",
+      "stat2": "Annual AI infrastructure growth",
+      "stat3": "Jobs augmented by AI globally",
+      "stat4": "Fortune 500 deploying AI at scale",
+      "statsNote": "Sources: McKinsey Global Institute, Gartner, IDC 2025",
+      "cap": {
+        "llm": {
+          "title": "Large Language Models",
+          "desc": "Foundation models powering next-gen search, coding, content, and enterprise automation across every vertical."
+        },
+        "vision": {
+          "title": "Computer Vision",
+          "desc": "Real-time visual intelligence for manufacturing QC, medical imaging, retail analytics, and autonomous navigation."
+        },
+        "nlp": {
+          "title": "Natural Language Processing",
+          "desc": "Conversational AI, document intelligence, multilingual platforms, and voice interfaces reshaping customer interaction."
+        },
+        "automation": {
+          "title": "Intelligent Automation",
+          "desc": "Agentic AI systems that orchestrate workflows, replace repetitive knowledge work, and drive enterprise efficiency."
+        },
+        "prediction": {
+          "title": "Predictive Analytics",
+          "desc": "ML-driven forecasting for financial markets, supply chains, demand planning, and climate risk modeling."
+        },
+        "robotics": {
+          "title": "AI Robotics",
+          "desc": "Physical AI — from collaborative arms on factory floors to fully autonomous warehouse and delivery robots."
+        }
+      }
+    },
+    "cloud": {
+      "badge": "Cloud Infrastructure",
+      "title": "Scalable, Secure, Sovereign Infrastructure",
+      "desc": "Cloud computing has become the fundamental utility of the digital economy. As AI workloads explode, demand for scalable compute, low-latency edge nodes, and compliant data platforms is accelerating. SFGCO backs the picks-and-shovels of this transformation.",
+      "m1": "Uptime SLA",
+      "m2": "Faster deployment",
+      "m3": "Cost reduction vs on-premise",
+      "approach": {
+        "title": "Multi-Cloud & Hybrid-First Strategy",
+        "desc": "We invest in infrastructure-agnostic platforms and cloud-native tooling that deliver resilience, portability, and cost efficiency across AWS, Azure, GCP, and sovereign cloud environments."
+      },
+      "svc": {
+        "infra": {
+          "title": "Hyperscale Compute",
+          "desc": "GPU clusters, custom silicon, and AI-optimized data centers forming the backbone of modern AI inference and training at scale."
+        },
+        "devops": {
+          "title": "DevOps & Platform Engineering",
+          "desc": "Kubernetes, CI/CD, observability, and internal developer platforms that compress software delivery cycles from weeks to hours."
+        },
+        "security": {
+          "title": "Cloud Security",
+          "desc": "Zero-trust networking, cloud-native WAF, CSPM, and AI-driven threat detection protecting cloud-first enterprises."
+        },
+        "data": {
+          "title": "Data & Analytics",
+          "desc": "Modern data lakehouses, real-time streaming pipelines, and AI-ready data platforms enabling data-driven decision making at scale."
+        },
+        "saas": {
+          "title": "Vertical SaaS",
+          "desc": "Cloud-native software purpose-built for healthcare, fintech, logistics, and energy — capturing industry-specific data moats."
+        },
+        "edge": {
+          "title": "Edge & IoT",
+          "desc": "Low-latency edge compute nodes and IoT platforms bringing cloud intelligence to the physical world — factories, vehicles, and cities."
+        }
+      }
+    },
+    "mobility": {
+      "badge": "Smart Mobility",
+      "title": "The Future of Movement Is Electric, Autonomous & Connected",
+      "desc1": "Mobility is undergoing the most profound transformation in over a century. The convergence of electric powertrains, AI-driven autonomy, real-time connectivity, and shared-economy models is dismantling century-old industry structures.",
+      "desc2": "SFGCO positions capital at the intersection of these forces — backing EV infrastructure, autonomous software stacks, smart city platforms, and sustainable logistics networks that will define how people and goods move in the coming decades.",
+      "marketLabel": "Mobility Market Opportunity (2030E)",
+      "bar1": { "label": "Electric Vehicles & Charging" },
+      "bar2": { "label": "Autonomous Vehicle Software" },
+      "bar3": { "label": "Smart City Infrastructure" },
+      "bar4": { "label": "Last-Mile Logistics" },
+      "marketNote": "Estimates: BloombergNEF, McKinsey Center for Future Mobility, 2025",
+      "area": {
+        "ev": {
+          "title": "EV & Charging Infrastructure",
+          "desc": "Battery technology, fast-charging networks, V2G systems, and fleet electrification platforms scaling the global EV transition."
+        },
+        "autonomous": {
+          "title": "Autonomous Vehicles",
+          "desc": "AI software stacks, sensor fusion, HD mapping, and safety validation platforms for Level 3–5 autonomy across passenger and commercial vehicles."
+        },
+        "smart": {
+          "title": "Smart Cities",
+          "desc": "Traffic optimization, pedestrian safety AI, digital-twin city platforms, and integrated multimodal transport management systems."
+        },
+        "shared": {
+          "title": "Shared & Micro Mobility",
+          "desc": "Ride-pooling platforms, e-scooter and e-bike networks, and MaaS (Mobility-as-a-Service) aggregators reshaping urban transport."
+        },
+        "logistics": {
+          "title": "Autonomous Logistics",
+          "desc": "Warehouse robotics, autonomous delivery drones, AI route optimization, and digital freight platforms transforming supply chains."
+        },
+        "green": {
+          "title": "Green Aviation & Maritime",
+          "desc": "Hydrogen-powered aircraft, electric ferries, sustainable aviation fuels, and carbon-neutral shipping routes decarbonizing long-haul transport."
+        }
+      }
     }
   }
 }

@@ -16,6 +16,7 @@ const PrivacyPolicy = lazy(() => import("../pages/PrivacyPolicy"));
 const TermsOfService = lazy(() => import("../pages/TermsOfService"));
 const RiskDisclosure = lazy(() => import("../pages/RiskDisclosure"));
 const CookiePolicy = lazy(() => import("../pages/CookiePolicy"));
+const Technology = lazy(() => import("../pages/Technology"));
 const NotFound = lazy(() => import("../pages/NotFound"));
 
 /** Full-page loading fallback shown while a lazy chunk is being fetched. */
@@ -120,6 +121,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<PageLoader />}>
             <Partnerships />
+          </Suspense>
+        ),
+      },
+      {
+        path: "tech",
+        element: (
+          <Suspense fallback={<PageLoader />}>
+            <Technology />
           </Suspense>
         ),
       },
