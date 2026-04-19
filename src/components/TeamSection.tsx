@@ -17,20 +17,6 @@ const MEMBERS = [
     bg: "#2a1049",
     bio: "Ex-Toptal AI lead. Built scalable ML systems for climate risk modeling.",
   },
-  {
-    initials: "MO",
-    name: "Marcus Osei",
-    role: "Chief Sustainability Officer",
-    bg: "#c8a84b",
-    bio: "UNFCCC climate advisor. PhD Environmental Economics, Oxford University.",
-  },
-  {
-    initials: "NW",
-    name: "Nina Weber",
-    role: "MD, Investment Banking",
-    bg: "#0a4a2e",
-    bio: "Ex-World Bank Group. Structured $3B+ in green infrastructure across 28 countries.",
-  },
 ];
 
 const AWARDS = [

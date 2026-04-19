@@ -507,7 +507,7 @@ export default function HeroSection() {
                   letterSpacing: 1,
                 }}
               >
-                SINCE 2009
+                SINCE 2020
               </div>
               <div style={{ fontSize: 14, fontWeight: 700, marginTop: 2 }}>
                 Ranked #1
