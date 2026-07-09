@@ -335,40 +335,40 @@
       }
     },
     "mobility": {
-      "badge": "ParkMaster3D",
-      "title": "ParkMaster3D — Advanced Driving & Smart Parking Simulation Platform",
-      "desc1": "ParkMaster3D is an interactive Three.js driving and parking simulator featuring realistic vehicle physics, progressive challenges, achievement systems, player statistics, replay functionality, and immersive environments.",
-      "desc2": "Created by Saud Alqhtani",
-      "marketLabel": "ParkMaster3D — Game Stats",
+      "badge": "Saudi Technology Project",
+      "title": "MASAR — Smart Driving & Parking Simulator",
+      "desc1": "MASAR is an advanced Three.js-powered driving and parking simulator inspired by real-world environments and designed to deliver an immersive learning and entertainment experience. The project includes realistic driving systems, progressive levels, unlockable vehicles, achievements, replay functionality, player progression tracking, and detailed performance analytics.",
+      "desc2": "MASAR combines modern simulation technology with engaging gameplay to create a unique driving and parking experience. Project Creator: Saud Alqhtani — GitHub: sqp77.",
+      "marketLabel": "MASAR — Game Stats",
       "bar1": { "label": "Levels" },
       "bar2": { "label": "Unlockable Vehicles" },
       "bar3": { "label": "Achievement System" },
-      "bar4": { "label": "Progress Tracking" },
-      "marketNote": "An independent project by Saud Alqhtani — built with Three.js",
+      "bar4": { "label": "Player Progress Tracking" },
+      "marketNote": "An independent Saudi technology project by Saud Alqhtani — GitHub: sqp77 — built with Three.js",
       "area": {
         "ev": {
-          "title": "Realistic Driving Simulation",
-          "desc": "Advanced driving experience built on realistic physics and smooth vehicle movement."
+          "title": "Realistic Driving",
+          "desc": "Advanced simulation of vehicle movement using realistic driving systems and physics."
         },
         "autonomous": {
           "title": "Smart Parking Systems",
-          "desc": "Evaluates parking accuracy and analyzes player performance in every level."
+          "desc": "Measures parking accuracy and analyzes performance within every level."
         },
         "smart": {
-          "title": "Achievement & Challenge System",
-          "desc": "An achievement and mission system that increases challenge and replayability."
+          "title": "Achievements & Challenges",
+          "desc": "An achievement and challenge system that increases engagement and replayability."
         },
         "shared": {
-          "title": "Progress Tracking & Analytics",
-          "desc": "Displays player level, best scores, and detailed statistics."
+          "title": "Progress Tracking",
+          "desc": "Displays player progress, best scores, and detailed statistics."
         },
         "logistics": {
-          "title": "Ghost Replay Technology",
-          "desc": "Replays your best attempt and compares it against your current run."
+          "title": "Replay Functionality",
+          "desc": "Replay a level and review previous performance."
         },
         "green": {
           "title": "Cross Platform Support",
-          "desc": "A gameplay experience compatible with a variety of devices and screens."
+          "desc": "An experience compatible with mobile and desktop devices."
         }
       }
     }
