@@ -2,12 +2,12 @@ import { useTranslation } from "react-i18next";
 import FadeIn from "./FadeIn";
 
 const mobilityAreas = [
-  { key: "ev", icon: "⚡", color: "#4b8ec8", border: "rgba(75,142,200,0.25)" },
-  { key: "autonomous", icon: "🚗", color: "#4b8ec8", border: "rgba(75,142,200,0.2)" },
-  { key: "smart", icon: "🏙️", color: "#2ea866", border: "rgba(46,168,102,0.2)" },
-  { key: "shared", icon: "🔗", color: "#c8a84b", border: "rgba(200,168,75,0.2)" },
-  { key: "logistics", icon: "📦", color: "#4b8ec8", border: "rgba(75,142,200,0.2)" },
-  { key: "green", icon: "🌱", color: "#2ea866", border: "rgba(46,168,102,0.2)" },
+  { key: "ev", icon: "🚗", color: "#4b8ec8", border: "rgba(75,142,200,0.25)" },
+  { key: "autonomous", icon: "🎯", color: "#4b8ec8", border: "rgba(75,142,200,0.2)" },
+  { key: "smart", icon: "🏆", color: "#2ea866", border: "rgba(46,168,102,0.2)" },
+  { key: "shared", icon: "📊", color: "#c8a84b", border: "rgba(200,168,75,0.2)" },
+  { key: "logistics", icon: "🔄", color: "#4b8ec8", border: "rgba(75,142,200,0.2)" },
+  { key: "green", icon: "📱", color: "#2ea866", border: "rgba(46,168,102,0.2)" },
 ];
 
 export default function TechMobilitySection() {
@@ -134,10 +134,10 @@ export default function TechMobilitySection() {
               </div>
 
               {[
-                { label: t("tech.mobility.bar1.label"), pct: 78, val: "$2.1T", color: "#4b8ec8" },
-                { label: t("tech.mobility.bar2.label"), pct: 61, val: "$890B", color: "#2ea866" },
-                { label: t("tech.mobility.bar3.label"), pct: 45, val: "$640B", color: "#c8a84b" },
-                { label: t("tech.mobility.bar4.label"), pct: 32, val: "$410B", color: "#4b8ec8" },
+                { label: t("tech.mobility.bar1.label"), pct: 95, val: "20+", color: "#4b8ec8" },
+                { label: t("tech.mobility.bar2.label"), pct: 70, val: "4", color: "#2ea866" },
+                { label: t("tech.mobility.bar3.label"), pct: 85, val: "Active", color: "#c8a84b" },
+                { label: t("tech.mobility.bar4.label"), pct: 60, val: "Live", color: "#4b8ec8" },
               ].map((item) => (
                 <div key={item.label} style={{ marginBottom: 20 }}>
                   <div

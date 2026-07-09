@@ -335,40 +335,40 @@
       }
     },
     "mobility": {
-      "badge": "Smart Mobility",
-      "title": "The Future of Movement Is Electric, Autonomous & Connected",
-      "desc1": "Mobility is undergoing the most profound transformation in over a century. The convergence of electric powertrains, AI-driven autonomy, real-time connectivity, and shared-economy models is dismantling century-old industry structures.",
-      "desc2": "SFGCO positions capital at the intersection of these forces — backing EV infrastructure, autonomous software stacks, smart city platforms, and sustainable logistics networks that will define how people and goods move in the coming decades.",
-      "marketLabel": "Mobility Market Opportunity (2030E)",
-      "bar1": { "label": "Electric Vehicles & Charging" },
-      "bar2": { "label": "Autonomous Vehicle Software" },
-      "bar3": { "label": "Smart City Infrastructure" },
-      "bar4": { "label": "Last-Mile Logistics" },
-      "marketNote": "Estimates: BloombergNEF, McKinsey Center for Future Mobility, 2025",
+      "badge": "ParkMaster3D",
+      "title": "ParkMaster3D — Advanced Driving & Smart Parking Simulation Platform",
+      "desc1": "ParkMaster3D is an interactive Three.js driving and parking simulator featuring realistic vehicle physics, progressive challenges, achievement systems, player statistics, replay functionality, and immersive environments.",
+      "desc2": "Created by Saud Alqhtani",
+      "marketLabel": "ParkMaster3D — Game Stats",
+      "bar1": { "label": "Levels" },
+      "bar2": { "label": "Unlockable Vehicles" },
+      "bar3": { "label": "Achievement System" },
+      "bar4": { "label": "Progress Tracking" },
+      "marketNote": "An independent project by Saud Alqhtani — built with Three.js",
       "area": {
         "ev": {
-          "title": "EV & Charging Infrastructure",
-          "desc": "Battery technology, fast-charging networks, V2G systems, and fleet electrification platforms scaling the global EV transition."
+          "title": "Realistic Driving Simulation",
+          "desc": "Advanced driving experience built on realistic physics and smooth vehicle movement."
         },
         "autonomous": {
-          "title": "Autonomous Vehicles",
-          "desc": "AI software stacks, sensor fusion, HD mapping, and safety validation platforms for Level 3–5 autonomy across passenger and commercial vehicles."
+          "title": "Smart Parking Systems",
+          "desc": "Evaluates parking accuracy and analyzes player performance in every level."
         },
         "smart": {
-          "title": "Smart Cities",
-          "desc": "Traffic optimization, pedestrian safety AI, digital-twin city platforms, and integrated multimodal transport management systems."
+          "title": "Achievement & Challenge System",
+          "desc": "An achievement and mission system that increases challenge and replayability."
         },
         "shared": {
-          "title": "Shared & Micro Mobility",
-          "desc": "Ride-pooling platforms, e-scooter and e-bike networks, and MaaS (Mobility-as-a-Service) aggregators reshaping urban transport."
+          "title": "Progress Tracking & Analytics",
+          "desc": "Displays player level, best scores, and detailed statistics."
         },
         "logistics": {
-          "title": "Autonomous Logistics",
-          "desc": "Warehouse robotics, autonomous delivery drones, AI route optimization, and digital freight platforms transforming supply chains."
+          "title": "Ghost Replay Technology",
+          "desc": "Replays your best attempt and compares it against your current run."
         },
         "green": {
-          "title": "Green Aviation & Maritime",
-          "desc": "Hydrogen-powered aircraft, electric ferries, sustainable aviation fuels, and carbon-neutral shipping routes decarbonizing long-haul transport."
+          "title": "Cross Platform Support",
+          "desc": "A gameplay experience compatible with a variety of devices and screens."
         }
       }
     }
