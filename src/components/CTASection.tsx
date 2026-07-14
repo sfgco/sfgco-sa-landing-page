@@ -2,8 +2,8 @@ import { useTranslation } from "react-i18next";
 import FadeIn from "./FadeIn";
 
 const CONTACT_CARDS = [
-  { icon: "📧", labelKey: "cta.emailLabel", val: "info@sfgco.sa" },
-  { icon: "📞", labelKey: "cta.callLabel", val: "+966 55 282 3299" },
+  { icon: "📧", labelKey: "cta.emailLabel", val: "tech@sfgco.sa" },
+  { icon: "📞", labelKey: "cta.callLabel", val: "+966 55 593 0749" },
   {
     icon: "📍",
     labelKey: "cta.officeLabel",
