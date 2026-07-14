@@ -6,7 +6,6 @@ import FadeIn from "../components/FadeIn";
 /** Standalone About page — page hero + reuses AboutSection and TeamSection. */
 export default function About() {
   const { t } = useTranslation();
-
   return (
     <>
       {/* Page hero */}
@@ -44,7 +43,7 @@ export default function About() {
               marginBottom: 20,
             }}
           >
-            SFGCO
+            SFGCO Tech
           </div>
           <h1
             style={{
@@ -71,8 +70,9 @@ export default function About() {
           </p>
         </FadeIn>
       </section>
-
+      {/* Page hero */}
       <AboutSection />
+      {/* Page hero */}
       <TeamSection />
     </>
   );

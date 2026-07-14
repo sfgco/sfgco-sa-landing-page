@@ -6,17 +6,13 @@ import MainLayout from "../layouts/MainLayout";
 const Home = lazy(() => import("../pages/Home"));
 const About = lazy(() => import("../pages/About"));
 const Services = lazy(() => import("../pages/Services"));
-const Investments = lazy(() => import("../pages/Investments"));
-const Impact = lazy(() => import("../pages/Impact"));
 const Contact = lazy(() => import("../pages/Contact"));
 const Careers = lazy(() => import("../pages/Careers"));
 const Press = lazy(() => import("../pages/Press"));
 const Partnerships = lazy(() => import("../pages/Partnerships"));
 const PrivacyPolicy = lazy(() => import("../pages/PrivacyPolicy"));
 const TermsOfService = lazy(() => import("../pages/TermsOfService"));
-const RiskDisclosure = lazy(() => import("../pages/RiskDisclosure"));
 const CookiePolicy = lazy(() => import("../pages/CookiePolicy"));
-const Technology = lazy(() => import("../pages/Technology"));
 const NotFound = lazy(() => import("../pages/NotFound"));
 
 /** Full-page loading fallback shown while a lazy chunk is being fetched. */
@@ -77,22 +73,6 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "investments",
-        element: (
-          <Suspense fallback={<PageLoader />}>
-            <Investments />
-          </Suspense>
-        ),
-      },
-      {
-        path: "impact",
-        element: (
-          <Suspense fallback={<PageLoader />}>
-            <Impact />
-          </Suspense>
-        ),
-      },
-      {
         path: "contact",
         element: (
           <Suspense fallback={<PageLoader />}>
@@ -125,14 +105,6 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "tech",
-        element: (
-          <Suspense fallback={<PageLoader />}>
-            <Technology />
-          </Suspense>
-        ),
-      },
-      {
         path: "privacy-policy",
         element: (
           <Suspense fallback={<PageLoader />}>
@@ -145,14 +117,6 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<PageLoader />}>
             <TermsOfService />
-          </Suspense>
-        ),
-      },
-      {
-        path: "risk-disclosure",
-        element: (
-          <Suspense fallback={<PageLoader />}>
-            <RiskDisclosure />
           </Suspense>
         ),
       },

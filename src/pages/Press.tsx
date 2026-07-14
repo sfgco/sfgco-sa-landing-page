@@ -3,117 +3,44 @@ import HoverCard from "../components/HoverCard";
 
 const PRESS_RELEASES = [
   {
-    date: "March 2025",
-    category: "Fund Launch",
+    date: "March 2026",
+    category: "Product Launch",
     title:
-      "SFGCO Closes $800M Deep Tech Venture Fund, Targeting AI and Climate-Tech Unicorns",
+      "SFGCO Tech Launches New AI Agent Platform for Enterprise Automation",
     outlet: "Press Release",
     outletColor: "#0e633d",
     summary:
-      "SFGCO announces the final close of its third flagship venture fund, with commitments from sovereign wealth funds, university endowments, and leading family offices across 18 countries.",
+      "SFGCO Tech announces the general availability of its AI agent platform, helping enterprise clients automate customer service, operations, and internal workflows.",
   },
   {
-    date: "January 2025",
+    date: "January 2026",
     category: "Milestone",
     title:
-      "SFGCO Portfolio Crosses $2.4B AUM, Surpasses 18 Million Tonnes CO₂ Offset",
+      "SFGCO Tech Surpasses 50 Delivered Projects Across 15+ Industries",
     outlet: "Press Release",
     outletColor: "#0e633d",
     summary:
-      "The firm marks a decade-and-a-half of verified impact, with independently audited results across renewable energy, ecosystem restoration, and green infrastructure.",
+      "The company marks a growth milestone, with production software now running across healthcare, logistics, retail, and financial services clients.",
   },
   {
     date: "November 2025",
     category: "Partnership",
     title:
-      "SFGCO and UN Environment Programme Sign Strategic MOU on Nature-Based Finance",
+      "SFGCO Tech Expands Cloud Practice with New AWS & Azure Delivery Teams",
     outlet: "Press Release",
     outletColor: "#0e633d",
     summary:
-      "A landmark agreement to co-develop blended finance structures for large-scale biodiversity and ocean conservation investments in the Global South.",
-  },
-];
-
-const COVERAGE = [
-  {
-    outlet: "Financial Times",
-    date: "Feb 2025",
-    headline:
-      "The Gulf's Green Gold Rush: How SFGCO is Reshaping Regional Capital Markets",
-    logo: "FT",
-  },
-  {
-    outlet: "Bloomberg",
-    date: "Jan 2025",
-    headline:
-      "Saudi Green Investor SFGCO Eyes European Expansion After Record Fund Close",
-    logo: "BB",
-  },
-  {
-    outlet: "Reuters",
-    date: "Dec 2025",
-    headline:
-      "SFGCO's Amazon Guardian Fund Hits 2 Million Hectare Protection Milestone",
-    logo: "RE",
-  },
-  {
-    outlet: "Wall Street Journal",
-    date: "Nov 2025",
-    headline:
-      "Sovereign Wealth Funds Double Down on Climate Investing Through SFGCO",
-    logo: "WJ",
-  },
-  {
-    outlet: "Arab News",
-    date: "Oct 2025",
-    headline:
-      "SFGCO Wins Best ESG Investment Manager at MENA Finance Awards 2025",
-    logo: "AN",
-  },
-  {
-    outlet: "Responsible Investor",
-    date: "Sep 2025",
-    headline:
-      "SFGCO Sets New Standard for Impact Transparency with Real-Time LP Dashboard",
-    logo: "RI",
-  },
-];
-
-const AWARDS = [
-  {
-    year: "2025",
-    award: "Best ESG Investment Manager — MENA",
-    body: "MENA Finance Awards",
-  },
-  {
-    year: "2025",
-    award: "Green Fund of the Year",
-    body: "Environmental Finance Awards",
-  },
-  {
-    year: "2023",
-    award: "Impact Investor of the Year",
-    body: "GIIN Investor Forum",
-  },
-  {
-    year: "2023",
-    award: "Best Renewable Energy Fund",
-    body: "Infrastructure Investor Awards",
-  },
-  {
-    year: "2022",
-    award: "ESG Reporting Excellence Award",
-    body: "CFA Society — Riyadh Chapter",
+      "A strategic expansion of the company's cloud engineering capabilities, enabling faster migrations and hybrid-cloud deployments for enterprise clients.",
   },
 ];
 
 export default function Press() {
   return (
     <>
-      <title>Press & Media | SFGCO</title>
+      <title>Press & Media | SFGCO Tech</title>
       <meta
         name="description"
-        content="SFGCO press releases, media coverage, awards, and media kit for journalists and analysts."
+        content="SFGCO Tech press releases, product news, and media kit for journalists and analysts."
       />
 
       {/* Hero */}
@@ -174,8 +101,8 @@ export default function Press() {
               margin: "0 auto 36px",
             }}
           >
-            News, press releases, media coverage, and resources for journalists
-            covering sustainable finance and green investment.
+            News, press releases, and resources for journalists covering
+            SFGCO Tech and our work in AI, cloud, and enterprise software.
           </p>
           <a
             href="mailto:press@sfgco.sa"
@@ -290,194 +217,6 @@ export default function Press() {
                     Read Full Release →
                   </span>
                 </HoverCard>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Media Coverage */}
-      <section style={{ background: "#fff", padding: "100px 48px" }}>
-        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-          <FadeIn>
-            <div style={{ textAlign: "center", marginBottom: 64 }}>
-              <div
-                style={{
-                  color: "#0e633d",
-                  fontSize: 11,
-                  fontWeight: 700,
-                  letterSpacing: 2.5,
-                  textTransform: "uppercase",
-                  marginBottom: 18,
-                }}
-              >
-                In the News
-              </div>
-              <h2
-                style={{
-                  fontFamily: "'Playfair Display', serif",
-                  fontSize: 42,
-                  fontWeight: 800,
-                  color: "#0a1f14",
-                }}
-              >
-                Media Coverage
-              </h2>
-            </div>
-          </FadeIn>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(3, 1fr)",
-              gap: 20,
-            }}
-          >
-            {COVERAGE.map((item, idx) => (
-              <FadeIn key={item.headline} delay={idx * 60}>
-                <HoverCard
-                  style={{
-                    background: "#faf8f5",
-                    border: "1.5px solid #ede5d9",
-                    borderRadius: 18,
-                    padding: 28,
-                    height: "100%",
-                    cursor: "pointer",
-                  }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "flex-start",
-                      marginBottom: 16,
-                    }}
-                  >
-                    <div
-                      style={{
-                        background: "#0a1f14",
-                        color: "#efe6d8",
-                        padding: "5px 13px",
-                        borderRadius: 8,
-                        fontSize: 11,
-                        fontWeight: 800,
-                        letterSpacing: 0.5,
-                      }}
-                    >
-                      {item.logo}
-                    </div>
-                    <span style={{ fontSize: 11, color: "#b0bdb2" }}>
-                      {item.date}
-                    </span>
-                  </div>
-                  <div
-                    style={{
-                      fontSize: 11,
-                      color: "#9aaa9e",
-                      marginBottom: 10,
-                      fontWeight: 600,
-                    }}
-                  >
-                    {item.outlet}
-                  </div>
-                  <p
-                    style={{
-                      fontFamily: "'Playfair Display', serif",
-                      fontSize: 16,
-                      fontWeight: 700,
-                      color: "#0a1f14",
-                      lineHeight: 1.5,
-                    }}
-                  >
-                    {item.headline}
-                  </p>
-                </HoverCard>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Awards & Recognition */}
-      <section style={{ background: "#0a1f14", padding: "100px 48px" }}>
-        <div style={{ maxWidth: 800, margin: "0 auto" }}>
-          <FadeIn>
-            <div style={{ textAlign: "center", marginBottom: 60 }}>
-              <div
-                style={{
-                  color: "#c8a84b",
-                  fontSize: 11,
-                  fontWeight: 700,
-                  letterSpacing: 2.5,
-                  textTransform: "uppercase",
-                  marginBottom: 18,
-                }}
-              >
-                Recognition
-              </div>
-              <h2
-                style={{
-                  fontFamily: "'Playfair Display', serif",
-                  fontSize: 42,
-                  fontWeight: 800,
-                  color: "#efe6d8",
-                }}
-              >
-                Awards & Honours
-              </h2>
-            </div>
-          </FadeIn>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: 1,
-              borderRadius: 18,
-              overflow: "hidden",
-              border: "1px solid rgba(255,255,255,0.07)",
-            }}
-          >
-            {AWARDS.map((a, idx) => (
-              <FadeIn key={a.award} delay={idx * 60}>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 24,
-                    padding: "22px 28px",
-                    background: "rgba(255,255,255,0.03)",
-                    borderBottom: "1px solid rgba(255,255,255,0.05)",
-                  }}
-                >
-                  <div
-                    style={{
-                      fontFamily: "'Playfair Display', serif",
-                      fontSize: 22,
-                      fontWeight: 800,
-                      color: "#c8a84b",
-                      minWidth: 54,
-                    }}
-                  >
-                    {a.year}
-                  </div>
-                  <div style={{ flex: 1 }}>
-                    <div
-                      style={{
-                        fontSize: 15,
-                        fontWeight: 700,
-                        color: "#efe6d8",
-                        marginBottom: 4,
-                      }}
-                    >
-                      {a.award}
-                    </div>
-                    <div
-                      style={{ fontSize: 12, color: "rgba(239,230,216,0.45)" }}
-                    >
-                      {a.body}
-                    </div>
-                  </div>
-                  <div style={{ fontSize: 20 }}>🏆</div>
-                </div>
               </FadeIn>
             ))}
           </div>

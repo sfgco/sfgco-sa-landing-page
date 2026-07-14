@@ -2,69 +2,48 @@ import { useTranslation } from "react-i18next";
 import FadeIn from "./FadeIn";
 import HoverCard from "./HoverCard";
 
-const REASONS = [
-  {
-    num: "01",
-    title: "Proven 15-Year Track Record",
-    desc: "Consistent above-benchmark returns with industry-leading sustainability outcomes through multiple market cycles.",
-  },
-  {
-    num: "02",
-    title: "Deep Domain Expertise",
-    desc: "80+ specialists spanning renewable energy, climate science, environmental law, carbon markets, and institutional finance.",
-  },
-  {
-    num: "03",
-    title: "Verified, Audited Impact",
-    desc: "All investments independently verified against science-based standards with real-time client dashboards.",
-  },
-  {
-    num: "04",
-    title: "Exclusive Global Deal Flow",
-    desc: "Partnerships with governments, multilateral development banks, and corporations across 42 countries.",
-  },
-];
+const REASON_KEYS = ["reason1", "reason2", "reason3", "reason4", "reason5", "reason6"];
 
 const CARDS = [
   {
-    icon: "🏆",
-    title: "Award Winning",
-    sub: "Best Green Fund 2025",
+    icon: "🚀",
+    title: "Rapid Delivery",
+    sub: "Agile sprint cycles",
     bg: "#0e633d",
     light: true,
   },
   {
     icon: "🔒",
-    title: "Regulated & Secure",
-    sub: "FSCA & FSB Licensed",
+    title: "Secure by Design",
+    sub: "Enterprise-grade security",
     bg: "#efe6d8",
     light: false,
   },
   {
-    icon: "📈",
-    title: "Consistent Returns",
-    sub: "+18.3% avg. 5yr IRR",
+    icon: "☁️",
+    title: "Cloud-Native",
+    sub: "Built to scale",
     bg: "#efe6d8",
     light: false,
   },
   {
-    icon: "🌍",
-    title: "UN SDG Aligned",
-    sub: "12 of 17 Global Goals",
+    icon: "🤖",
+    title: "AI-Powered",
+    sub: "Intelligent automation",
     bg: "#0e633d",
     light: true,
   },
   {
-    icon: "⚡",
-    title: "500MW+ Clean Energy",
-    sub: "Deployed & operational",
+    icon: "🌍",
+    title: "Cross-Industry Reach",
+    sub: "15+ sectors served",
     bg: "#c8a84b",
     light: false,
   },
   {
     icon: "🤝",
-    title: "Institutional Grade",
-    sub: "Pension & endowment ready",
+    title: "Long-Term Partner",
+    sub: "End-to-end support",
     bg: "#f5f1eb",
     light: false,
   },
@@ -125,9 +104,9 @@ export default function WhySFGCO() {
                 {t("whySFGCO.subtitle")}
               </p>
 
-              {REASONS.map((item) => (
+              {REASON_KEYS.map((key, idx) => (
                 <div
-                  key={item.num}
+                  key={key}
                   style={{ display: "flex", gap: 20, marginBottom: 28 }}
                 >
                   <div
@@ -141,7 +120,7 @@ export default function WhySFGCO() {
                       paddingTop: 3,
                     }}
                   >
-                    {item.num}
+                    {String(idx + 1).padStart(2, "0")}
                   </div>
                   <div>
                     <h4
@@ -153,7 +132,7 @@ export default function WhySFGCO() {
                         marginBottom: 6,
                       }}
                     >
-                      {item.title}
+                      {t(`whySFGCO.${key}.title`)}
                     </h4>
                     <p
                       style={{
@@ -162,7 +141,7 @@ export default function WhySFGCO() {
                         lineHeight: 1.7,
                       }}
                     >
-                      {item.desc}
+                      {t(`whySFGCO.${key}.desc`)}
                     </p>
                   </div>
                 </div>

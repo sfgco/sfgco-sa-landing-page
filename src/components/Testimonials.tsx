@@ -2,12 +2,12 @@ import { useTranslation } from 'react-i18next';
 import FadeIn from './FadeIn';
 
 const TESTIMONIALS = [
-  { quote:'SFGCO has redefined what we expect from an impact manager. The combination of rigorous financial discipline and genuine environmental commitment is unmatched. Our ESG portfolio has outperformed benchmarks for five consecutive years.', name:'Dr. Sarah Mensah', title:'Chief Investment Officer', org:'African Development Pension Fund', meta:'$4.2B AUM · Investor since 2017', initials:'SM', color:'#c8a84b' },
-  { quote:"Our family office has been with SFGCO for over a decade. The transparency, the quality of their team, and the consistent returns have made them our most valued long-term investment partner.", name:'Henrik Lundqvist', title:'Principal', org:'Lundqvist Family Office', meta:'Partner since 2012 · 3 fund cycles', initials:'HL', color:'#2ea866' },
-  { quote:"As a corporation committed to net zero by 2030, SFGCO's carbon market expertise and project pipeline have been transformational. They don't just advise — they deliver measurable, verified results.", name:'Priya Sharma', title:'Chief Sustainability Officer', org:'GreenTech Corporation', meta:'$800M invested · 12 projects', initials:'PS', color:'#c8a84b' },
+  { quote:'SFGCO Tech has redefined what we expect from a technology partner. The combination of engineering rigor and genuine product thinking is unmatched. Our platform has scaled seamlessly through three major growth phases.', name:'Sarah Mensah', title:'Chief Technology Officer', org:'Meridian Health Systems', meta:'Healthcare · Partner since 2021', initials:'SM', color:'#c8a84b' },
+  { quote:"Our team has worked with SFGCO Tech for over three years. The transparency, the quality of their engineers, and the consistent delivery have made them our most valued long-term technology partner.", name:'Henrik Lundqvist', title:'VP of Engineering', org:'Nordic Logistics Group', meta:'Logistics · 4 platform launches', initials:'HL', color:'#2ea866' },
+  { quote:"As a retailer scaling across the region, SFGCO Tech's AI and mobile expertise have been transformational. They don't just advise — they ship production-grade software that our customers love.", name:'Priya Sharma', title:'Head of Digital', org:'Northwind Retail Group', meta:'Retail · 6 apps shipped', initials:'PS', color:'#c8a84b' },
 ];
 
-/** Dark-green testimonial grid with investor quotes. */
+/** Dark-green testimonial grid with client quotes. */
 export default function Testimonials() {
   const { t } = useTranslation();
 

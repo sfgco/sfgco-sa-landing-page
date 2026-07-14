@@ -6,9 +6,9 @@ export default function AboutSection() {
   const { t } = useTranslation();
 
   const stats = [
-    { n: "80+", l: "Specialists" },
-    { n: "$2.4B", l: "Assets Under Mgmt." },
-    { n: "18M+", l: "Tonnes CO₂ Offset" },
+    { n: "50+", l: "Specialists" },
+    { n: "150+", l: "Projects Delivered" },
+    { n: "15+", l: "Industries Served" },
     { n: "97%", l: "Client Retention" },
   ];
 
@@ -136,7 +136,7 @@ export default function AboutSection() {
               </div>
             </div>
 
-            {/* ESG badge */}
+            {/* Client satisfaction badge */}
             <div
               style={{
                 position: "absolute",
@@ -181,17 +181,17 @@ export default function AboutSection() {
                 <div
                   style={{ fontWeight: 700, fontSize: 13, color: "#0a1f14" }}
                 >
-                  ESG Score
+                  Client Satisfaction
                 </div>
                 <div
                   style={{ fontSize: 12, color: "#0e633d", fontWeight: 700 }}
                 >
-                  92/100 · Top 1%
+                  98% · Top Rated
                 </div>
               </div>
             </div>
 
-            {/* UN SDG badge */}
+            {/* Industries badge */}
             <div
               style={{
                 position: "absolute",
@@ -212,7 +212,7 @@ export default function AboutSection() {
                   lineHeight: 1,
                 }}
               >
-                12/17
+                15+
               </div>
               <div
                 style={{
@@ -223,7 +223,7 @@ export default function AboutSection() {
                   marginTop: 3,
                 }}
               >
-                UN SDG GOALS
+                INDUSTRIES SERVED
               </div>
             </div>
           </div>
@@ -325,7 +325,7 @@ export default function AboutSection() {
           </div>
 
           <a
-            href="#investments"
+            href="#services"
             style={{
               display: "inline-flex",
               alignItems: "center",

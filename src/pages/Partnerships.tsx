@@ -3,58 +3,47 @@ import HoverCard from "../components/HoverCard";
 
 const PARTNER_TYPES = [
   {
-    icon: "🏛️",
-    title: "Institutional Co-Investors",
-    desc: "Pension funds, sovereign wealth funds, insurance companies, and endowments seeking direct co-investment rights alongside our flagship strategies. We offer preferred economics and board-level access on qualifying tickets.",
-    tags: ["Co-Investment Rights", "ROFR", "Preferred Terms"],
+    icon: "☁️",
+    title: "Cloud & Infrastructure Partners",
+    desc: "Hyperscale cloud providers and infrastructure vendors we build on and integrate with to deliver resilient, scalable platforms for our clients.",
+    tags: ["Cloud Credits", "Joint Solutions", "Co-Marketing"],
     accent: "#0e633d",
   },
   {
-    icon: "🏦",
-    title: "Development Finance Institutions",
-    desc: "Multilateral and bilateral DFIs that provide first-loss capital, concessional financing, and political risk guarantees to unlock commercial investment in emerging markets.",
-    tags: ["Blended Finance", "First-Loss", "Guarantees"],
+    icon: "🧩",
+    title: "System Integrators",
+    desc: "Consulting firms and integrators who bring us in as the engineering team behind AI, ERP, and custom software engagements for their clients.",
+    tags: ["White-Label Delivery", "Staff Augmentation", "Co-Delivery"],
     accent: "#1a8050",
   },
   {
     icon: "🏢",
-    title: "Corporate Partners",
-    desc: "Large corporates seeking to meet Scope 1, 2, and 3 emissions targets, secure renewable energy supply through PPAs, or access high-quality carbon credits for net-zero commitments.",
-    tags: ["PPAs", "Carbon Credits", "Net-Zero Advisory"],
+    title: "Enterprise Clients",
+    desc: "Large organizations seeking a long-term technology partner to design, build, and maintain mission-critical digital products at scale.",
+    tags: ["Managed Delivery", "Dedicated Pods", "SLA Support"],
     accent: "#c8a84b",
   },
   {
-    icon: "🔬",
-    title: "Technology Partners",
-    desc: "Deep-tech and AI companies developing solutions for climate monitoring, grid optimisation, predictive maintenance, or carbon accounting — seeking growth capital and SFGCOs global commercial network.",
-    tags: ["Growth Capital", "Market Access", "Pilot Projects"],
+    icon: "🚀",
+    title: "Startup & Scale-Up Partners",
+    desc: "Founders and product teams looking for a technical co-builder to take an idea from prototype to production-ready platform.",
+    tags: ["MVP Development", "Technical Co-Founder Support", "Growth Engineering"],
     accent: "#2ea866",
   },
   {
-    icon: "🌿",
-    title: "NGO & Conservation Bodies",
-    desc: "Environmental NGOs and conservation organisations looking to design and certify nature-based solutions projects that can access voluntary carbon markets and blended finance at scale.",
-    tags: ["NbS Design", "Verra/Gold Standard", "REDD+"],
+    icon: "🎓",
+    title: "Academic & Research Partners",
+    desc: "Universities and research institutions collaborating with us on applied AI research, talent pipelines, and internship programs.",
+    tags: ["Research Collaboration", "Internships", "Talent Pipeline"],
     accent: "#0a4a2e",
   },
   {
-    icon: "🏫",
-    title: "Academic & Research Partners",
-    desc: "Universities and research institutions collaborating on proprietary climate data, ESG measurement methodology, and sustainability transition pathways that inform our investment theses.",
-    tags: ["Research Grants", "Data Sharing", "Co-Publications"],
+    icon: "🤝",
+    title: "Channel & Reseller Partners",
+    desc: "Agencies and resellers who introduce our AI, ERP, mobile, and custom software services to their own client base.",
+    tags: ["Referral Program", "Reseller Terms", "Joint Proposals"],
     accent: "#c8a84b",
   },
-];
-
-const CURRENT_PARTNERS = [
-  { name: "IFC", category: "Development Finance" },
-  { name: "EIB", category: "Development Finance" },
-  { name: "GIIN", category: "Standards Body" },
-  { name: "IRENA", category: "Research & Policy" },
-  { name: "WWF", category: "Conservation" },
-  { name: "UNEP FI", category: "Initiative" },
-  { name: "PRI", category: "Initiative" },
-  { name: "CDP", category: "Standards Body" },
 ];
 
 const PROCESS = [
@@ -66,32 +55,32 @@ const PROCESS = [
   {
     num: "02",
     title: "Alignment Review",
-    desc: "Our Partnership Development team evaluates strategic, financial, and ESG alignment within 10 business days and responds with an outcome.",
+    desc: "Our Partnership Development team evaluates strategic and technical alignment within 10 business days and responds with an outcome.",
   },
   {
     num: "03",
     title: "Exploratory Call",
-    desc: "A structured 60-minute call with relevant SFGCO leads to map out a potential collaboration framework and answer your questions.",
+    desc: "A structured 60-minute call with relevant SFGCO Tech leads to map out a potential collaboration framework and answer your questions.",
   },
   {
     num: "04",
-    title: "Term Sheet & Due Diligence",
-    desc: "For partnerships proceeding to formalisation, we co-develop a term sheet, conduct mutual due diligence, and define governance and reporting requirements.",
+    title: "Scope & Agreement",
+    desc: "For partnerships proceeding to formalisation, we co-develop a scope of work, define governance, and agree on delivery milestones.",
   },
   {
     num: "05",
     title: "Launch & Review",
-    desc: "Partnerships are reviewed annually against agreed KPIs, with the option to deepen or expand the relationship as outcomes materialise.",
+    desc: "Partnerships are reviewed periodically against agreed KPIs, with the option to deepen or expand the relationship as outcomes materialise.",
   },
 ];
 
 export default function Partnerships() {
   return (
     <>
-      <title>Partnerships | SFGCO</title>
+      <title>Partnerships | SFGCO Tech</title>
       <meta
         name="description"
-        content="Partner with SFGCO — co-investment, DFI collaboration, corporate sustainability, technology ventures, and conservation partnerships."
+        content="Partner with SFGCO Tech — cloud alliances, system integration, enterprise delivery, startup co-building, and academic collaboration."
       />
 
       {/* Hero */}
@@ -165,9 +154,9 @@ export default function Partnerships() {
               margin: "0 auto",
             }}
           >
-            We achieve more together. SFGCO actively seeks partners who share
-            our conviction that financial performance and planetary health are
-            inseparable.
+            We achieve more together. SFGCO Tech actively seeks partners who
+            share our conviction that great software is built through
+            collaboration.
           </p>
         </FadeIn>
       </section>
@@ -290,81 +279,6 @@ export default function Partnerships() {
               </FadeIn>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Current Partners */}
-      <section style={{ background: "#0a1f14", padding: "80px 48px" }}>
-        <div style={{ maxWidth: 1000, margin: "0 auto", textAlign: "center" }}>
-          <FadeIn>
-            <div
-              style={{
-                color: "#c8a84b",
-                fontSize: 11,
-                fontWeight: 700,
-                letterSpacing: 2.5,
-                textTransform: "uppercase",
-                marginBottom: 18,
-              }}
-            >
-              Our Network
-            </div>
-            <h2
-              style={{
-                fontFamily: "'Playfair Display', serif",
-                fontSize: 36,
-                fontWeight: 800,
-                color: "#efe6d8",
-                marginBottom: 48,
-              }}
-            >
-              Trusted By Global Institutions
-            </h2>
-          </FadeIn>
-          <FadeIn delay={60}>
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: 16,
-                justifyContent: "center",
-              }}
-            >
-              {CURRENT_PARTNERS.map((p) => (
-                <div
-                  key={p.name}
-                  style={{
-                    background: "rgba(255,255,255,0.05)",
-                    border: "1px solid rgba(255,255,255,0.09)",
-                    borderRadius: 14,
-                    padding: "16px 28px",
-                    textAlign: "center",
-                  }}
-                >
-                  <div
-                    style={{
-                      fontFamily: "'Playfair Display', serif",
-                      fontSize: 20,
-                      fontWeight: 800,
-                      color: "#efe6d8",
-                      marginBottom: 5,
-                    }}
-                  >
-                    {p.name}
-                  </div>
-                  <div
-                    style={{
-                      fontSize: 10,
-                      color: "rgba(239,230,216,0.4)",
-                      letterSpacing: 0.5,
-                    }}
-                  >
-                    {p.category}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </FadeIn>
         </div>
       </section>
 
@@ -505,7 +419,7 @@ export default function Partnerships() {
                 }}
               >
                 Our Partnership Development team typically responds within five
-                business days. For urgent enquiries, please call our Riyadh
+                business days. For urgent enquiries, please call our Khobar
                 office directly.
               </p>
               <div

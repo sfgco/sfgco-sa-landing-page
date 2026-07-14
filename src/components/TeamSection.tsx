@@ -4,27 +4,41 @@ import HoverCard from "./HoverCard";
 
 const MEMBERS = [
   {
-    initials: "MA",
-    name: "Magren Al Qahtani",
-    role: "CEO & Co-Founder",
-    bg: "#0e633d",
-    bio: "Former UNCTAD advisor. 20+ yrs sustainable finance & impact investing.",
-  },
-  {
     initials: "AK",
     name: "Ahmed Khalid",
     role: "Chief Technology Officer",
     bg: "#2a1049",
-    bio: "Ex-Toptal AI lead. Built scalable ML systems for climate risk modeling.",
+    bio: "Ex-Toptal AI lead. Built scalable ML systems and cloud platforms for global clients.",
+  },
+  {
+    initials: "SA",
+    name: "Saud Al Qahtani",
+    role: "Software Engineering",
+    bg: "#0e633d",
+    bio: "developer and architect of cloud-native systems, mobile apps, and enterprise software solutions.",
+  },
+  {
+    initials: "AM",
+    name: "Ahmed Mamdouh",
+    role: "Software Engineering",
+    bg: "#0e2763",
+    bio: "backed by extensive experience in software engineering and cloud-native architecture.",
+  },
+  {
+    initials: "AM",
+    name: "Abulrahman ",
+    role: "Software Engineering",
+    bg: "#0e2763",
+    bio: "frontend developer with expertise in building responsive web applications.",
   },
 ];
 
-const AWARDS = [
-  "🏆 Best Green Fund GCC 2025",
-  "🌍 UN PRI Gold Rating",
-  "⭐ Bloomberg ESG Leader",
-  "🔰 GIIN Impact Award 2023",
-  "🎖️ FT Sustainable Finance Top 50",
+const HIGHLIGHTS = [
+  "🤖 AI & Machine Learning",
+  "☁️ Cloud-Native Engineering",
+  "🏢 Enterprise ERP Delivery",
+  "📱 Mobile & Cross-Platform Apps",
+  "🎮 Interactive & Game Development",
 ];
 
 /** Leadership team grid with awards strip. */
@@ -191,12 +205,12 @@ export default function TeamSection() {
             >
               {t("team.recognition")}
             </div>
-            {AWARDS.map((award) => (
+            {HIGHLIGHTS.map((item) => (
               <div
-                key={award}
+                key={item}
                 style={{ fontSize: 13, fontWeight: 600, color: "#2d3d32" }}
               >
-                {award}
+                {item}
               </div>
             ))}
           </div>

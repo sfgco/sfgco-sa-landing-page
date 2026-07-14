@@ -2,10 +2,10 @@ import { useTranslation } from 'react-i18next';
 import FadeIn from './FadeIn';
 
 const STEPS = [
-  { step:'01', icon:'💬', title:'Discovery Call', desc:'We learn about your investment goals, timeline, risk appetite, and sustainability priorities.' },
-  { step:'02', icon:'📋', title:'Custom Strategy', desc:'Our team crafts a bespoke green investment strategy tailored to your specific objectives.' },
-  { step:'03', icon:'✅', title:'Due Diligence', desc:'Rigorous screening of all investments for financial, environmental, and social criteria.' },
-  { step:'04', icon:'📊', title:'Ongoing Reporting', desc:'Real-time dashboards tracking both financial returns and verified sustainability impact.' },
+  { step:'01', icon:'💬', title:'Discovery Call', desc:'We learn about your business goals, technical constraints, timeline, and priorities.' },
+  { step:'02', icon:'📋', title:'Strategy & Design', desc:'Our team crafts a bespoke technical roadmap and product design tailored to your objectives.' },
+  { step:'03', icon:'⚙️', title:'Agile Development', desc:'Iterative sprints with continuous testing, code review, and stakeholder feedback loops.' },
+  { step:'04', icon:'🚀', title:'Deployment & Support', desc:'Production rollout followed by ongoing monitoring, maintenance, and 24/7 support.' },
 ];
 
 /** Four-step numbered process with connecting gradient line. */

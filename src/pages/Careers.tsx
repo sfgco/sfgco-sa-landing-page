@@ -4,56 +4,65 @@ import HoverCard from "../components/HoverCard";
 
 const VALUES = [
   {
-    icon: "🌍",
-    title: "Planet-First Mindset",
-    desc: "Every decision we make — from portfolio selection to office procurement — is evaluated through a climate lens.",
+    icon: "🚀",
+    title: "Innovation First",
+    desc: "Every decision we make — from architecture choices to tooling — is evaluated through a build-for-the-future lens.",
   },
   {
     icon: "🔬",
-    title: "Intellectual Rigour",
-    desc: "We back every thesis with data. We challenge assumptions, welcome dissent, and improve through evidence.",
+    title: "Engineering Rigour",
+    desc: "We back every technical decision with data. We challenge assumptions, welcome dissent, and improve through evidence.",
   },
   {
     icon: "🤝",
     title: "Long-Term Partnership",
-    desc: "We build careers, not just jobs. Most of our senior team joined at entry level and grew with the firm.",
+    desc: "We build careers, not just jobs. Most of our senior team joined at entry level and grew with the company.",
   },
   {
     icon: "⚡",
-    title: "Bias for Impact",
-    desc: "Speed matters. We operate with startup urgency inside an institutional-grade framework.",
+    title: "Bias for Delivery",
+    desc: "Speed matters. We operate with startup urgency inside an enterprise-grade engineering framework.",
   },
 ];
 
 const BENEFITS = [
-  "Competitive salary benchmarked to top-quartile finance roles",
-  "Annual performance bonus tied to fund and personal impact KPIs",
+  "Competitive salary benchmarked to top-quartile tech roles",
+  "Annual performance bonus tied to delivery and personal KPIs",
   "Full medical, dental & vision for you and dependents",
-  "SAR 25,000 annual learning & conference budget",
+  "SAR 15,000 annual learning & conference budget",
   "Hybrid work — 3 days in office, 2 remote",
   "30 days annual leave + all Saudi public holidays",
-  "SFGCO equity participation from day one",
-  "Carbon-neutral business travel policy",
+  "Modern hardware & tooling of your choice",
+  "Clear promotion tracks and mentorship program",
 ];
 
 const OPENINGS = [
   {
-    title: "Investor Relations Manager",
-    team: "IR & Marketing",
-    location: "Riyadh, KSA",
+    title: "AI/ML Engineer",
+    team: "Artificial Intelligence",
+    location: "Khobar, KSA",
     type: "Full-Time",
-    level: "Manager",
-    tags: ["LP Communications", "Fundraising", "CRM"],
-    desc: "Own LP relationships for our flagship funds — preparing quarterly reports, coordinating LP meetings, and supporting capital raises across institutional and family-office channels.",
+    level: "Mid-Senior",
+    tags: ["LLMs", "Python", "MLOps"],
+    desc: "Design and ship generative AI and machine learning solutions — from RAG pipelines to production ML systems — for clients across healthcare, retail, and logistics.",
   },
   {
-    title: "Full-Stack Engineer — Investor Platform",
-    team: "Technology",
+    title: "Full-Stack Engineer",
+    team: "Custom Software",
     location: "Remote · MENA Timezone",
     type: "Full-Time",
     level: "Mid-Senior",
     tags: ["React", "Node.js", "AWS"],
-    desc: "Build and scale the investor portal that powers real-time impact dashboards, document management, and capital call workflows for 150+ institutional investors.",
+    desc: "Build and scale enterprise portals, SaaS platforms, and APIs that power mission-critical workflows for clients across multiple industries.",
+  },
+  {
+    title: "Cloud DevOps Engineer",
+    team: "Cloud Solutions",
+    location: "Khobar, KSA",
+    type: "Full-Time",
+    level: "Senior",
+    tags: ["Kubernetes", "CI/CD", "Terraform"],
+    desc: "Own cloud infrastructure and delivery pipelines across AWS, Azure, and GCP, helping clients migrate, scale, and secure their production environments.",
   },
 ];
 
@@ -62,7 +71,7 @@ const LEVEL_COLOR: Record<string, string> = {
   Associate: "#0e633d",
   "Senior Associate": "#1a8050",
   Specialist: "#c8a84b",
-  Manager: "#c8a84b",
+  Senior: "#c8a84b",
   "Mid-Senior": "#0a4a2e",
 };
 
@@ -71,10 +80,10 @@ export default function Careers() {
 
   return (
     <>
-      <title>Careers | SFGCO</title>
+      <title>Careers | SFGCO Tech</title>
       <meta
         name="description"
-        content="Join SFGCO — build a career at the intersection of institutional finance and planetary impact across 42 countries."
+        content="Join SFGCO Tech — build a career at the intersection of AI, cloud engineering, and enterprise software."
       />
 
       {/* Hero */}
@@ -138,9 +147,9 @@ export default function Careers() {
               letterSpacing: -1,
             }}
           >
-            Build Wealth.
+            Build Products.
             <br />
-            <span style={{ color: "#c8a84b" }}>Restore the Planet.</span>
+            <span style={{ color: "#c8a84b" }}>Shape the Future.</span>
           </h1>
           <p
             style={{
@@ -150,9 +159,9 @@ export default function Careers() {
               margin: "0 auto 40px",
             }}
           >
-            SFGCO is a place where rigorous financial thinking meets genuine
-            environmental purpose. We are growing fast and looking for
-            exceptional people to grow with us.
+            SFGCO Tech is a place where rigorous engineering meets genuine
+            product craft. We are growing fast and looking for exceptional
+            people to grow with us.
           </p>
           <div
             style={{
@@ -164,8 +173,8 @@ export default function Careers() {
           >
             {[
               [OPENINGS.length, "Open Roles"],
-              ["42", "Countries"],
-              ["80+", "Team Members"],
+              ["15+", "Industries"],
+              ["50+", "Team Members"],
             ].map(([val, label]) => (
               <div key={label} style={{ textAlign: "center" }}>
                 <div

@@ -16,9 +16,7 @@ export default function Navbar() {
   const NAV_LINKS = [
     { key: "nav.about", to: "/about" },
     { key: "nav.services", to: "/services" },
-    { key: "nav.technology", to: "/tech" },
-    { key: "nav.investments", to: "/investments" },
-    { key: "nav.impact", to: "/impact" },
+    { key: "nav.careers", to: "/careers" },
   ];
 
   return (
@@ -81,7 +79,7 @@ export default function Navbar() {
                 textTransform: "uppercase",
               }}
             >
-              Future of Green
+              Tech
             </div>
           </div>
         </button>
@@ -148,7 +146,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Invest Now CTA */}
+          {/* Get Started CTA */}
           <NavLink
             to="/contact"
             style={{
@@ -175,7 +173,7 @@ export default function Navbar() {
                 "0 4px 20px rgba(200,168,75,0.3)";
             }}
           >
-            {t("nav.investNow")}
+            {t("nav.getStarted")}
           </NavLink>
         </div>
 
@@ -269,7 +267,7 @@ export default function Navbar() {
               fontSize: 15,
             }}
           >
-            {t("nav.investNow")}
+            {t("nav.getStarted")}
           </NavLink>
         </div>
       )}

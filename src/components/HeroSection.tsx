@@ -5,10 +5,10 @@ export default function HeroSection() {
   const { t } = useTranslation();
 
   const bars = [
-    { label: "Solar & Wind", pct: 85, color: "#c8a84b" },
-    { label: "Green Buildings", pct: 73, color: "#2ea866" },
-    { label: "Reforestation", pct: 91, color: "#1a8050" },
-    { label: "Clean Transport", pct: 67, color: "#0e633d" },
+    { label: "AI & Automation", pct: 88, color: "#c8a84b" },
+    { label: "Cloud Migration", pct: 82, color: "#2ea866" },
+    { label: "ERP Implementation", pct: 76, color: "#1a8050" },
+    { label: "Mobile & Web Apps", pct: 91, color: "#0e633d" },
   ];
 
   return (
@@ -168,7 +168,7 @@ export default function HeroSection() {
               {/* CTA buttons */}
               <div style={{ display: "flex", gap: 16, marginBottom: 64 }}>
                 <a
-                  href="#investments"
+                  href="/contact"
                   style={{
                     background: "#c8a84b",
                     color: "#0a1f14",
@@ -193,10 +193,10 @@ export default function HeroSection() {
                       "0 8px 36px rgba(200,168,75,0.4)";
                   }}
                 >
-                  {t("hero.exploreBtn")}
+                  {t("hero.consultBtn")}
                 </a>
                 <a
-                  href="#about"
+                  href="#services"
                   style={{
                     border: "1.5px solid rgba(239,230,216,0.35)",
                     color: "#efe6d8",
@@ -220,7 +220,7 @@ export default function HeroSection() {
                       "rgba(239,230,216,0.35)";
                   }}
                 >
-                  {t("hero.missionBtn")}
+                  {t("hero.servicesBtn")}
                 </a>
               </div>
 
@@ -330,12 +330,12 @@ export default function HeroSection() {
                   <span
                     style={{ color: "rgba(239,230,216,0.65)", fontSize: 12 }}
                   >
-                    Annual CO₂ Offset Target
+                    Client Satisfaction Score
                   </span>
                   <span
                     style={{ color: "#c8a84b", fontSize: 13, fontWeight: 700 }}
                   >
-                    18.2M Tonnes — 91%
+                    96%
                   </span>
                 </div>
                 <div
@@ -348,7 +348,7 @@ export default function HeroSection() {
                 >
                   <div
                     style={{
-                      width: "91%",
+                      width: "96%",
                       height: "100%",
                       background: "linear-gradient(90deg, #0e633d, #c8a84b)",
                       borderRadius: 50,
@@ -416,7 +416,7 @@ export default function HeroSection() {
                       color: "#fff",
                     }}
                   >
-                    $847M
+                    50+
                   </div>
                   <div
                     style={{
@@ -425,7 +425,7 @@ export default function HeroSection() {
                       marginTop: 2,
                     }}
                   >
-                    Returns Generated (2025)
+                    Projects Delivered
                   </div>
                 </div>
                 <div style={{ textAlign: "right" }}>
@@ -437,7 +437,7 @@ export default function HeroSection() {
                       color: "#c8a84b",
                     }}
                   >
-                    +23.4%
+                    98%
                   </div>
                   <div
                     style={{
@@ -446,7 +446,7 @@ export default function HeroSection() {
                       marginTop: 2,
                     }}
                   >
-                    YoY Portfolio Growth
+                    On-Time Delivery
                   </div>
                 </div>
               </div>
@@ -473,7 +473,7 @@ export default function HeroSection() {
                   lineHeight: 1,
                 }}
               >
-                AAA
+                24/7
               </div>
               <div
                 style={{
@@ -483,7 +483,7 @@ export default function HeroSection() {
                   marginTop: 2,
                 }}
               >
-                ESG RATED
+                TECH SUPPORT
               </div>
             </div>
             <div
@@ -510,10 +510,10 @@ export default function HeroSection() {
                 SINCE 2020
               </div>
               <div style={{ fontSize: 14, fontWeight: 700, marginTop: 2 }}>
-                Ranked #1
+                Building
               </div>
               <div style={{ fontSize: 10, color: "#c8a84b", fontWeight: 600 }}>
-                Green Fund GCC
+                Digital Products
               </div>
             </div>
           </div>

@@ -10,8 +10,6 @@ const SOCIAL = [
   { l: "fb", title: "Facebook" },
 ];
 
-const CERTS = ["PRI", "TCFD", "GIIN", "ISO"];
-
 const FOOTER_COLS: {
   headKey: string;
   links: { label: string; to?: string }[];
@@ -19,29 +17,18 @@ const FOOTER_COLS: {
   {
     headKey: "Services",
     links: [
-      { label: "Renewable Energy" },
-      { label: "Green Infrastructure" },
-      { label: "ESG Advisory" },
-      { label: "Carbon Markets" },
-      { label: "Impact Funds" },
-      { label: "Circular Economy" },
-    ],
-  },
-  {
-    headKey: "Invest",
-    links: [
-      { label: "Green Bond Fund", to: "/investments" },
-      { label: "RE Portfolio Fund", to: "/investments" },
-      { label: "Climate Ventures", to: "/investments" },
-      { label: "Co-investments", to: "/investments" },
-      { label: "Fund Performance", to: "/impact" },
-      { label: "Risk Disclosure", to: "/risk-disclosure" },
+      { label: "Artificial Intelligence", to: "/services" },
+      { label: "Cloud Solutions", to: "/services" },
+      { label: "ERP Solutions", to: "/services" },
+      { label: "Mobile Applications", to: "/services" },
+      { label: "Custom Software", to: "/services" },
+      { label: "Game Development", to: "/services" },
     ],
   },
   {
     headKey: "Company",
     links: [
-      { label: "About SFGCO", to: "/about" },
+      { label: "About SFGCO Tech", to: "/about" },
       { label: "Leadership Team", to: "/about" },
       { label: "Careers", to: "/careers" },
       { label: "Press & Media", to: "/press" },
@@ -54,7 +41,6 @@ const FOOTER_COLS: {
 const LEGAL_LINKS = [
   { label: "Privacy Policy", to: "/privacy-policy" },
   { label: "Terms of Service", to: "/terms-of-service" },
-  { label: "Risk Disclosure", to: "/risk-disclosure" },
   { label: "Cookie Policy", to: "/cookie-policy" },
 ];
 
@@ -76,7 +62,7 @@ export default function Footer() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "2.2fr 1fr 1fr 1fr",
+            gridTemplateColumns: "2.2fr 1fr 1fr",
             gap: 64,
             marginBottom: 72,
           }}
@@ -116,7 +102,7 @@ export default function Footer() {
                     textTransform: "uppercase",
                   }}
                 >
-                  Future of Green
+                  Tech
                 </div>
               </div>
             </div>
@@ -170,26 +156,6 @@ export default function Footer() {
                 >
                   {s.l.toUpperCase()}
                 </button>
-              ))}
-            </div>
-
-            {/* Certifications */}
-            <div style={{ display: "flex", gap: 10 }}>
-              {CERTS.map((b) => (
-                <div
-                  key={b}
-                  style={{
-                    padding: "4px 10px",
-                    borderRadius: 6,
-                    border: "1px solid rgba(200,168,75,0.25)",
-                    fontSize: 9,
-                    fontWeight: 800,
-                    color: "#c8a84b",
-                    letterSpacing: 1,
-                  }}
-                >
-                  {b}
-                </div>
               ))}
             </div>
           </div>

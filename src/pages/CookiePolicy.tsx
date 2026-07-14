@@ -21,7 +21,7 @@ const SECTIONS = [
       '_ga, _gid (analytics, 2 years / 24 hours) — Google Analytics visitor identifier. Anonymised; IP addresses are truncated.',
       '_gat_UA (analytics, 1 minute) — throttles the request rate to Google Analytics.',
       'sfgco_consent (365 days) — records your cookie consent choices so the banner does not reappear.',
-      'sfgco_session (session) — maintains your authenticated session on the investor portal. Cleared when you log out.',
+      'sfgco_session (session) — maintains your authenticated session on our client portal. Cleared when you log out.',
     ],
   },
   {
@@ -51,20 +51,20 @@ const SECTIONS = [
   },
   {
     heading: 'Contact Us',
-    body: 'If you have any questions about our use of cookies, please contact our Data Protection Officer at privacy@sfgco.com or write to us at SFGCO Investments Ltd., King Fahd Road, Riyadh 12214, Kingdom of Saudi Arabia.',
+    body: 'If you have any questions about our use of cookies, please contact us at privacy@sfgco.sa or write to us at SFGCO Tech, Khobar, Eastern Province, Kingdom of Saudi Arabia.',
   },
 ];
 
 export default function CookiePolicy() {
   return (
     <>
-      <title>Cookie Policy | SFGCO</title>
-      <meta name="description" content="Learn how SFGCO uses cookies, what data they collect, and how to manage your preferences." />
+      <title>Cookie Policy | SFGCO Tech</title>
+      <meta name="description" content="Learn how SFGCO Tech uses cookies, what data they collect, and how to manage your preferences." />
       <LegalPageLayout
         badge="Legal"
         title="Cookie Policy"
         subtitle="What cookies we use, why we use them, and how you can control them."
-        lastUpdated="1 April 2025"
+        lastUpdated="1 April 2026"
         sections={SECTIONS}
       />
     </>
