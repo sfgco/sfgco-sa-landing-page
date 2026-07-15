@@ -6,12 +6,16 @@ const SECTORS: { key: string; gradient: string; icon: React.ReactNode }[] = [
   {
     key: "renewable",
     gradient: "linear-gradient(145deg, #b8860b, #c8a84b)",
-    icon: <path d="M12 3v2m0 14v2m9-9h-2M5 12H3m14.4-6.4l-1.4 1.4M7 17l-1.4 1.4m0-12.8L7 7m10 10l1.4 1.4M12 8a4 4 0 100 8 4 4 0 000-8z" />,
+    icon: (
+      <path d="M12 3v2m0 14v2m9-9h-2M5 12H3m14.4-6.4l-1.4 1.4M7 17l-1.4 1.4m0-12.8L7 7m10 10l1.4 1.4M12 8a4 4 0 100 8 4 4 0 000-8z" />
+    ),
   },
   {
     key: "environment",
     gradient: "linear-gradient(145deg, #1a8050, #2ea866)",
-    icon: <path d="M12 22c-4.4-1.2-8-5.6-8-11 0-3 1.4-5.6 3.6-7.3C9.2 2.3 10.6 2 12 2s2.8.3 4.4 1.7C18.6 5.4 20 8 20 11c0 5.4-3.6 9.8-8 11zM12 22V8" />,
+    icon: (
+      <path d="M12 22c-4.4-1.2-8-5.6-8-11 0-3 1.4-5.6 3.6-7.3C9.2 2.3 10.6 2 12 2s2.8.3 4.4 1.7C18.6 5.4 20 8 20 11c0 5.4-3.6 9.8-8 11zM12 22V8" />
+    ),
   },
   {
     key: "realEstate",
@@ -21,7 +25,9 @@ const SECTORS: { key: string; gradient: string; icon: React.ReactNode }[] = [
   {
     key: "tech",
     gradient: "linear-gradient(145deg, #0e633d, #1a8050)",
-    icon: <path d="M9 3H5a2 2 0 00-2 2v4m18 0V5a2 2 0 00-2-2h-4m0 18h4a2 2 0 002-2v-4M3 15v4a2 2 0 002 2h4m2-9l3 3-3 3m-4-6l-3 3 3 3" />,
+    icon: (
+      <path d="M9 3H5a2 2 0 00-2 2v4m18 0V5a2 2 0 00-2-2h-4m0 18h4a2 2 0 002-2v-4M3 15v4a2 2 0 002 2h4m2-9l3 3-3 3m-4-6l-3 3 3 3" />
+    ),
   },
   {
     key: "agriculture",
@@ -36,12 +42,16 @@ const SECTORS: { key: string; gradient: string; icon: React.ReactNode }[] = [
   {
     key: "recycling",
     gradient: "linear-gradient(145deg, #b8860b, #e8cc7a)",
-    icon: <path d="M7 19H4.8a2 2 0 01-1.7-3l3-5m10 8h3.1a2 2 0 001.7-3l-1.5-2.6M14 5.4l1.5 2.6m-9-4L8 6.5 5 8m14.5.5L17 5.6l-3.5.3M9.5 19.5L12 21l2.5-1.5" />,
+    icon: (
+      <path d="M7 19H4.8a2 2 0 01-1.7-3l3-5m10 8h3.1a2 2 0 001.7-3l-1.5-2.6M14 5.4l1.5 2.6m-9-4L8 6.5 5 8m14.5.5L17 5.6l-3.5.3M9.5 19.5L12 21l2.5-1.5" />
+    ),
   },
   {
     key: "logistics",
     gradient: "linear-gradient(145deg, #0e633d, #0a4a2e)",
-    icon: <path d="M3 17h13V7H3v10zM16 10h3l3 3v4h-6v-7zM6.5 20a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM17.5 20a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />,
+    icon: (
+      <path d="M3 17h13V7H3v10zM16 10h3l3 3v4h-6v-7zM6.5 20a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM17.5 20a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+    ),
   },
 ];
 
@@ -112,14 +122,23 @@ export default function SectorsSection() {
                       insetInlineEnd: -40,
                     }}
                   />
-                  <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                  <svg
+                    width="38"
+                    height="38"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#fff"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
                     {s.icon}
                   </svg>
                 </div>
                 <div style={{ padding: "24px 26px 28px" }}>
                   <h3
                     style={{
-                      fontFamily: "'Playfair Display', serif",
+                      fontFamily: "'cairo', serif",
                       fontSize: 19,
                       fontWeight: 800,
                       color: "#0a1f14",
@@ -128,7 +147,13 @@ export default function SectorsSection() {
                   >
                     {t(`sectors.items.${s.key}.title`)}
                   </h3>
-                  <p style={{ fontSize: 13.5, color: "#6b7c6e", lineHeight: 1.75 }}>
+                  <p
+                    style={{
+                      fontSize: 13.5,
+                      color: "#6b7c6e",
+                      lineHeight: 1.75,
+                    }}
+                  >
                     {t(`sectors.items.${s.key}.desc`)}
                   </p>
                 </div>

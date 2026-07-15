@@ -7,9 +7,21 @@ export default function AboutSection() {
   const { t } = useTranslation();
 
   return (
-    <section id="about" style={{ background: "#efe6d8", padding: "120px 48px" }}>
+    <section
+      id="about"
+      style={{ background: "#efe6d8", padding: "120px 48px" }}
+    >
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        <div className="grid-2-cols" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 88, alignItems: "center", marginBottom: 100 }}>
+        <div
+          className="grid-2-cols"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+            gap: 88,
+            alignItems: "center",
+            marginBottom: 100,
+          }}
+        >
           {/* Visual card */}
           <FadeIn>
             <div style={{ position: "relative" }}>
@@ -52,13 +64,40 @@ export default function AboutSection() {
                     pointerEvents: "none",
                   }}
                 />
-                <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#c8a84b" strokeWidth="1.5" style={{ marginBottom: 22 }}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1m4 0h1m-6 4h1m4 0h1m-6 4h1m4 0h1" />
+                <svg
+                  width="46"
+                  height="46"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#c8a84b"
+                  strokeWidth="1.5"
+                  style={{ marginBottom: 22 }}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1m4 0h1m-6 4h1m4 0h1m-6 4h1m4 0h1"
+                  />
                 </svg>
-                <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 24, fontWeight: 800, color: "#efe6d8", lineHeight: 1.5 }}>
+                <div
+                  style={{
+                    fontFamily: "'cairo', serif",
+                    fontSize: 24,
+                    fontWeight: 800,
+                    color: "#efe6d8",
+                    lineHeight: 1.5,
+                  }}
+                >
                   SFGCO
                 </div>
-                <div style={{ fontSize: 14, color: "rgba(239,230,216,0.65)", marginTop: 8, lineHeight: 1.7 }}>
+                <div
+                  style={{
+                    fontSize: 14,
+                    color: "rgba(239,230,216,0.65)",
+                    marginTop: 8,
+                    lineHeight: 1.7,
+                  }}
+                >
                   {t("hero.badge")}
                 </div>
               </div>
@@ -79,21 +118,45 @@ export default function AboutSection() {
             >
               {t("about.badge")}
             </div>
-            <h2 style={{ fontSize: 44, fontWeight: 800, color: "#0a1f14", lineHeight: 1.2, marginBottom: 24 }}>
+            <h2
+              style={{
+                fontSize: 44,
+                fontWeight: 800,
+                color: "#0a1f14",
+                lineHeight: 1.2,
+                marginBottom: 24,
+              }}
+            >
               {t("about.title")}
             </h2>
-            <p style={{ fontSize: 16, color: "#5a7062", lineHeight: 1.9 }}>{t("about.body")}</p>
+            <p style={{ fontSize: 16, color: "#5a7062", lineHeight: 1.9 }}>
+              {t("about.body")}
+            </p>
           </FadeIn>
         </div>
 
         {/* Organizational chart */}
         <FadeIn>
           <div style={{ textAlign: "center", marginBottom: 40 }}>
-            <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 28, fontWeight: 800, color: "#0a1f14" }}>
+            <h3
+              style={{
+                fontFamily: "'cairo', serif",
+                fontSize: 28,
+                fontWeight: 800,
+                color: "#0a1f14",
+              }}
+            >
               {t("about.orgTitle")}
             </h3>
           </div>
-          <div style={{ background: "#fff", borderRadius: 24, padding: "36px 28px", border: "1.5px solid #e0d4c0" }}>
+          <div
+            style={{
+              background: "#fff",
+              borderRadius: 24,
+              padding: "36px 28px",
+              border: "1.5px solid #e0d4c0",
+            }}
+          >
             <OrgChart />
           </div>
         </FadeIn>

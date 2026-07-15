@@ -13,7 +13,15 @@ interface PreviewCardProps {
 }
 
 /** Home-page overview tile — icon, title, optional excerpt, link out to the dedicated page. */
-export default function PreviewCard({ icon, eyebrow, title, to, ctaLabel, children, dark = false }: Readonly<PreviewCardProps>) {
+export default function PreviewCard({
+  icon,
+  eyebrow,
+  title,
+  to,
+  ctaLabel,
+  children,
+  dark = false,
+}: Readonly<PreviewCardProps>) {
   return (
     <HoverCard
       style={{
@@ -38,7 +46,16 @@ export default function PreviewCard({ icon, eyebrow, title, to, ctaLabel, childr
           marginBottom: 20,
         }}
       >
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={dark ? "#c8a84b" : "#0e633d"} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <svg
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke={dark ? "#c8a84b" : "#0e633d"}
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
           {icon}
         </svg>
       </div>
@@ -57,7 +74,7 @@ export default function PreviewCard({ icon, eyebrow, title, to, ctaLabel, childr
       </div>
       <h3
         style={{
-          fontFamily: "'Playfair Display', serif",
+          fontFamily: "cairo', serif",
           fontSize: 20,
           fontWeight: 800,
           color: dark ? "#efe6d8" : "#0a1f14",
@@ -68,7 +85,15 @@ export default function PreviewCard({ icon, eyebrow, title, to, ctaLabel, childr
       </h3>
 
       {children && (
-        <p style={{ fontSize: 13.5, lineHeight: 1.8, color: dark ? "rgba(239,230,216,0.75)" : "#6b7c6e", marginBottom: 20, flexGrow: 1 }}>
+        <p
+          style={{
+            fontSize: 13.5,
+            lineHeight: 1.8,
+            color: dark ? "rgba(239,230,216,0.75)" : "#6b7c6e",
+            marginBottom: 20,
+            flexGrow: 1,
+          }}
+        >
           {children}
         </p>
       )}
@@ -87,7 +112,16 @@ export default function PreviewCard({ icon, eyebrow, title, to, ctaLabel, childr
         }}
       >
         {ctaLabel}
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+        <svg
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
           <path d="M5 12h14M12 5l7 7-7 7" />
         </svg>
       </Link>

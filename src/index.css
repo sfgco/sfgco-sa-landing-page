@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap");
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -20,7 +22,11 @@
   --gold: #c8a84b;
   --gold-light: #e8cc7a;
   --white: #ffffff;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
   font-size: 16px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -33,7 +39,7 @@ body,
   margin: 0;
   padding: 0;
   min-height: 100%;
-  background: #06130B;
+  background: #06130b;
 }
 
 body {
@@ -48,24 +54,41 @@ body {
   text-align: left;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Playfair Display', Georgia, serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "cairo", Georgia, serif;
   font-weight: 800;
   letter-spacing: -0.02em;
 }
 
-p { margin: 0; }
+p {
+  margin: 0;
+}
 
-a { text-decoration: none; }
+a {
+  text-decoration: none;
+}
 
-input { font-family: inherit; }
+input {
+  font-family: inherit;
+}
 
-button { font-family: inherit; cursor: pointer; }
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
 
 /* Animations */
 @keyframes bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(-8px); }
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-8px);
+  }
 }
 
 @keyframes fadeInUp {
@@ -80,18 +103,31 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
 
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-fade-in-up {
@@ -104,36 +140,39 @@ button { font-family: inherit; cursor: pointer; }
 
 /* Hover card utilities */
 .hover-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
 }
 .hover-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 28px 72px rgba(14,99,61,0.12);
+  box-shadow: 0 28px 72px rgba(14, 99, 61, 0.12);
 }
 .hover-card-sm:hover {
   transform: translateY(-5px);
-  box-shadow: 0 16px 48px rgba(14,99,61,0.15);
+  box-shadow: 0 16px 48px rgba(14, 99, 61, 0.15);
 }
 .hover-card-lg:hover {
   transform: translateY(-10px);
-  box-shadow: 0 32px 80px rgba(14,99,61,0.16);
+  box-shadow: 0 32px 80px rgba(14, 99, 61, 0.16);
 }
 .hover-card-team:hover {
   transform: translateY(-8px);
-  box-shadow: 0 28px 72px rgba(14,99,61,0.12);
+  box-shadow: 0 28px 72px rgba(14, 99, 61, 0.12);
   border-color: #0e633d !important;
 }
 
 /* ── RTL / Arabic support ──────────────────────────────────────────────────── */
 [dir="rtl"] {
-  font-family: 'Cairo', 'Inter', system-ui, sans-serif;
+  font-family: "Cairo", "Inter", system-ui, sans-serif;
 }
 
 [dir="rtl"] h1,
 [dir="rtl"] h2,
 [dir="rtl"] h3,
 [dir="rtl"] h4 {
-  font-family: 'Cairo', 'Playfair Display', Georgia, serif;
+  font-family: "Cairo", "cairo", Georgia, serif;
   letter-spacing: 0; /* Arabic doesn't use letter-spacing */
 }
 
@@ -146,34 +185,59 @@ button { font-family: inherit; cursor: pointer; }
 
 /* Responsive navbar */
 @media (max-width: 768px) {
-  .nav-links    { display: none !important; }
-  .nav-hamburger { display: block !important; }
+  .nav-links {
+    display: none !important;
+  }
+  .nav-hamburger {
+    display: block !important;
+  }
 }
 
 /* Responsive grids: fixed multi-column layouts collapse to a single column
    on narrow viewports (inline grid-template-columns is overridden here). */
 @media (max-width: 860px) {
-  .grid-2-cols { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .grid-2-cols {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
 }
 @media (max-width: 760px) {
-  .grid-3-cols { grid-template-columns: 1fr !important; }
+  .grid-3-cols {
+    grid-template-columns: 1fr !important;
+  }
 }
 @media (max-width: 900px) {
-  .grid-4-cols { grid-template-columns: 1fr 1fr !important; }
+  .grid-4-cols {
+    grid-template-columns: 1fr 1fr !important;
+  }
 }
 @media (max-width: 560px) {
-  .grid-4-cols { grid-template-columns: 1fr !important; }
+  .grid-4-cols {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 /* Tighter section padding on small screens */
 @media (max-width: 640px) {
-  section { padding-left: 24px !important; padding-right: 24px !important; }
+  section {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
 }
 
 /* Scrollbar */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--secondary); }
-::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 3px; }
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 3px;
+}
 
 /* Placeholder */
-::placeholder { color: rgba(239,230,216,0.4); }
+::placeholder {
+  color: rgba(239, 230, 216, 0.4);
+}

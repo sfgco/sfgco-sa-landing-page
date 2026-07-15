@@ -32,16 +32,33 @@ const SOCIAL = [
 /** Contact Us — form (6 fields exactly per source doc) + contact info + social. */
 export default function ContactSection() {
   const { t } = useTranslation();
-  const [form, setForm] = useState({ name: "", org: "", email: "", phone: "", subject: "", message: "" });
+  const [form, setForm] = useState({
+    name: "",
+    org: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
   const [submitted, setSubmitted] = useState(false);
 
-  const fields: { key: keyof typeof form; label: string; type: string; area?: boolean }[] = [
+  const fields: {
+    key: keyof typeof form;
+    label: string;
+    type: string;
+    area?: boolean;
+  }[] = [
     { key: "name", label: t("contact.form.name"), type: "text" },
     { key: "org", label: t("contact.form.org"), type: "text" },
     { key: "email", label: t("contact.form.email"), type: "email" },
     { key: "phone", label: t("contact.form.phone"), type: "tel" },
     { key: "subject", label: t("contact.form.subject"), type: "text" },
-    { key: "message", label: t("contact.form.message"), type: "text", area: true },
+    {
+      key: "message",
+      label: t("contact.form.message"),
+      type: "text",
+      area: true,
+    },
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -66,7 +83,10 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" style={{ background: "#0a1f14", padding: "120px 48px" }}>
+    <section
+      id="contact"
+      style={{ background: "#0a1f14", padding: "120px 48px" }}
+    >
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <FadeIn>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
@@ -82,13 +102,23 @@ export default function ContactSection() {
             >
               {t("contact.badge")}
             </div>
-            <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 46, fontWeight: 800, color: "#fff" }}>
+            <h2
+              style={{
+                fontFamily: "'cairo', serif",
+                fontSize: 46,
+                fontWeight: 800,
+                color: "#fff",
+              }}
+            >
               {t("contact.title")}
             </h2>
           </div>
         </FadeIn>
 
-        <div className="grid-2-cols" style={{ display: "grid", gridTemplateColumns: "1.3fr 1fr", gap: 56 }}>
+        <div
+          className="grid-2-cols"
+          style={{ display: "grid", gridTemplateColumns: "1.3fr 1fr", gap: 56 }}
+        >
           {/* Form */}
           <FadeIn>
             <form
@@ -100,15 +130,38 @@ export default function ContactSection() {
                 padding: 40,
               }}
             >
-              <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 800, color: "#efe6d8", marginBottom: 28 }}>
+              <h3
+                style={{
+                  fontFamily: "'cairo', serif",
+                  fontSize: 22,
+                  fontWeight: 800,
+                  color: "#efe6d8",
+                  marginBottom: 28,
+                }}
+              >
                 {t("contact.formTitle")}
               </h3>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 18 }}>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "1fr 1fr",
+                  gap: 18,
+                }}
+              >
                 {fields.map((f) => (
-                  <div key={f.key} style={f.area ? { gridColumn: "1 / -1" } : undefined}>
+                  <div
+                    key={f.key}
+                    style={f.area ? { gridColumn: "1 / -1" } : undefined}
+                  >
                     <label
                       htmlFor={f.key}
-                      style={{ display: "block", fontSize: 12.5, color: "rgba(239,230,216,0.6)", marginBottom: 8, fontWeight: 600 }}
+                      style={{
+                        display: "block",
+                        fontSize: 12.5,
+                        color: "rgba(239,230,216,0.6)",
+                        marginBottom: 8,
+                        fontWeight: 600,
+                      }}
                     >
                       {f.label}
                     </label>
@@ -117,7 +170,9 @@ export default function ContactSection() {
                         id={f.key}
                         rows={5}
                         value={form[f.key]}
-                        onChange={(e) => setForm((s) => ({ ...s, [f.key]: e.target.value }))}
+                        onChange={(e) =>
+                          setForm((s) => ({ ...s, [f.key]: e.target.value }))
+                        }
                         style={{ ...inputStyle, resize: "vertical" }}
                         required
                       />
@@ -126,7 +181,9 @@ export default function ContactSection() {
                         id={f.key}
                         type={f.type}
                         value={form[f.key]}
-                        onChange={(e) => setForm((s) => ({ ...s, [f.key]: e.target.value }))}
+                        onChange={(e) =>
+                          setForm((s) => ({ ...s, [f.key]: e.target.value }))
+                        }
                         style={inputStyle}
                         required
                       />
@@ -155,7 +212,14 @@ export default function ContactSection() {
               </button>
 
               {submitted && (
-                <p style={{ marginTop: 16, fontSize: 13.5, color: "#2ea866", fontWeight: 600 }}>
+                <p
+                  style={{
+                    marginTop: 16,
+                    fontSize: 13.5,
+                    color: "#2ea866",
+                    fontWeight: 600,
+                  }}
+                >
                   {t("contact.form.success")}
                 </p>
               )}
@@ -165,32 +229,91 @@ export default function ContactSection() {
           {/* Info */}
           <FadeIn delay={120}>
             <div>
-              <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 800, color: "#efe6d8", marginBottom: 28 }}>
+              <h3
+                style={{
+                  fontFamily: "'cairo', serif",
+                  fontSize: 22,
+                  fontWeight: 800,
+                  color: "#efe6d8",
+                  marginBottom: 28,
+                }}
+              >
                 {t("contact.infoTitle")}
               </h3>
 
-              <div style={{ display: "flex", flexDirection: "column", gap: 22, marginBottom: 36 }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 22,
+                  marginBottom: 36,
+                }}
+              >
                 {[
-                  { label: t("contact.locationLabel"), value: t("contact.location"), href: undefined },
-                  { label: t("contact.phoneLabel"), value: t("contact.phone"), href: `tel:${t("contact.phone")}` },
-                  { label: t("contact.emailLabel"), value: t("contact.email"), href: `mailto:${t("contact.email")}` },
+                  {
+                    label: t("contact.locationLabel"),
+                    value: t("contact.location"),
+                    href: undefined,
+                  },
+                  {
+                    label: t("contact.phoneLabel"),
+                    value: t("contact.phone"),
+                    href: `tel:${t("contact.phone")}`,
+                  },
+                  {
+                    label: t("contact.emailLabel"),
+                    value: t("contact.email"),
+                    href: `mailto:${t("contact.email")}`,
+                  },
                 ].map((item) => (
                   <div key={item.label}>
-                    <div style={{ fontSize: 11, color: "rgba(239,230,216,0.45)", letterSpacing: 1, textTransform: "uppercase", marginBottom: 6 }}>
+                    <div
+                      style={{
+                        fontSize: 11,
+                        color: "rgba(239,230,216,0.45)",
+                        letterSpacing: 1,
+                        textTransform: "uppercase",
+                        marginBottom: 6,
+                      }}
+                    >
                       {item.label}
                     </div>
                     {item.href ? (
-                      <a href={item.href} style={{ color: "#efe6d8", fontSize: 16, fontWeight: 600 }} dir="ltr">
+                      <a
+                        href={item.href}
+                        style={{
+                          color: "#efe6d8",
+                          fontSize: 16,
+                          fontWeight: 600,
+                        }}
+                        dir="ltr"
+                      >
                         {item.value}
                       </a>
                     ) : (
-                      <div style={{ color: "#efe6d8", fontSize: 16, fontWeight: 600 }}>{item.value}</div>
+                      <div
+                        style={{
+                          color: "#efe6d8",
+                          fontSize: 16,
+                          fontWeight: 600,
+                        }}
+                      >
+                        {item.value}
+                      </div>
                     )}
                   </div>
                 ))}
               </div>
 
-              <div style={{ fontSize: 11, color: "rgba(239,230,216,0.45)", letterSpacing: 1, textTransform: "uppercase", marginBottom: 14 }}>
+              <div
+                style={{
+                  fontSize: 11,
+                  color: "rgba(239,230,216,0.45)",
+                  letterSpacing: 1,
+                  textTransform: "uppercase",
+                  marginBottom: 14,
+                }}
+              >
                 {t("contact.socialLabel")}
               </div>
               <div style={{ display: "flex", gap: 12 }}>
@@ -213,7 +336,12 @@ export default function ContactSection() {
                       justifyContent: "center",
                     }}
                   >
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#efe6d8">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="#efe6d8"
+                    >
                       {s.icon}
                     </svg>
                   </a>

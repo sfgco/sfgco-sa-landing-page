@@ -95,13 +95,22 @@ export default function ValuesSection() {
                     margin: "0 auto 18px",
                   }}
                 >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0e633d" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#0e633d"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
                     {ICONS[key]}
                   </svg>
                 </div>
                 <h3
                   style={{
-                    fontFamily: "'Playfair Display', serif",
+                    fontFamily: "'cairo', serif",
                     fontSize: 18,
                     fontWeight: 800,
                     color: "#0a1f14",

@@ -8,7 +8,10 @@ export default function StrategicGoalsSection() {
   const goals = t("goals.items", { returnObjects: true }) as string[];
 
   return (
-    <section id="strategic-goals" style={{ background: "#efe6d8", padding: "120px 48px" }}>
+    <section
+      id="strategic-goals"
+      style={{ background: "#efe6d8", padding: "120px 48px" }}
+    >
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <FadeIn>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
@@ -53,7 +56,7 @@ export default function StrategicGoalsSection() {
               >
                 <div
                   style={{
-                    fontFamily: "'Playfair Display', serif",
+                    fontFamily: "'cairo', serif",
                     fontSize: 24,
                     fontWeight: 800,
                     color: "#c8a84b",
@@ -62,7 +65,15 @@ export default function StrategicGoalsSection() {
                 >
                   {String(idx + 1).padStart(2, "0")}
                 </div>
-                <p style={{ fontSize: 15.5, lineHeight: 1.8, color: "#2d3d32", fontWeight: 500, paddingTop: 4 }}>
+                <p
+                  style={{
+                    fontSize: 15.5,
+                    lineHeight: 1.8,
+                    color: "#2d3d32",
+                    fontWeight: 500,
+                    paddingTop: 4,
+                  }}
+                >
                   {goal}
                 </p>
               </HoverCard>

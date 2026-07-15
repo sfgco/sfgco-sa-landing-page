@@ -67,27 +67,64 @@ export default function Navbar() {
         {/* Logo */}
         <button
           onClick={() => navigate("/")}
-          style={{ display: "flex", alignItems: "center", gap: 12, background: "none", border: "none", cursor: "pointer", padding: 0 }}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 12,
+            background: "none",
+            border: "none",
+            cursor: "pointer",
+            padding: 0,
+          }}
           aria-label="Go to homepage"
         >
-          <img src={logoImg} alt="SFGCO" style={{ height: 42, objectFit: "contain" }} />
+          <img
+            src={logoImg}
+            alt="SFGCO"
+            style={{ height: 42, objectFit: "contain" }}
+          />
           <div>
-            <div style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: 17, color: "#fff", letterSpacing: 3 }}>
+            <div
+              style={{
+                fontFamily: "'cairo', serif",
+                fontWeight: 800,
+                fontSize: 17,
+                color: "#fff",
+                letterSpacing: 3,
+              }}
+            >
               SFGCO
             </div>
           </div>
         </button>
 
         {/* Desktop links */}
-        <div className="nav-links" style={{ display: "flex", gap: 26, alignItems: "center" }}>
+        <div
+          className="nav-links"
+          style={{ display: "flex", gap: 26, alignItems: "center" }}
+        >
           {NAV_LINKS.map((link) => (
-            <NavLink key={link.key} to={link.to} end={link.end} style={({ isActive }) => linkStyle(isActive)}>
+            <NavLink
+              key={link.key}
+              to={link.to}
+              end={link.end}
+              style={({ isActive }) => linkStyle(isActive)}
+            >
               {t(link.key)}
             </NavLink>
           ))}
 
           {/* Language switcher */}
-          <div style={{ display: "flex", gap: 4, alignItems: "center", borderRadius: 50, border: "1px solid rgba(239,230,216,0.2)", overflow: "hidden" }}>
+          <div
+            style={{
+              display: "flex",
+              gap: 4,
+              alignItems: "center",
+              borderRadius: 50,
+              border: "1px solid rgba(239,230,216,0.2)",
+              overflow: "hidden",
+            }}
+          >
             {(["ar", "en"] as const).map((lang) => (
               <button
                 key={lang}
@@ -95,8 +132,10 @@ export default function Navbar() {
                 aria-label={`Switch to ${lang === "en" ? "English" : "Arabic"}`}
                 style={{
                   padding: "5px 12px",
-                  background: language === lang ? "rgba(200,168,75,0.25)" : "transparent",
-                  color: language === lang ? "#c8a84b" : "rgba(255,255,255,0.6)",
+                  background:
+                    language === lang ? "rgba(200,168,75,0.25)" : "transparent",
+                  color:
+                    language === lang ? "#c8a84b" : "rgba(255,255,255,0.6)",
                   border: "none",
                   cursor: "pointer",
                   fontSize: 11,
@@ -182,7 +221,7 @@ export default function Navbar() {
                 color: isActive ? "#c8a84b" : "rgba(255,255,255,0.85)",
                 fontSize: 20,
                 fontWeight: 600,
-                fontFamily: "'Playfair Display', serif",
+                fontFamily: "'cairo', serif",
               })}
             >
               {t(link.key)}
@@ -213,7 +252,14 @@ export default function Navbar() {
           <NavLink
             to="/contact"
             onClick={() => setMobileOpen(false)}
-            style={{ background: "#c8a84b", color: "#0a1f14", padding: "14px 36px", borderRadius: 50, fontWeight: 700, fontSize: 15 }}
+            style={{
+              background: "#c8a84b",
+              color: "#0a1f14",
+              padding: "14px 36px",
+              borderRadius: 50,
+              fontWeight: 700,
+              fontSize: 15,
+            }}
           >
             {t("nav.contact")}
           </NavLink>

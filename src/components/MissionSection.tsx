@@ -43,13 +43,24 @@ export default function MissionSection() {
                 margin: "0 auto 28px",
               }}
             >
-              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0e633d" strokeWidth="1.8">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4L12 2z" />
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#0e633d"
+                strokeWidth="1.8"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4L12 2z"
+                />
               </svg>
             </div>
             <h1
               style={{
-                fontFamily: "'Playfair Display', serif",
+                fontFamily: "'cairo', serif",
                 fontSize: 38,
                 fontWeight: 800,
                 color: "#0a1f14",

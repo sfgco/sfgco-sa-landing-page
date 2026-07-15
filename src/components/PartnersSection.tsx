@@ -7,9 +7,13 @@ const SLOTS = [1, 2, 3, 4, 5];
 const PRINCIPLE_KEYS = ["alignment", "growth", "governance"];
 
 const PRINCIPLE_ICONS: Record<string, React.ReactNode> = {
-  alignment: <path d="M12 2l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L12 15.9 6.4 19l1.4-6.2-4.8-4.3 6.4-.6z" />,
+  alignment: (
+    <path d="M12 2l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L12 15.9 6.4 19l1.4-6.2-4.8-4.3 6.4-.6z" />
+  ),
   growth: <path d="M3 20h18M6 20V10m6 10V4m6 16v-7" />,
-  governance: <path d="M2.5 12S6 5 12 5s9.5 7 9.5 7-3.5 7-9.5 7-9.5-7-9.5-7zM12 15a3 3 0 100-6 3 3 0 000 6z" />,
+  governance: (
+    <path d="M2.5 12S6 5 12 5s9.5 7 9.5 7-3.5 7-9.5 7-9.5-7-9.5-7zM12 15a3 3 0 100-6 3 3 0 000 6z" />
+  ),
 };
 
 /**
@@ -22,7 +26,10 @@ export default function PartnersSection() {
   const loop = [...SLOTS, ...SLOTS];
 
   return (
-    <section id="partners" style={{ background: "#efe6d8", padding: "120px 48px 100px" }}>
+    <section
+      id="partners"
+      style={{ background: "#efe6d8", padding: "120px 48px 100px" }}
+    >
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <FadeIn>
           <div style={{ textAlign: "center", marginBottom: 56 }}>
@@ -38,16 +45,39 @@ export default function PartnersSection() {
             >
               {t("partners.badge")}
             </div>
-            <h2 style={{ fontSize: 40, fontWeight: 800, color: "#0a1f14", marginBottom: 24 }}>
+            <h2
+              style={{
+                fontSize: 40,
+                fontWeight: 800,
+                color: "#0a1f14",
+                marginBottom: 24,
+              }}
+            >
               {t("partners.title")}
             </h2>
-            <p style={{ fontSize: 16, color: "#5a7062", lineHeight: 1.9, maxWidth: 680, margin: "0 auto" }}>
+            <p
+              style={{
+                fontSize: 16,
+                color: "#5a7062",
+                lineHeight: 1.9,
+                maxWidth: 680,
+                margin: "0 auto",
+              }}
+            >
               {t("partners.body")}
             </p>
           </div>
         </FadeIn>
 
-        <div className="grid-3-cols" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24, marginBottom: 80 }}>
+        <div
+          className="grid-3-cols"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 1fr)",
+            gap: 24,
+            marginBottom: 80,
+          }}
+        >
           {PRINCIPLE_KEYS.map((key, idx) => (
             <FadeIn key={key} delay={idx * 80}>
               <HoverCard
@@ -57,7 +87,10 @@ export default function PartnersSection() {
                   padding: 34,
                   height: "100%",
                   border: idx === 1 ? "none" : "1.5px solid #e0d4c0",
-                  boxShadow: idx === 1 ? "0 20px 60px rgba(14,99,61,0.25)" : "0 4px 20px rgba(14,99,61,0.06)",
+                  boxShadow:
+                    idx === 1
+                      ? "0 20px 60px rgba(14,99,61,0.25)"
+                      : "0 4px 20px rgba(14,99,61,0.06)",
                 }}
               >
                 <div
@@ -65,7 +98,10 @@ export default function PartnersSection() {
                     width: 50,
                     height: 50,
                     borderRadius: 14,
-                    background: idx === 1 ? "rgba(200,168,75,0.2)" : "rgba(14,99,61,0.08)",
+                    background:
+                      idx === 1
+                        ? "rgba(200,168,75,0.2)"
+                        : "rgba(14,99,61,0.08)",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -87,7 +123,7 @@ export default function PartnersSection() {
                 </div>
                 <h3
                   style={{
-                    fontFamily: "'Playfair Display', serif",
+                    fontFamily: "'cairo', serif",
                     fontSize: 19,
                     fontWeight: 800,
                     color: idx === 1 ? "#efe6d8" : "#0a1f14",
@@ -96,7 +132,13 @@ export default function PartnersSection() {
                 >
                   {t(`partners.principles.${key}.title`)}
                 </h3>
-                <p style={{ fontSize: 14, lineHeight: 1.8, color: idx === 1 ? "rgba(239,230,216,0.75)" : "#6b7c6e" }}>
+                <p
+                  style={{
+                    fontSize: 14,
+                    lineHeight: 1.8,
+                    color: idx === 1 ? "rgba(239,230,216,0.75)" : "#6b7c6e",
+                  }}
+                >
                   {t(`partners.principles.${key}.desc`)}
                 </p>
               </HoverCard>
@@ -130,7 +172,14 @@ export default function PartnersSection() {
                   flexShrink: 0,
                 }}
               >
-                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#b0bdb2" strokeWidth="1.5">
+                <svg
+                  width="34"
+                  height="34"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#b0bdb2"
+                  strokeWidth="1.5"
+                >
                   <rect x="3" y="4" width="18" height="14" rx="2" />
                   <path d="M3 15l5-5 4 4 3-3 6 6" />
                   <circle cx="8" cy="8" r="1.5" />

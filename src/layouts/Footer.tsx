@@ -49,18 +49,59 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer style={{ background: "#060f08", padding: "80px 48px 40px", color: "rgba(239,230,216,0.55)" }}>
+    <footer
+      style={{
+        background: "#060f08",
+        padding: "80px 48px 40px",
+        color: "rgba(239,230,216,0.55)",
+      }}
+    >
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        <div className="grid-4-cols" style={{ display: "grid", gridTemplateColumns: "1.3fr 1fr 1fr 1fr", gap: 40, marginBottom: 64 }}>
+        <div
+          className="grid-4-cols"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1.3fr 1fr 1fr 1fr",
+            gap: 40,
+            marginBottom: 64,
+          }}
+        >
           {/* Brand column */}
           <div>
-            <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 22 }}>
-              <img src={logoImg} alt="SFGCO" style={{ height: 40, opacity: 0.9 }} />
-              <div style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: 16, color: "#efe6d8", letterSpacing: 3 }}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: 12,
+                marginBottom: 22,
+              }}
+            >
+              <img
+                src={logoImg}
+                alt="SFGCO"
+                style={{ height: 40, opacity: 0.9 }}
+              />
+              <div
+                style={{
+                  fontFamily: "'cairo', serif",
+                  fontWeight: 800,
+                  fontSize: 16,
+                  color: "#efe6d8",
+                  letterSpacing: 3,
+                }}
+              >
                 SFGCO
               </div>
             </div>
-            <p style={{ fontSize: 13, lineHeight: 1.85, maxWidth: 300, marginBottom: 28, color: "rgba(239,230,216,0.5)" }}>
+            <p
+              style={{
+                fontSize: 13,
+                lineHeight: 1.85,
+                maxWidth: 300,
+                marginBottom: 28,
+                color: "rgba(239,230,216,0.5)",
+              }}
+            >
               {t("footer.tagline")}
             </p>
 
@@ -83,7 +124,12 @@ export default function Footer() {
                     justifyContent: "center",
                   }}
                 >
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="#efe6d8">
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="#efe6d8"
+                  >
                     {s.icon}
                   </svg>
                 </a>
@@ -93,7 +139,16 @@ export default function Footer() {
 
           {/* Company links */}
           <div>
-            <h5 style={{ fontWeight: 800, color: "#efe6d8", fontSize: 11, letterSpacing: 2, textTransform: "uppercase", marginBottom: 22 }}>
+            <h5
+              style={{
+                fontWeight: 800,
+                color: "#efe6d8",
+                fontSize: 11,
+                letterSpacing: 2,
+                textTransform: "uppercase",
+                marginBottom: 22,
+              }}
+            >
               {t("footer.quickLinksTitle")}
             </h5>
             <div style={{ display: "flex", flexDirection: "column", gap: 11 }}>
@@ -101,9 +156,20 @@ export default function Footer() {
                 <Link
                   key={l.key}
                   to={l.to}
-                  style={{ color: "rgba(239,230,216,0.48)", fontSize: 13, textDecoration: "none", transition: "color 0.2s" }}
-                  onMouseEnter={(e) => ((e.currentTarget as HTMLAnchorElement).style.color = "#c8a84b")}
-                  onMouseLeave={(e) => ((e.currentTarget as HTMLAnchorElement).style.color = "rgba(239,230,216,0.48)")}
+                  style={{
+                    color: "rgba(239,230,216,0.48)",
+                    fontSize: 13,
+                    textDecoration: "none",
+                    transition: "color 0.2s",
+                  }}
+                  onMouseEnter={(e) =>
+                    ((e.currentTarget as HTMLAnchorElement).style.color =
+                      "#c8a84b")
+                  }
+                  onMouseLeave={(e) =>
+                    ((e.currentTarget as HTMLAnchorElement).style.color =
+                      "rgba(239,230,216,0.48)")
+                  }
                 >
                   {t(l.key)}
                 </Link>
@@ -113,7 +179,16 @@ export default function Footer() {
 
           {/* Investment links */}
           <div>
-            <h5 style={{ fontWeight: 800, color: "#efe6d8", fontSize: 11, letterSpacing: 2, textTransform: "uppercase", marginBottom: 22 }}>
+            <h5
+              style={{
+                fontWeight: 800,
+                color: "#efe6d8",
+                fontSize: 11,
+                letterSpacing: 2,
+                textTransform: "uppercase",
+                marginBottom: 22,
+              }}
+            >
               {t("nav.sectors")}
             </h5>
             <div style={{ display: "flex", flexDirection: "column", gap: 11 }}>
@@ -121,9 +196,20 @@ export default function Footer() {
                 <Link
                   key={l.key}
                   to={l.to}
-                  style={{ color: "rgba(239,230,216,0.48)", fontSize: 13, textDecoration: "none", transition: "color 0.2s" }}
-                  onMouseEnter={(e) => ((e.currentTarget as HTMLAnchorElement).style.color = "#c8a84b")}
-                  onMouseLeave={(e) => ((e.currentTarget as HTMLAnchorElement).style.color = "rgba(239,230,216,0.48)")}
+                  style={{
+                    color: "rgba(239,230,216,0.48)",
+                    fontSize: 13,
+                    textDecoration: "none",
+                    transition: "color 0.2s",
+                  }}
+                  onMouseEnter={(e) =>
+                    ((e.currentTarget as HTMLAnchorElement).style.color =
+                      "#c8a84b")
+                  }
+                  onMouseLeave={(e) =>
+                    ((e.currentTarget as HTMLAnchorElement).style.color =
+                      "rgba(239,230,216,0.48)")
+                  }
                 >
                   {t(l.key)}
                 </Link>
@@ -133,15 +219,40 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h5 style={{ fontWeight: 800, color: "#efe6d8", fontSize: 11, letterSpacing: 2, textTransform: "uppercase", marginBottom: 22 }}>
+            <h5
+              style={{
+                fontWeight: 800,
+                color: "#efe6d8",
+                fontSize: 11,
+                letterSpacing: 2,
+                textTransform: "uppercase",
+                marginBottom: 22,
+              }}
+            >
               {t("footer.contactTitle")}
             </h5>
-            <div style={{ display: "flex", flexDirection: "column", gap: 14, fontSize: 13, lineHeight: 1.7 }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: 14,
+                fontSize: 13,
+                lineHeight: 1.7,
+              }}
+            >
               <span>{t("contact.location")}</span>
-              <a href={`tel:${t("contact.phone")}`} dir="ltr" style={{ color: "rgba(239,230,216,0.65)" }}>
+              <a
+                href={`tel:${t("contact.phone")}`}
+                dir="ltr"
+                style={{ color: "rgba(239,230,216,0.65)" }}
+              >
                 {t("contact.phone")}
               </a>
-              <a href={`mailto:${t("contact.email")}`} dir="ltr" style={{ color: "rgba(239,230,216,0.65)" }}>
+              <a
+                href={`mailto:${t("contact.email")}`}
+                dir="ltr"
+                style={{ color: "rgba(239,230,216,0.65)" }}
+              >
                 {t("contact.email")}
               </a>
               <Link to="/contact" style={{ color: "#c8a84b", fontWeight: 700 }}>

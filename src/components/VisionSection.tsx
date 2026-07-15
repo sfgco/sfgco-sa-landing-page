@@ -56,14 +56,29 @@ export default function VisionSection() {
                 margin: "0 auto 28px",
               }}
             >
-              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#c8a84b" strokeWidth="1.8">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#c8a84b"
+                strokeWidth="1.8"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
               </svg>
             </div>
             <h1
               style={{
-                fontFamily: "'Playfair Display', serif",
+                fontFamily: "'cairo', serif",
                 fontSize: 38,
                 fontWeight: 800,
                 color: "#efe6d8",
@@ -72,7 +87,13 @@ export default function VisionSection() {
             >
               {t("visionMission.visionTitle")}
             </h1>
-            <p style={{ fontSize: 19, lineHeight: 1.95, color: "rgba(239,230,216,0.85)" }}>
+            <p
+              style={{
+                fontSize: 19,
+                lineHeight: 1.95,
+                color: "rgba(239,230,216,0.85)",
+              }}
+            >
               {t("visionMission.visionBody")}
             </p>
           </div>
