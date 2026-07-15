@@ -163,6 +163,18 @@ button {
   border-color: #0e633d !important;
 }
 
+/* Partner logo carousel — grayscale until hovered */
+.partner-logo-tile img {
+  filter: grayscale(1) opacity(0.55);
+  transition: filter 0.3s ease;
+}
+.partner-logo-tile:hover img {
+  filter: grayscale(0) opacity(1);
+}
+.partner-logo-tile:hover {
+  border-color: #0e633d !important;
+}
+
 /* ── RTL / Arabic support ──────────────────────────────────────────────────── */
 [dir="rtl"] {
   font-family: "Cairo", "Inter", system-ui, sans-serif;

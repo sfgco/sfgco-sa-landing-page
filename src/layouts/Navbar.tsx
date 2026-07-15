@@ -10,9 +10,7 @@ const NAV_LINKS = [
   { key: "nav.about", to: "/about" },
   { key: "nav.services", to: "/services" },
   { key: "nav.sectors", to: "/investment-sectors" },
-  { key: "nav.whyUs", to: "/why-us" },
   { key: "nav.projects", to: "/projects" },
-  { key: "nav.partners", to: "/partners" },
   { key: "nav.news", to: "/news" },
 ];
 

@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import ScrollToTop from "../layouts/ScrollToTop";
 
@@ -12,10 +12,7 @@ const Values = lazy(() => import("../pages/Values"));
 const StrategicGoals = lazy(() => import("../pages/StrategicGoals"));
 const Services = lazy(() => import("../pages/Services"));
 const InvestmentSectors = lazy(() => import("../pages/InvestmentSectors"));
-const WhyUs = lazy(() => import("../pages/WhyUs"));
 const Projects = lazy(() => import("../pages/Projects"));
-const Opportunities = lazy(() => import("../pages/Opportunities"));
-const Partners = lazy(() => import("../pages/Partners"));
 const NewsList = lazy(() => import("../pages/NewsList"));
 const NewsArticle = lazy(() => import("../pages/NewsArticle"));
 const Contact = lazy(() => import("../pages/Contact"));
@@ -71,10 +68,9 @@ const router = createBrowserRouter([
       { path: "strategic-goals", element: withSuspense(<StrategicGoals />) },
       { path: "services", element: withSuspense(<Services />) },
       { path: "investment-sectors", element: withSuspense(<InvestmentSectors />) },
-      { path: "why-us", element: withSuspense(<WhyUs />) },
+      { path: "why-us", element: <Navigate to="/" replace /> },
       { path: "projects", element: withSuspense(<Projects />) },
-      { path: "opportunities", element: withSuspense(<Opportunities />) },
-      { path: "partners", element: withSuspense(<Partners />) },
+      { path: "opportunities", element: <Navigate to="/projects" replace /> },
       { path: "news", element: withSuspense(<NewsList />) },
       { path: "news/:slug", element: withSuspense(<NewsArticle />) },
       { path: "contact", element: withSuspense(<Contact />) },

@@ -106,18 +106,6 @@ export default function AboutSection() {
 
           {/* Text */}
           <FadeIn delay={150}>
-            <div
-              style={{
-                color: "#0e633d",
-                fontSize: 11,
-                fontWeight: 700,
-                letterSpacing: 2.5,
-                textTransform: "uppercase",
-                marginBottom: 18,
-              }}
-            >
-              {t("about.badge")}
-            </div>
             <h2
               style={{
                 fontSize: 44,

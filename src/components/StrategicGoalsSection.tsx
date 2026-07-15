@@ -15,18 +15,6 @@ export default function StrategicGoalsSection() {
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <FadeIn>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
-            <div
-              style={{
-                color: "#0e633d",
-                fontSize: 11,
-                fontWeight: 700,
-                letterSpacing: 2.5,
-                textTransform: "uppercase",
-                marginBottom: 18,
-              }}
-            >
-              {t("goals.badge")}
-            </div>
             <h2 style={{ fontSize: 44, fontWeight: 800, color: "#0a1f14" }}>
               {t("goals.title")}
             </h2>
