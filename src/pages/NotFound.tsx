@@ -6,6 +6,9 @@ export default function NotFound() {
   const { t } = useTranslation();
 
   return (
+    <>
+    <title>{`${t('pages.notFound.title')} | SFGCO`}</title>
+    <meta name="robots" content="noindex" />
     <section
       style={{
         minHeight: '100vh',
@@ -15,7 +18,7 @@ export default function NotFound() {
         alignItems: 'center',
         justifyContent: 'center',
         textAlign: 'center',
-        padding: '48px',
+        padding: '110px 48px 48px',
         position: 'relative',
         overflow: 'hidden',
       }}
@@ -50,5 +53,6 @@ export default function NotFound() {
         {t('pages.notFound.backBtn')}
       </Link>
     </section>
+    </>
   );
 }

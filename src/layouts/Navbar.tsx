@@ -1,25 +1,47 @@
 import { useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useScrolled } from "../hooks/useScrolled";
 import { useLanguage } from "../hooks/useLanguage";
 import logoImg from "../assets/sfgco-logo.png";
 
-/** Top navigation bar with scroll effect, routing links, and EN/AR language switcher. */
+const NAV_LINKS = [
+  { key: "nav.home", to: "/", end: true },
+  { key: "nav.about", to: "/about" },
+  { key: "nav.services", to: "/services" },
+  { key: "nav.sectors", to: "/investment-sectors" },
+  { key: "nav.whyUs", to: "/why-us" },
+  { key: "nav.projects", to: "/projects" },
+  { key: "nav.partners", to: "/partners" },
+  { key: "nav.news", to: "/news" },
+];
+
+/** Top navigation bar — routes to dedicated pages, highlights the active route, EN/AR switcher. */
 export default function Navbar() {
   const { t } = useTranslation();
   const scrolled = useScrolled(80);
   const { language, changeLanguage } = useLanguage();
   const [mobileOpen, setMobileOpen] = useState(false);
   const navigate = useNavigate();
+  const { pathname } = useLocation();
 
-  const NAV_LINKS = [
-    { key: "nav.about", to: "/about" },
-    { key: "nav.services", to: "/services" },
-    { key: "nav.technology", to: "/tech" },
-    { key: "nav.investments", to: "/investments" },
-    { key: "nav.impact", to: "/impact" },
-  ];
+  // On every route except the full-bleed dark Hero on Home, the navbar must
+  // stay solid — a transparent navbar with light text is unreadable over the
+  // light-background inner pages.
+  const isHome = pathname === "/";
+  const solid = scrolled || !isHome;
+
+  const linkStyle = (isActive: boolean): React.CSSProperties => ({
+    color: isActive ? "#c8a84b" : "rgba(255,255,255,0.8)",
+    fontSize: 13,
+    fontWeight: isActive ? 700 : 500,
+    letterSpacing: 0.5,
+    transition: "color 0.2s",
+    fontFamily: "inherit",
+    position: "relative",
+    paddingBottom: 4,
+    borderBottom: isActive ? "1.5px solid #c8a84b" : "1.5px solid transparent",
+  });
 
   return (
     <>
@@ -32,115 +54,56 @@ export default function Navbar() {
           left: 0,
           right: 0,
           zIndex: 1000,
-          padding: scrolled ? "12px 48px" : "22px 48px",
-          background: scrolled ? "rgba(10,31,20,0.96)" : "transparent",
-          backdropFilter: scrolled ? "blur(20px)" : "none",
+          padding: solid ? "12px 48px" : "22px 48px",
+          background: solid ? "rgba(10,31,20,0.96)" : "transparent",
+          backdropFilter: solid ? "blur(20px)" : "none",
           transition: "all 0.35s ease",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          borderBottom: scrolled ? "1px solid rgba(239,230,216,0.08)" : "none",
+          borderBottom: solid ? "1px solid rgba(239,230,216,0.08)" : "none",
         }}
       >
         {/* Logo */}
         <button
           onClick={() => navigate("/")}
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: 12,
-            background: "none",
-            border: "none",
-            cursor: "pointer",
-            padding: 0,
-          }}
+          style={{ display: "flex", alignItems: "center", gap: 12, background: "none", border: "none", cursor: "pointer", padding: 0 }}
           aria-label="Go to homepage"
         >
-          <img
-            src={logoImg}
-            alt="SFGCO"
-            style={{ height: 42, objectFit: "contain" }}
-          />
+          <img src={logoImg} alt="SFGCO" style={{ height: 42, objectFit: "contain" }} />
           <div>
-            <div
-              style={{
-                fontFamily: "'Playfair Display', serif",
-                fontWeight: 800,
-                fontSize: 17,
-                color: "#fff",
-                letterSpacing: 3,
-              }}
-            >
+            <div style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: 17, color: "#fff", letterSpacing: 3 }}>
               SFGCO
-            </div>
-            <div
-              style={{
-                fontSize: 8,
-                color: "rgba(239,230,216,0.6)",
-                letterSpacing: 2,
-                textTransform: "uppercase",
-              }}
-            >
-              Future of Green
             </div>
           </div>
         </button>
 
         {/* Desktop links */}
-        <div
-          className="nav-links"
-          style={{ display: "flex", gap: 36, alignItems: "center" }}
-        >
+        <div className="nav-links" style={{ display: "flex", gap: 26, alignItems: "center" }}>
           {NAV_LINKS.map((link) => (
-            <NavLink
-              key={link.key}
-              to={link.to}
-              style={{
-                color: "rgba(255,255,255,0.8)",
-                fontSize: 13,
-                fontWeight: 500,
-                letterSpacing: 0.5,
-                transition: "color 0.2s",
-                fontFamily: "'Inter', sans-serif",
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#fff")}
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.color = "rgba(255,255,255,0.8)")
-              }
-            >
+            <NavLink key={link.key} to={link.to} end={link.end} style={({ isActive }) => linkStyle(isActive)}>
               {t(link.key)}
             </NavLink>
           ))}
 
           {/* Language switcher */}
-          <div
-            style={{
-              display: "flex",
-              gap: 4,
-              alignItems: "center",
-              borderRadius: 50,
-              border: "1px solid rgba(239,230,216,0.2)",
-              overflow: "hidden",
-            }}
-          >
-            {(["en", "ar"] as const).map((lang) => (
+          <div style={{ display: "flex", gap: 4, alignItems: "center", borderRadius: 50, border: "1px solid rgba(239,230,216,0.2)", overflow: "hidden" }}>
+            {(["ar", "en"] as const).map((lang) => (
               <button
                 key={lang}
                 onClick={() => changeLanguage(lang)}
                 aria-label={`Switch to ${lang === "en" ? "English" : "Arabic"}`}
                 style={{
                   padding: "5px 12px",
-                  background:
-                    language === lang ? "rgba(200,168,75,0.25)" : "transparent",
-                  color:
-                    language === lang ? "#c8a84b" : "rgba(255,255,255,0.6)",
+                  background: language === lang ? "rgba(200,168,75,0.25)" : "transparent",
+                  color: language === lang ? "#c8a84b" : "rgba(255,255,255,0.6)",
                   border: "none",
                   cursor: "pointer",
                   fontSize: 11,
                   fontWeight: 700,
                   letterSpacing: 0.5,
                   transition: "all 0.2s",
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "inherit",
                 }}
               >
                 {lang.toUpperCase()}
@@ -148,11 +111,11 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Invest Now CTA */}
+          {/* Contact CTA */}
           <NavLink
             to="/contact"
-            style={{
-              background: "#c8a84b",
+            style={({ isActive }) => ({
+              background: isActive ? "#e8cc7a" : "#c8a84b",
               color: "#0a1f14",
               padding: "10px 26px",
               borderRadius: 50,
@@ -161,21 +124,9 @@ export default function Navbar() {
               letterSpacing: 0.5,
               transition: "all 0.3s",
               boxShadow: "0 4px 20px rgba(200,168,75,0.3)",
-            }}
-            onMouseEnter={(e) => {
-              (e.currentTarget as HTMLAnchorElement).style.transform =
-                "translateY(-2px)";
-              (e.currentTarget as HTMLAnchorElement).style.boxShadow =
-                "0 8px 28px rgba(200,168,75,0.45)";
-            }}
-            onMouseLeave={(e) => {
-              (e.currentTarget as HTMLAnchorElement).style.transform =
-                "translateY(0)";
-              (e.currentTarget as HTMLAnchorElement).style.boxShadow =
-                "0 4px 20px rgba(200,168,75,0.3)";
-            }}
+            })}
           >
-            {t("nav.investNow")}
+            {t("nav.contact")}
           </NavLink>
         </div>
 
@@ -216,28 +167,30 @@ export default function Navbar() {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            gap: 36,
+            gap: 26,
+            overflowY: "auto",
+            padding: "40px 0",
           }}
         >
           {NAV_LINKS.map((link) => (
             <NavLink
               key={link.key}
               to={link.to}
+              end={link.end}
               onClick={() => setMobileOpen(false)}
-              style={{
-                color: "rgba(255,255,255,0.85)",
-                fontSize: 22,
+              style={({ isActive }) => ({
+                color: isActive ? "#c8a84b" : "rgba(255,255,255,0.85)",
+                fontSize: 20,
                 fontWeight: 600,
                 fontFamily: "'Playfair Display', serif",
-              }}
+              })}
             >
               {t(link.key)}
             </NavLink>
           ))}
 
-          {/* Mobile language switcher */}
           <div style={{ display: "flex", gap: 8 }}>
-            {(["en", "ar"] as const).map((lang) => (
+            {(["ar", "en"] as const).map((lang) => (
               <button
                 key={lang}
                 onClick={() => changeLanguage(lang)}
@@ -260,16 +213,9 @@ export default function Navbar() {
           <NavLink
             to="/contact"
             onClick={() => setMobileOpen(false)}
-            style={{
-              background: "#c8a84b",
-              color: "#0a1f14",
-              padding: "14px 36px",
-              borderRadius: 50,
-              fontWeight: 700,
-              fontSize: 15,
-            }}
+            style={{ background: "#c8a84b", color: "#0a1f14", padding: "14px 36px", borderRadius: 50, fontWeight: 700, fontSize: 15 }}
           >
-            {t("nav.investNow")}
+            {t("nav.contact")}
           </NavLink>
         </div>
       )}

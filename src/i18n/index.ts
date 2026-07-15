@@ -12,13 +12,16 @@ i18n
       en: { translation: en },
       ar: { translation: ar },
     },
-    fallbackLng: "en",
+    fallbackLng: "ar",
     supportedLngs: ["en", "ar"],
     interpolation: {
       escapeValue: false, // React already escapes values
     },
     detection: {
-      order: ["localStorage", "navigator"],
+      // Arabic is the site's primary language; only a previously-saved
+      // choice (via the language switcher) should override it — never
+      // the browser/OS locale.
+      order: ["localStorage"],
       caches: ["localStorage"],
     },
   });

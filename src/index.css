@@ -144,6 +144,26 @@ button { font-family: inherit; cursor: pointer; }
   .nav-hamburger { display: block !important; }
 }
 
+/* Responsive grids: fixed multi-column layouts collapse to a single column
+   on narrow viewports (inline grid-template-columns is overridden here). */
+@media (max-width: 860px) {
+  .grid-2-cols { grid-template-columns: 1fr !important; gap: 40px !important; }
+}
+@media (max-width: 760px) {
+  .grid-3-cols { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 900px) {
+  .grid-4-cols { grid-template-columns: 1fr 1fr !important; }
+}
+@media (max-width: 560px) {
+  .grid-4-cols { grid-template-columns: 1fr !important; }
+}
+
+/* Tighter section padding on small screens */
+@media (max-width: 640px) {
+  section { padding-left: 24px !important; padding-right: 24px !important; }
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--secondary); }
