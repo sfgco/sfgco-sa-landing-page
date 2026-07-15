@@ -181,7 +181,6 @@
       "org": "Organization Name",
       "email": "Email Address",
       "phone": "Mobile Number",
-      "subject": "Subject",
       "message": "Message",
       "submit": "Send Message",
       "success": "Thank you for reaching out — we'll get back to you as soon as possible."

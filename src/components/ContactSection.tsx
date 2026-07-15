@@ -29,7 +29,7 @@ const SOCIAL = [
   },
 ];
 
-/** Contact Us — form (6 fields exactly per source doc) + contact info + social. */
+/** Contact Us — form (5 fields exactly per source doc) + contact info + social. */
 export default function ContactSection() {
   const { t } = useTranslation();
   const [form, setForm] = useState({
@@ -37,7 +37,6 @@ export default function ContactSection() {
     org: "",
     email: "",
     phone: "",
-    subject: "",
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
@@ -52,7 +51,6 @@ export default function ContactSection() {
     { key: "org", label: t("contact.form.org"), type: "text" },
     { key: "email", label: t("contact.form.email"), type: "email" },
     { key: "phone", label: t("contact.form.phone"), type: "tel" },
-    { key: "subject", label: t("contact.form.subject"), type: "text" },
     {
       key: "message",
       label: t("contact.form.message"),
@@ -65,7 +63,7 @@ export default function ContactSection() {
     e.preventDefault();
     const body = `${t("contact.form.name")}: ${form.name}\n${t("contact.form.org")}: ${form.org}\n${t("contact.form.phone")}: ${form.phone}\n\n${form.message}`;
     window.location.href = `mailto:${t("contact.email")}?subject=${encodeURIComponent(
-      form.subject || t("contact.formTitle"),
+      t("contact.formTitle"),
     )}&body=${encodeURIComponent(body)}`;
     setSubmitted(true);
   };
