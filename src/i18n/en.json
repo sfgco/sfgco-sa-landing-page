@@ -138,7 +138,22 @@
   },
   "partners": {
     "badge": "Success Partners",
-    "title": "Success Partners"
+    "title": "Success Partners",
+    "body": "We build every partnership on shared strategic value, aligning with organizations that share our commitment to sustainable growth and long-term impact across the sectors we invest in.",
+    "principles": {
+      "alignment": {
+        "title": "Strategic Alignment",
+        "desc": "We partner with organizations whose vision and objectives align with our sustainable investment strategy."
+      },
+      "growth": {
+        "title": "Shared Growth",
+        "desc": "Every partnership is structured to create lasting value for both sides, not a one-time transaction."
+      },
+      "governance": {
+        "title": "Transparent Governance",
+        "desc": "We hold every partnership to the same standards of transparency and accountability we apply internally."
+      }
+    }
   },
   "news": {
     "badge": "News",
