@@ -1,376 +1,211 @@
 {
   "nav": {
-    "about": "About",
+    "home": "Home",
+    "about": "About Us",
+    "vision": "Vision",
+    "mission": "Mission",
+    "values": "Values",
+    "strategicGoals": "Strategic Goals",
     "services": "Services",
-    "technology": "Technology",
-    "investments": "Investments",
-    "impact": "Impact",
-    "team": "Team",
-    "investNow": "Invest Now"
+    "sectors": "Investment Sectors",
+    "whyUs": "Why Us",
+    "projects": "Our Projects",
+    "opportunities": "Investment Opportunities",
+    "partners": "Success Partners",
+    "news": "News",
+    "contact": "Contact Us"
+  },
+  "common": {
+    "readMore": "Learn More"
+  },
+  "home": {
+    "overviewBadge": "Overview",
+    "overviewTitle": "Get to Know SFGCO"
   },
   "hero": {
-    "badge": "Sustainable Investment Leaders",
-    "title1": "Invest in the",
-    "titleHighlight": "Future",
-    "title2": "of Green Earth",
-    "subtitle": "SFGCO pioneers sustainable investment — connecting visionary capital with transformative green projects across 42 countries. Build wealth. Restore the planet.",
-    "exploreBtn": "Explore Investments",
-    "missionBtn": "Our Mission",
-    "stat1": "$2.4B+",
-    "stat1Label": "Assets Managed",
-    "stat2": "150+",
-    "stat2Label": "Portfolio Companies",
-    "stat3": "42",
-    "stat3Label": "Countries",
-    "dashboardTitle": "2025 Live Impact Dashboard",
-    "live": "LIVE",
-    "scrollCue": "Discover"
-  },
-  "trust": {
-    "label": "Trusted Partners & Institutional Investors"
+    "badge": "Sustainable Future for Green Growth Investment",
+    "title": "We invest today to build a green, sustainable future.",
+    "description": "Sustainable Future for Green Growth Investment Company (SFGCO) seeks to build quality investments that contribute to achieving sustainable development, by investing in promising sectors and developing innovative projects that create economic, social, and environmental value, in alignment with the goals of Saudi Arabia's Vision 2030.",
+    "ctaPrimary": "Explore Investment Sectors",
+    "ctaSecondary": "Learn About Us",
+    "visionLabel": "In alignment with",
+    "visionValue": "Saudi Vision 2030"
   },
   "about": {
-    "badge": "Our Mission",
-    "yearsValue": "15+",
-    "yearsLabel": "Years of Proven Impact",
-    "title": "Sustainability Is Not a Trend — It's the",
-    "titleHighlight": "Only Future",
-    "p1": "Founded on the conviction that financial returns and environmental stewardship are inseparable, SFGCO has pioneered a new model of investment — one that delivers strong risk-adjusted returns while driving measurable, verifiable positive impact on our planet.",
-    "p2": "We partner with institutional investors, family offices, and forward-thinking corporations to deploy capital into transformative green projects across renewable energy, ecosystem restoration, and clean technology.",
-    "check1": "UN Principles for Responsible Investment (PRI) signatory",
-    "check2": "TCFD-aligned reporting & real-time impact transparency",
-    "check3": "Science-based targets for net-zero portfolio by 2035",
-    "check4": "ISO 14001 certified environmental management system",
-    "discoverBtn": "Discover Opportunities"
+    "badge": "About Us",
+    "title": "About the Company",
+    "body": "Sustainable Future for Green Growth Investment Company (SFGCO) is a Saudi investment company specialized in investing in and developing projects across sustainable economic sectors. We work to build strategic partnerships and create innovative investment solutions that contribute to national economic development and enhance environmental sustainability, with a focus on achieving long-term returns and sustainable value for investors and society.",
+    "orgTitle": "Organizational Structure",
+    "org": {
+      "shareholders": "Shareholders",
+      "ceo": "General Manager",
+      "marketing": "Marketing & Public Relations Department",
+      "hr": "Human Resources Department",
+      "grc": "Governance, Risk & Compliance Department (GRC)",
+      "investment": "Investment & Business Development Department",
+      "operations": "Operations & Production Department",
+      "finance": "Financial & Accounting Affairs Department",
+      "compliance": "Compliance & Risk Management Section",
+      "legal": "Legal Affairs & Governance Section",
+      "assets": "Assets & Investment Section",
+      "bizdev": "Business Development & Opportunities Section"
+    }
+  },
+  "visionMission": {
+    "badge": "Vision & Mission",
+    "visionTitle": "Our Vision",
+    "visionBody": "To be among the leading investment companies in the Kingdom and the region in sustainable investment, shaping a more prosperous economic future for coming generations.",
+    "missionTitle": "Our Mission",
+    "missionBody": "To provide quality solutions and investments that keep pace with global developments, contribute to supporting the national economy, promote innovation and sustainability, and create added value for our partners and investors."
+  },
+  "values": {
+    "badge": "Our Values",
+    "title": "The Values That Guide Our Work",
+    "items": {
+      "sustainability": "Sustainability",
+      "transparency": "Transparency",
+      "innovation": "Innovation",
+      "responsibility": "Responsibility",
+      "professionalism": "Professionalism",
+      "partnership": "Partnership",
+      "excellence": "Excellence"
+    }
+  },
+  "goals": {
+    "badge": "Strategic Goals",
+    "title": "Our Strategic Goals",
+    "items": [
+      "Diversifying investments across promising sectors.",
+      "Supporting the green economy and sustainable investment.",
+      "Building strategic local and international partnerships.",
+      "Maximizing investment returns according to best practices.",
+      "Developing projects with economic and social impact.",
+      "Contributing to achieving the goals of Saudi Vision 2030."
+    ]
   },
   "services": {
-    "badge": "What We Do",
-    "title": "Comprehensive Green Services",
-    "subtitle": "From strategic advisory to active portfolio management, we deliver end-to-end sustainability solutions for forward-thinking investors."
-  },
-  "impact": {
-    "badge": "Measurable Impact",
-    "title": "Numbers That Drive Real Change",
-    "subtitle": "Every figure represents verified, independently audited impact — not projections."
-  },
-  "investments": {
-    "badge": "Invest With Us",
-    "title1": "Choose Your Path to",
-    "title2": "Sustainable Returns",
-    "subtitle": "Three distinct investment vehicles designed to match your risk profile, return expectations, and impact ambitions.",
-    "requestBtn": "Request Investment Information",
-    "disclaimer": "All investments carry risk. Past performance is not indicative of future results. For qualified investors only. Please review our Risk Disclosure before investing."
-  },
-  "techAI": {
-    "badge": "Tech & AI Investment",
-    "title1": "Capitalizing on the",
-    "titleHighlight": "AI Revolution",
-    "title2": "Before the Crowd",
-    "subtitle": "Artificial intelligence and deep technology are rewriting every industry. SFGCO deploys institutional capital into the most defensible, high-conviction opportunities across the global AI and tech landscape.",
-    "stat1": "Global AI market size projected by 2030",
-    "stat2": "Average annual growth rate for AI infrastructure",
-    "stat3": "AI & deep-tech companies screened annually",
-    "stat4": "Of Fortune 500 accelerating AI adoption",
-    "areasLabel": "Investment Focus Areas",
-    "plansLabel": "Investment Vehicles",
-    "plansTitle": "Choose Your Tech & AI Exposure",
-    "minLabel": "Min. Investment",
-    "durLabel": "Duration",
-    "requestBtn": "Request Tech AI Briefing",
-    "disclaimer": "All investments carry risk. Past performance is not indicative of future results. For qualified investors only. Please review our Risk Disclosure before investing.",
-    "area1": {
-      "title": "AI Infrastructure & Compute",
-      "desc": "Data centers, AI-optimised chips, cloud hyperscalers, and the physical backbone powering every large language model and autonomous system at scale."
-    },
-    "area2": {
-      "title": "Semiconductors & Edge AI",
-      "desc": "Proprietary chip architectures, RISC-V ecosystems, and edge inference hardware that bring intelligence closer to the sensor — reducing latency and energy consumption."
-    },
-    "area3": {
-      "title": "AI-Powered Life Sciences",
-      "desc": "Generative biology, AI-driven drug discovery, genomics platforms, and digital-health applications that are compressing drug development timelines from decades to years."
-    },
-    "area4": {
-      "title": "Cybersecurity & AI Defense",
-      "desc": "Next-generation zero-trust architectures, post-quantum cryptography, and AI-native security operations centers protecting enterprises and critical national infrastructure."
-    },
-    "area5": {
-      "title": "Industrial AI & Robotics",
-      "desc": "Autonomous manufacturing systems, digital-twin platforms, AI-guided quality control, and collaborative robotics reshaping factory floors across automotive, aerospace, and logistics."
-    },
-    "area6": {
-      "title": "Sovereign AI & GovTech",
-      "desc": "National AI programs, smart-grid optimisation, AI-powered financial systems, and precision-agriculture platforms enabling governments to deploy intelligence at a country scale."
-    },
-    "plan1": {
-      "badge": "Diversified",
-      "name": "AI Growth Equity Fund",
-      "returnLabel": "Target Net IRR",
-      "risk": "Moderate Risk",
-      "f1": "Diversified basket of 25+ AI & tech equities",
-      "f2": "Series B–D entry points",
-      "f3": "Quarterly liquidity windows",
-      "f4": "Independent valuation committee",
-      "f5": "Annual LP tech summit access"
-    },
-    "plan2": {
-      "badge": "★ Most Popular",
-      "name": "Deep Tech Venture Fund",
-      "returnLabel": "Target Gross IRR",
-      "risk": "Growth Risk",
-      "f1": "Early-stage AI & deep-tech equity",
-      "f2": "Series A & B concentrated bets",
-      "f3": "Board-level representation rights",
-      "f4": "Proprietary deal-flow from 80+ accelerators",
-      "f5": "Co-investment rights on follow-on rounds"
-    },
-    "plan3": {
-      "badge": "Founders Access",
-      "name": "AI Unicorn Co-Invest",
-      "returnLabel": "Target Gross MOIC",
-      "risk": "High Conviction",
-      "f1": "Direct co-investment in unicorn rounds",
-      "f2": "Seed to pre-IPO continuum",
-      "f3": "Full information rights & ROFR",
-      "f4": "Access to secondary liquidity pool",
-      "f5": "Dedicated AI research analyst support"
+    "badge": "Our Services",
+    "title": "Our Services",
+    "items": {
+      "direct": { "title": "Direct Investment", "desc": "Investing in promising projects and companies with strong economic feasibility to achieve sustainable growth." },
+      "portfolio": { "title": "Investment Portfolio Management", "desc": "Managing portfolios according to professional strategies that balance return and risk." },
+      "development": { "title": "Project Development", "desc": "Establishing and developing investment projects from concept through to operation." },
+      "advisory": { "title": "Investment Advisory", "desc": "Providing financial and investment advisory services built on studies and analysis." },
+      "feasibility": { "title": "Feasibility Studies", "desc": "Preparing economic, technical, and marketing studies for investment projects." },
+      "partnerships": { "title": "Strategic Partnerships", "desc": "Building quality partnerships with government entities, the private sector, and investors to achieve shared growth." }
     }
   },
-  "whySFGCO": {
-    "badge": "Why Choose SFGCO",
-    "title1": "Where Financial Excellence Meets",
-    "titleHighlight": "Green Purpose",
-    "subtitle": "We combine institutional-grade investment rigor with deep environmental expertise — delivering portfolios that consistently outperform while generating verifiable planet outcomes."
+  "sectors": {
+    "badge": "Investment Sectors",
+    "title": "Investment Sectors",
+    "items": {
+      "renewable": { "title": "Renewable Energy", "desc": "Investing in solar power, wind power, and clean energy technology projects." },
+      "environment": { "title": "Environmental Sustainability", "desc": "Projects that contribute to protecting the environment, reducing emissions, and strengthening the green economy." },
+      "realEstate": { "title": "Sustainable Real Estate Development", "desc": "Developing communities and real estate projects that adopt sustainability and energy-efficiency standards." },
+      "tech": { "title": "Technology & Innovation", "desc": "Investing in technology solutions, digital transformation, and emerging technologies." },
+      "agriculture": { "title": "Smart Agriculture", "desc": "Supporting modern agricultural technologies, food security, and optimal use of resources." },
+      "water": { "title": "Water Management", "desc": "Water management, desalination, and efficient reuse solutions." },
+      "recycling": { "title": "Recycling & Circular Economy", "desc": "Recycling projects, waste management, and resource utilization." },
+      "logistics": { "title": "Sustainable Logistics", "desc": "Developing logistics services and supply chains using environmentally friendly solutions." }
+    }
+  },
+  "whyUs": {
+    "badge": "Why Us?",
+    "title": "Why Choose Us?",
+    "items": {
+      "expertise": { "title": "Specialized Investment Expertise", "desc": "We draw on accumulated experience and a strategic vision in investment management." },
+      "innovative": { "title": "Innovative Solutions", "desc": "We provide flexible investment solutions that keep pace with market developments." },
+      "sustainability": { "title": "Commitment to Sustainability", "desc": "We make sustainability a core pillar of all our investment decisions." },
+      "risk": { "title": "Effective Risk Management", "desc": "We follow global best practices in assessing and managing risk." },
+      "longterm": { "title": "Long-Term Partnerships", "desc": "We believe sustainable success begins with partnerships built on trust." },
+      "governance": { "title": "Governance & Transparency", "desc": "We uphold the highest standards of governance and transparency in all our business." }
+    }
   },
   "projects": {
-    "badge": "Featured Projects",
-    "title": "Impact In Action",
-    "subtitle": "A selection from our $2.4B+ portfolio of active green investments delivering both returns and real-world transformation.",
-    "viewBtn": "View Full Project Details →",
-    "viewAllBtn": "View All 150+ Portfolio Projects"
+    "badge": "Our Projects",
+    "title": "Completed Projects",
+    "body": "We have contributed to implementing initiatives and projects that support economic development and sustainability.",
+    "emptyTitle": "Completed projects will be showcased soon",
+    "emptyBody": "We are currently documenting our completed projects, which will be added to this page progressively."
   },
-  "testimonials": {
-    "badge": "Investor Voices",
-    "title": "Trusted by Global Leaders"
+  "opportunities": {
+    "badge": "Investment Opportunities",
+    "title": "Investment Opportunities",
+    "body": "We provide promising investment opportunities for investors across various economic sectors.",
+    "emptyTitle": "Investment opportunities are being prepared",
+    "emptyBody": "Available investment opportunities will be published here as soon as they launch. Contact us to learn more.",
+    "requestBtn": "Contact Us About Investment Opportunities"
   },
-  "team": {
-    "badge": "Leadership",
-    "title": "The Minds Behind the Mission",
-    "subtitle": "A world-class team combining decades of institutional finance experience with deep environmental expertise.",
-    "recognition": "Industry Recognition"
-  },
-  "process": {
-    "badge": "How It Works",
-    "title": "Your Investment Journey"
-  },
-  "cta": {
-    "badge": "Begin Your Journey",
-    "title1": "Ready to Invest in",
-    "titleHighlight": "Tomorrow's World?",
-    "subtitle": "Join 150+ institutional investors, family offices, and corporations who are building wealth while building a better planet. Our team is ready to craft your personalized sustainable investment strategy.",
-    "emailPlaceholder": "Enter your email address",
-    "scheduleBtn": "Schedule a Strategy Call",
-    "perk1": "No commitment required",
-    "perk2": "Personalized strategy session",
-    "perk3": "Fully confidential",
-    "emailLabel": "Email Us",
-    "callLabel": "Call Us",
-    "officeLabel": "Head Office"
-  },
-  "footer": {
-    "tagline": "Leading the transition to a sustainable global economy through innovative investment strategies, rigorous impact measurement, and long-term partnerships.",
-    "newsletterTitle": "Stay Ahead of Sustainable Finance",
-    "newsletterSub": "Monthly insights on green investment, ESG trends, and impact reports.",
-    "newsletterPlaceholder": "your@email.com",
-    "subscribeBtn": "Subscribe",
-    "copyright": "© 2025 SFGCO Investments Ltd. All rights reserved. Registered Investment Advisor.",
-    "disclaimer": "Investment involves risk. Past performance is not indicative of future results. SFGCO products are intended for qualified institutional investors only. This website does not constitute an offer or solicitation to buy or sell any security in any jurisdiction where such activity would be prohibited. Please review our full Risk Disclosure before making any investment decisions."
-  },
-  "pages": {
-    "about": {
-      "title": "About SFGCO",
-      "subtitle": "Pioneering sustainable investment since 2020"
-    },
-    "investments": {
-      "badge": "Investment Opportunities",
-      "title": "Investment Strategies",
-      "subtitle": "Institutional-grade vehicles spanning green bonds, renewable energy equity, deep-tech ventures, and AI-driven portfolios.",
-      "metaDesc": "Explore SFGCO's investment strategies — green bonds, renewable energy, climate ventures, and Tech & AI funds for qualified investors."
-    },
-    "impact": {
-      "badge": "Verified Impact",
-      "title": "Our Global Impact",
-      "subtitle": "Every number is independently audited. Every project delivers real, measurable change — for investors and for the planet.",
-      "metaDesc": "Track SFGCO's verified environmental and social impact across 42 countries — CO₂ offset, clean energy deployed, and UN SDG alignment.",
-      "sdgLabel": "UN SDG Alignment",
-      "sdgTitle": "Aligned with 7 of 17 Global Goals",
-      "sdgSubtitle": "Our portfolio is designed around science-based targets and directly contributes to the UN Sustainable Development Goals most critical for climate and human wellbeing.",
-      "storiesLabel": "Impact Stories",
-      "storiesTitle": "Projects That Define Our Legacy"
-    },
-    "services": {
-      "title": "Our Services",
-      "subtitle": "Comprehensive green investment solutions"
-    },
-    "contact": {
-      "title": "Contact Us",
-      "subtitle": "Get in touch with our team"
-    },
-    "technology": {
-      "badge": "Our Technology",
-      "titleLine1": "AI, Cloud &",
-      "titleHighlight": "Mobility",
-      "titleLine2": "Powering Tomorrow",
-      "subtitle": "SFGCO invests at the convergence of artificial intelligence, cloud infrastructure, and next-generation mobility — three forces reshaping every industry and unlocking unprecedented value.",
-      "ctaBtn": "Request Tech Briefing",
-      "viewInvestBtn": "View Investment Vehicles",
-      "cta": {
-        "badge": "Get Started",
-        "title": "Ready to Invest in Deep Tech?",
-        "subtitle": "Our technology investment team works with qualified investors to build high-conviction exposure across AI, cloud, and mobility.",
-        "btn": "Schedule a Tech Briefing",
-        "secondary": "Explore Investment Vehicles"
+  "partners": {
+    "badge": "Success Partners",
+    "title": "Success Partners",
+    "body": "We build every partnership on shared strategic value, aligning with organizations that share our commitment to sustainable growth and long-term impact across the sectors we invest in.",
+    "principles": {
+      "alignment": {
+        "title": "Strategic Alignment",
+        "desc": "We partner with organizations whose vision and objectives align with our sustainable investment strategy."
+      },
+      "growth": {
+        "title": "Shared Growth",
+        "desc": "Every partnership is structured to create lasting value for both sides, not a one-time transaction."
+      },
+      "governance": {
+        "title": "Transparent Governance",
+        "desc": "We hold every partnership to the same standards of transparency and accountability we apply internally."
       }
-    },
-    "notFound": {
-      "title": "404 — Page Not Found",
-      "subtitle": "The page you are looking for doesn't exist.",
-      "backBtn": "Back to Home"
     }
   },
-  "tech": {
-    "pillars": {
-      "badge": "Three Technology Pillars",
-      "title": "Where We See the Next Decade",
-      "subtitle": "Three converging forces are rewriting how the world works. We invest at the frontier of each.",
-      "ai": {
-        "label": "Artificial Intelligence",
-        "title": "Machines That Think, Learn & Create",
-        "desc": "From large language models to computer vision and autonomous decision-making, AI is transitioning from research curiosity to the foundational layer of every enterprise. We invest across the full AI stack."
-      },
-      "cloud": {
-        "label": "Cloud Infrastructure",
-        "title": "The Backbone of the Digital Economy",
-        "desc": "Hyperscale cloud, edge compute, and sovereign infrastructure are becoming as critical as electricity. We back the platforms, tooling, and services powering the next wave of digital transformation."
-      },
-      "mobility": {
-        "label": "Smart Mobility",
-        "title": "Reimagining How the World Moves",
-        "desc": "Electric vehicles, autonomous systems, connected cities, and sustainable logistics are converging into an entirely new mobility paradigm. We invest in the companies defining that future."
-      }
+  "news": {
+    "badge": "News",
+    "title": "Company News",
+    "subtitle": "Keeping you updated on our latest business news and achievements",
+    "categoriesTitle": "What We Share",
+    "categories": [
+      "Launching new investment partnerships",
+      "Signing strategic cooperation agreements",
+      "Participating in investment conferences and events",
+      "Launching new sustainability projects",
+      "Company business updates and achievements"
+    ],
+    "viewAllBtn": "View All News",
+    "backBtn": "Back to News",
+    "emptyTitle": "No news published yet",
+    "emptyBody": "Follow us to stay up to date with the latest from SFGCO as soon as it's published."
+  },
+  "contact": {
+    "badge": "Contact Us",
+    "title": "Contact Us",
+    "formTitle": "Contact Form",
+    "form": {
+      "name": "Full Name",
+      "org": "Organization Name",
+      "email": "Email Address",
+      "phone": "Mobile Number",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Thank you for reaching out — we'll get back to you as soon as possible."
     },
-    "ai": {
-      "badge": "Artificial Intelligence",
-      "title": "Intelligence at Every Layer of the Stack",
-      "desc1": "Artificial intelligence is no longer a future technology — it is the defining infrastructure of our era. From foundation models and autonomous agents to AI-powered drug discovery and precision manufacturing, the scope of impact is unprecedented.",
-      "desc2": "SFGCO deploys institutional capital across the full AI value chain: compute and infrastructure, model development, enterprise applications, and the data ecosystems that make AI increasingly powerful over time.",
-      "stat1": "AI market size by 2030",
-      "stat2": "Annual AI infrastructure growth",
-      "stat3": "Jobs augmented by AI globally",
-      "stat4": "Fortune 500 deploying AI at scale",
-      "statsNote": "Sources: McKinsey Global Institute, Gartner, IDC 2025",
-      "cap": {
-        "llm": {
-          "title": "Large Language Models",
-          "desc": "Foundation models powering next-gen search, coding, content, and enterprise automation across every vertical."
-        },
-        "vision": {
-          "title": "Computer Vision",
-          "desc": "Real-time visual intelligence for manufacturing QC, medical imaging, retail analytics, and autonomous navigation."
-        },
-        "nlp": {
-          "title": "Natural Language Processing",
-          "desc": "Conversational AI, document intelligence, multilingual platforms, and voice interfaces reshaping customer interaction."
-        },
-        "automation": {
-          "title": "Intelligent Automation",
-          "desc": "Agentic AI systems that orchestrate workflows, replace repetitive knowledge work, and drive enterprise efficiency."
-        },
-        "prediction": {
-          "title": "Predictive Analytics",
-          "desc": "ML-driven forecasting for financial markets, supply chains, demand planning, and climate risk modeling."
-        },
-        "robotics": {
-          "title": "AI Robotics",
-          "desc": "Physical AI — from collaborative arms on factory floors to fully autonomous warehouse and delivery robots."
-        }
-      }
-    },
-    "cloud": {
-      "badge": "Cloud Infrastructure",
-      "title": "Scalable, Secure, Sovereign Infrastructure",
-      "desc": "Cloud computing has become the fundamental utility of the digital economy. As AI workloads explode, demand for scalable compute, low-latency edge nodes, and compliant data platforms is accelerating. SFGCO backs the picks-and-shovels of this transformation.",
-      "m1": "Uptime SLA",
-      "m2": "Faster deployment",
-      "m3": "Cost reduction vs on-premise",
-      "approach": {
-        "title": "Multi-Cloud & Hybrid-First Strategy",
-        "desc": "We invest in infrastructure-agnostic platforms and cloud-native tooling that deliver resilience, portability, and cost efficiency across AWS, Azure, GCP, and sovereign cloud environments."
-      },
-      "svc": {
-        "infra": {
-          "title": "Hyperscale Compute",
-          "desc": "GPU clusters, custom silicon, and AI-optimized data centers forming the backbone of modern AI inference and training at scale."
-        },
-        "devops": {
-          "title": "DevOps & Platform Engineering",
-          "desc": "Kubernetes, CI/CD, observability, and internal developer platforms that compress software delivery cycles from weeks to hours."
-        },
-        "security": {
-          "title": "Cloud Security",
-          "desc": "Zero-trust networking, cloud-native WAF, CSPM, and AI-driven threat detection protecting cloud-first enterprises."
-        },
-        "data": {
-          "title": "Data & Analytics",
-          "desc": "Modern data lakehouses, real-time streaming pipelines, and AI-ready data platforms enabling data-driven decision making at scale."
-        },
-        "saas": {
-          "title": "Vertical SaaS",
-          "desc": "Cloud-native software purpose-built for healthcare, fintech, logistics, and energy — capturing industry-specific data moats."
-        },
-        "edge": {
-          "title": "Edge & IoT",
-          "desc": "Low-latency edge compute nodes and IoT platforms bringing cloud intelligence to the physical world — factories, vehicles, and cities."
-        }
-      }
-    },
-    "mobility": {
-      "badge": "Smart Mobility",
-      "title": "The Future of Movement Is Electric, Autonomous & Connected",
-      "desc1": "Mobility is undergoing the most profound transformation in over a century. The convergence of electric powertrains, AI-driven autonomy, real-time connectivity, and shared-economy models is dismantling century-old industry structures.",
-      "desc2": "SFGCO positions capital at the intersection of these forces — backing EV infrastructure, autonomous software stacks, smart city platforms, and sustainable logistics networks that will define how people and goods move in the coming decades.",
-      "marketLabel": "Mobility Market Opportunity (2030E)",
-      "bar1": { "label": "Electric Vehicles & Charging" },
-      "bar2": { "label": "Autonomous Vehicle Software" },
-      "bar3": { "label": "Smart City Infrastructure" },
-      "bar4": { "label": "Last-Mile Logistics" },
-      "marketNote": "Estimates: BloombergNEF, McKinsey Center for Future Mobility, 2025",
-      "area": {
-        "ev": {
-          "title": "EV & Charging Infrastructure",
-          "desc": "Battery technology, fast-charging networks, V2G systems, and fleet electrification platforms scaling the global EV transition."
-        },
-        "autonomous": {
-          "title": "Autonomous Vehicles",
-          "desc": "AI software stacks, sensor fusion, HD mapping, and safety validation platforms for Level 3–5 autonomy across passenger and commercial vehicles."
-        },
-        "smart": {
-          "title": "Smart Cities",
-          "desc": "Traffic optimization, pedestrian safety AI, digital-twin city platforms, and integrated multimodal transport management systems."
-        },
-        "shared": {
-          "title": "Shared & Micro Mobility",
-          "desc": "Ride-pooling platforms, e-scooter and e-bike networks, and MaaS (Mobility-as-a-Service) aggregators reshaping urban transport."
-        },
-        "logistics": {
-          "title": "Autonomous Logistics",
-          "desc": "Warehouse robotics, autonomous delivery drones, AI route optimization, and digital freight platforms transforming supply chains."
-        },
-        "green": {
-          "title": "Green Aviation & Maritime",
-          "desc": "Hydrogen-powered aircraft, electric ferries, sustainable aviation fuels, and carbon-neutral shipping routes decarbonizing long-haul transport."
-        }
-      }
+    "infoTitle": "Contact Information",
+    "locationLabel": "Location",
+    "location": "Saudi Arabia – Dhahran – Hajar Al-Sahel District",
+    "phoneLabel": "Phone",
+    "phone": "0552823299",
+    "emailLabel": "Email",
+    "email": "info@sfgco.sa",
+    "socialLabel": "Social Media"
+  },
+  "footer": {
+    "tagline": "We invest today to build a green, sustainable future.",
+    "quickLinksTitle": "Quick Links",
+    "contactTitle": "Contact Us",
+    "copyright": "© 2026 Sustainable Future for Green Growth Investment Company (SFGCO). All rights reserved."
+  },
+  "pages": {
+    "notFound": {
+      "title": "404 — Page Not Found",
+      "subtitle": "The page you're looking for doesn't exist.",
+      "backBtn": "Back to Home"
     }
   }
 }
