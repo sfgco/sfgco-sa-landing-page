@@ -11,19 +11,6 @@ export default function MissionSection() {
         <FadeIn>
           <div
             style={{
-              color: "#0e633d",
-              fontSize: 11,
-              fontWeight: 700,
-              letterSpacing: 2.5,
-              textTransform: "uppercase",
-              marginBottom: 18,
-            }}
-          >
-            {t("visionMission.badge")}
-          </div>
-
-          <div
-            style={{
               background: "#faf8f5",
               border: "1.5px solid #ede5d9",
               borderRadius: 28,

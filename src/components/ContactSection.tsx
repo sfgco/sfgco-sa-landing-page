@@ -88,18 +88,6 @@ export default function ContactSection() {
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <FadeIn>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
-            <div
-              style={{
-                color: "#c8a84b",
-                fontSize: 11,
-                fontWeight: 700,
-                letterSpacing: 2.5,
-                textTransform: "uppercase",
-                marginBottom: 18,
-              }}
-            >
-              {t("contact.badge")}
-            </div>
             <h2
               style={{
                 fontFamily: "'cairo', serif",

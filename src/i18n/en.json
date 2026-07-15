@@ -18,10 +18,6 @@
   "common": {
     "readMore": "Learn More"
   },
-  "home": {
-    "overviewBadge": "Overview",
-    "overviewTitle": "Get to Know SFGCO"
-  },
   "hero": {
     "badge": "Sustainable Future for Green Growth Investment",
     "title": "We invest today to build a green, sustainable future.",
@@ -187,7 +183,7 @@
     },
     "infoTitle": "Contact Information",
     "locationLabel": "Location",
-    "location": "Saudi Arabia – Dhahran – Hajar Al-Sahel District",
+    "location": "Saudi Arabia – Al Khobar – Al Yarmouk District",
     "phoneLabel": "Phone",
     "phone": "0552823299",
     "emailLabel": "Email",

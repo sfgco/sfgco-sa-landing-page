@@ -32,18 +32,15 @@ const ICONS: Record<string, React.ReactNode> = {
   ),
 };
 
-/** Why Choose Us — premium card layout for the six real differentiators. */
-export default function WhyUsSection() {
+/** Homepage "لماذا نحن؟" section — the sole, canonical version of this content (no dedicated page). */
+export default function WhyUsPreviewSection() {
   const { t } = useTranslation();
 
   return (
-    <section
-      id="why-us"
-      style={{ background: "#efe6d8", padding: "120px 48px" }}
-    >
+    <section style={{ background: "#fff", padding: "110px 48px" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <FadeIn>
-          <div style={{ textAlign: "center", marginBottom: 72 }}>
+          <div style={{ textAlign: "center", marginBottom: 64 }}>
             <div
               style={{
                 color: "#0e633d",
@@ -56,7 +53,7 @@ export default function WhyUsSection() {
             >
               {t("whyUs.badge")}
             </div>
-            <h2 style={{ fontSize: 44, fontWeight: 800, color: "#0a1f14" }}>
+            <h2 style={{ fontSize: 40, fontWeight: 800, color: "#0a1f14" }}>
               {t("whyUs.title")}
             </h2>
           </div>
@@ -71,14 +68,14 @@ export default function WhyUsSection() {
           }}
         >
           {KEYS.map((key, idx) => (
-            <FadeIn key={key} delay={idx * 80}>
+            <FadeIn key={key} delay={idx * 70}>
               <HoverCard
                 style={{
-                  background: idx % 3 === 1 ? "#0e633d" : "#fff",
+                  background: idx % 3 === 1 ? "#0e633d" : "#faf8f5",
                   borderRadius: 22,
-                  padding: 34,
+                  padding: 32,
                   height: "100%",
-                  border: idx % 3 === 1 ? "none" : "1.5px solid #e0d4c0",
+                  border: idx % 3 === 1 ? "none" : "1.5px solid #ede5d9",
                   boxShadow:
                     idx % 3 === 1
                       ? "0 20px 60px rgba(14,99,61,0.25)"
@@ -87,8 +84,8 @@ export default function WhyUsSection() {
               >
                 <div
                   style={{
-                    width: 50,
-                    height: 50,
+                    width: 48,
+                    height: 48,
                     borderRadius: 14,
                     background:
                       idx % 3 === 1
@@ -97,12 +94,12 @@ export default function WhyUsSection() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    marginBottom: 22,
+                    marginBottom: 20,
                   }}
                 >
                   <svg
-                    width="22"
-                    height="22"
+                    width="21"
+                    height="21"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke={idx % 3 === 1 ? "#c8a84b" : "#0e633d"}
@@ -116,17 +113,17 @@ export default function WhyUsSection() {
                 <h3
                   style={{
                     fontFamily: "'cairo', serif",
-                    fontSize: 19,
+                    fontSize: 18,
                     fontWeight: 800,
                     color: idx % 3 === 1 ? "#efe6d8" : "#0a1f14",
-                    marginBottom: 12,
+                    marginBottom: 10,
                   }}
                 >
                   {t(`whyUs.items.${key}.title`)}
                 </h3>
                 <p
                   style={{
-                    fontSize: 14,
+                    fontSize: 13.5,
                     lineHeight: 1.8,
                     color: idx % 3 === 1 ? "rgba(239,230,216,0.75)" : "#6b7c6e",
                   }}

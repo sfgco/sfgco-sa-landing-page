@@ -37,18 +37,6 @@ export default function NewsList() {
           }}
         />
         <FadeIn>
-          <div
-            style={{
-              color: "#c8a84b",
-              fontSize: 11,
-              fontWeight: 700,
-              letterSpacing: 2.5,
-              textTransform: "uppercase",
-              marginBottom: 20,
-            }}
-          >
-            {t("news.badge")}
-          </div>
           <h1
             style={{
               fontFamily: "'cairo', serif",

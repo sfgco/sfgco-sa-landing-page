@@ -32,15 +32,12 @@ const COMPANY_LINKS = [
   { key: "nav.mission", to: "/mission" },
   { key: "nav.values", to: "/values" },
   { key: "nav.strategicGoals", to: "/strategic-goals" },
-  { key: "nav.whyUs", to: "/why-us" },
 ];
 
 const INVEST_LINKS = [
   { key: "nav.services", to: "/services" },
   { key: "nav.sectors", to: "/investment-sectors" },
   { key: "nav.projects", to: "/projects" },
-  { key: "nav.opportunities", to: "/opportunities" },
-  { key: "nav.partners", to: "/partners" },
   { key: "nav.news", to: "/news" },
 ];
 

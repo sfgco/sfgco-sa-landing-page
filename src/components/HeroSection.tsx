@@ -1,50 +1,9 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import logoImg from "../assets/sfgco-logo.png";
+import HeroIllustration from "./HeroIllustration";
 
-const SECTOR_ICONS: { key: string; icon: React.ReactNode }[] = [
-  {
-    key: "renewable",
-    icon: (
-      <path d="M12 3v2m0 14v2m9-9h-2M5 12H3m14.4-6.4l-1.4 1.4M7 17l-1.4 1.4m0-12.8L7 7m10 10l1.4 1.4M12 8a4 4 0 100 8 4 4 0 000-8z" />
-    ),
-  },
-  {
-    key: "environment",
-    icon: (
-      <path d="M12 22c-4.4-1.2-8-5.6-8-11 0-3 1.4-5.6 3.6-7.3C9.2 2.3 10.6 2 12 2s2.8.3 4.4 1.7C18.6 5.4 20 8 20 11c0 5.4-3.6 9.8-8 11z" />
-    ),
-  },
-  {
-    key: "realEstate",
-    icon: <path d="M3 11l9-8 9 8M5 10v10h14V10M9 20v-6h6v6" />,
-  },
-  {
-    key: "tech",
-    icon: (
-      <path d="M9 3H5a2 2 0 00-2 2v4m18 0V5a2 2 0 00-2-2h-4m0 18h4a2 2 0 002-2v-4M3 15v4a2 2 0 002 2h4" />
-    ),
-  },
-  {
-    key: "agriculture",
-    icon: <path d="M12 2C8 6 6 9 6 13a6 6 0 0012 0c0-4-2-7-6-11z" />,
-  },
-  {
-    key: "water",
-    icon: <path d="M12 2s7 8 7 13a7 7 0 01-14 0c0-5 7-13 7-13z" />,
-  },
-  {
-    key: "recycling",
-    icon: (
-      <path d="M7 19H4.8a2 2 0 01-1.7-3l3-5m10 8h3.1a2 2 0 001.7-3l-1.5-2.6M14 5.4l1.5 2.6" />
-    ),
-  },
-  {
-    key: "logistics",
-    icon: <path d="M3 17h13V7H3v10zM16 10h3l3 3v4h-6v-7z" />,
-  },
-];
-
-/** Full-screen hero — headline, description, and a visual sectors preview card. */
+/** Full-screen hero — premium split layout: company identity + headline on one side, a custom illustration on the other. */
 export default function HeroSection() {
   const { t } = useTranslation();
 
@@ -123,33 +82,53 @@ export default function HeroSection() {
           <div style={{ animation: "fadeInUp 0.7s ease forwards" }}>
             <div
               style={{
-                display: "inline-flex",
+                display: "flex",
                 alignItems: "center",
-                gap: 10,
-                background: "rgba(200,168,75,0.12)",
-                border: "1px solid rgba(200,168,75,0.3)",
-                borderRadius: 50,
-                padding: "7px 18px",
-                marginBottom: 28,
+                gap: 16,
+                marginBottom: 20,
+              }}
+            >
+              <img
+                src={logoImg}
+                alt="SFGCO"
+                style={{ height: 52, objectFit: "contain" }}
+              />
+              <div
+                style={{
+                  fontFamily: "'cairo', serif",
+                  fontWeight: 800,
+                  fontSize: 26,
+                  color: "#fff",
+                  letterSpacing: 4,
+                }}
+              >
+                SFGCO
+              </div>
+            </div>
+
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: 14,
+                marginBottom: 32,
               }}
             >
               <span
                 style={{
-                  width: 7,
-                  height: 7,
-                  borderRadius: "50%",
+                  width: 28,
+                  height: 2,
                   background: "#c8a84b",
                   display: "inline-block",
-                  animation: "pulse 2s infinite",
+                  flexShrink: 0,
                 }}
               />
               <span
                 style={{
-                  color: "#c8a84b",
-                  fontSize: 11,
-                  fontWeight: 700,
-                  letterSpacing: 2,
-                  textTransform: "uppercase",
+                  color: "#e8cc7a",
+                  fontSize: 15,
+                  fontWeight: 600,
+                  letterSpacing: 0.3,
                 }}
               >
                 {t("hero.badge")}
@@ -280,18 +259,19 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right column — sectors preview card */}
+          {/* Right column — premium illustration: energy, growth, sustainability */}
           <div style={{ position: "relative" }}>
             <div
               style={{
                 background: "rgba(255,255,255,0.05)",
                 border: "1px solid rgba(239,230,216,0.12)",
                 borderRadius: 28,
-                padding: 32,
+                padding: 28,
                 backdropFilter: "blur(24px)",
                 position: "relative",
                 overflow: "hidden",
                 boxShadow: "0 32px 80px rgba(0,0,0,0.3)",
+                aspectRatio: "1 / 1",
               }}
             >
               <div
@@ -305,62 +285,7 @@ export default function HeroSection() {
                     "linear-gradient(90deg, #c8a84b 0%, #0e633d 50%, #c8a84b 100%)",
                 }}
               />
-              <div
-                style={{
-                  color: "rgba(239,230,216,0.7)",
-                  fontSize: 13,
-                  fontWeight: 600,
-                  marginBottom: 22,
-                }}
-              >
-                {t("sectors.title")}
-              </div>
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "1fr 1fr",
-                  gap: 12,
-                }}
-              >
-                {SECTOR_ICONS.map((s) => (
-                  <div
-                    key={s.key}
-                    style={{
-                      background: "rgba(255,255,255,0.05)",
-                      border: "1px solid rgba(239,230,216,0.08)",
-                      borderRadius: 14,
-                      padding: "14px 12px",
-                      display: "flex",
-                      alignItems: "center",
-                      gap: 10,
-                    }}
-                  >
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#c8a84b"
-                      strokeWidth="1.8"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      style={{ flexShrink: 0 }}
-                    >
-                      {s.icon}
-                    </svg>
-                    <span
-                      style={{
-                        fontSize: 11.5,
-                        color: "#efe6d8",
-                        fontWeight: 600,
-                        lineHeight: 1.3,
-                      }}
-                    >
-                      {t(`sectors.items.${s.key}.title`)}
-                    </span>
-                  </div>
-                ))}
-              </div>
+              <HeroIllustration />
             </div>
           </div>
         </div>
