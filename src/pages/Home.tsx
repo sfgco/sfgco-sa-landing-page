@@ -1,7 +1,6 @@
 import HeroSection from "../components/HeroSection";
 import PartnerLogosStrip from "../components/PartnerLogosStrip";
 import WhyUsPreviewSection from "../components/WhyUsPreviewSection";
-import NewsTeaserSection from "../components/NewsTeaserSection";
 
 /**
  * Home — a modern overview page. The full content of every section lives on
@@ -25,7 +24,6 @@ export default function Home() {
       <HeroSection />
       <PartnerLogosStrip />
       <WhyUsPreviewSection />
-      <NewsTeaserSection />
     </>
   );
 }

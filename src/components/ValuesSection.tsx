@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import FadeIn from "./FadeIn";
-import HoverCard from "./HoverCard";
 
 const ICONS: Record<string, React.ReactNode> = {
   sustainability: (
@@ -36,81 +35,88 @@ const KEYS = [
   "excellence",
 ];
 
-/** Values — 7 icon cards in a responsive grid. */
+/** Values — a flowing row of icon+label pills (no card grid), embedded within the About page. */
 export default function ValuesSection() {
   const { t } = useTranslation();
 
   return (
-    <section id="values" style={{ background: "#fff", padding: "120px 48px" }}>
-      <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        <FadeIn>
-          <div style={{ textAlign: "center", marginBottom: 64 }}>
-            <h2 style={{ fontSize: 44, fontWeight: 800, color: "#0a1f14" }}>
-              {t("values.title")}
-            </h2>
-          </div>
-        </FadeIn>
-
-        <div
+    <div id="values" style={{ textAlign: "center" }}>
+      <FadeIn>
+        <h2
           style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(190px, 1fr))",
-            gap: 20,
+            fontSize: 32,
+            fontWeight: 800,
+            color: "#0a1f14",
+            marginBottom: 36,
           }}
         >
-          {KEYS.map((key, idx) => (
-            <FadeIn key={key} delay={idx * 60}>
-              <HoverCard
-                variant="sm"
+          {t("values.title")}
+        </h2>
+      </FadeIn>
+
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          gap: 14,
+        }}
+      >
+        {KEYS.map((key, idx) => (
+          <FadeIn key={key} delay={idx * 50}>
+            <div
+              className="value-pill"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 10,
+                padding: "14px 24px",
+                borderRadius: 50,
+                background: "#fff",
+                border: "1.5px solid #e0d4c0",
+                transition: "all 0.25s",
+                cursor: "default",
+              }}
+            >
+              <span
                 style={{
-                  background: "#faf8f5",
-                  border: "1.5px solid #ede5d9",
-                  borderRadius: 20,
-                  padding: "32px 20px",
-                  textAlign: "center",
-                  height: "100%",
+                  width: 30,
+                  height: 30,
+                  borderRadius: "50%",
+                  background: "rgba(14,99,61,0.08)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexShrink: 0,
                 }}
               >
-                <div
-                  style={{
-                    width: 54,
-                    height: 54,
-                    borderRadius: "50%",
-                    background: "rgba(14,99,61,0.08)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    margin: "0 auto 18px",
-                  }}
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#0e633d"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="#0e633d"
-                    strokeWidth="1.8"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    {ICONS[key]}
-                  </svg>
-                </div>
-                <h3
-                  style={{
-                    fontFamily: "'cairo', serif",
-                    fontSize: 18,
-                    fontWeight: 800,
-                    color: "#0a1f14",
-                  }}
-                >
-                  {t(`values.items.${key}`)}
-                </h3>
-              </HoverCard>
-            </FadeIn>
-          ))}
-        </div>
+                  {ICONS[key]}
+                </svg>
+              </span>
+              <span
+                style={{
+                  fontFamily: "'cairo', serif",
+                  fontSize: 15.5,
+                  fontWeight: 700,
+                  color: "#0a1f14",
+                }}
+              >
+                {t(`values.items.${key}`)}
+              </span>
+            </div>
+          </FadeIn>
+        ))}
       </div>
-    </section>
+    </div>
   );
 }

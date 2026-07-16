@@ -12,7 +12,7 @@ export default function NewsArticle() {
   return (
     <section
       style={{
-        background: "#fff",
+        background: "#efe6d8",
         padding: "160px 48px 120px",
         minHeight: "70vh",
       }}

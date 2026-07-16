@@ -61,7 +61,7 @@ export default function NewsList() {
         </FadeIn>
       </section>
 
-      <section style={{ background: "#fff", padding: "90px 48px 120px" }}>
+      <section style={{ background: "#efe6d8", padding: "90px 48px 120px" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>
           {newsArticles.length === 0 ? (
             <FadeIn>

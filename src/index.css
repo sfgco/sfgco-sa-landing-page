@@ -163,6 +163,43 @@ button {
   border-color: #0e633d !important;
 }
 
+/* Sector cards — banner image zooms in slightly on card hover */
+.sector-banner {
+  transition: transform 0.4s ease;
+}
+.hover-card:hover .sector-banner {
+  transform: scale(1.05);
+}
+
+/* Why-us cards — icon circle scales in and border tints green on hover */
+.whyus-card:hover {
+  border-color: #0e633d !important;
+}
+.whyus-card:hover .whyus-icon {
+  transform: scale(1.08);
+}
+
+/* Values pills — fill green and lift on hover */
+.value-pill:hover {
+  background: #0e633d !important;
+  border-color: #0e633d !important;
+  transform: translateY(-3px);
+}
+.value-pill:hover span:last-child {
+  color: #efe6d8 !important;
+}
+.value-pill:hover span:first-child {
+  background: rgba(255, 255, 255, 0.16) !important;
+}
+.value-pill:hover svg {
+  stroke: #efe6d8 !important;
+}
+
+/* Services accordion — subtle hover tint on the header row */
+.service-accordion-header:hover {
+  background: #faf8f5 !important;
+}
+
 /* Partner logo carousel — grayscale until hovered */
 .partner-logo-tile img {
   filter: grayscale(1) opacity(0.55);
@@ -197,7 +234,8 @@ button {
 
 /* Responsive navbar */
 @media (max-width: 768px) {
-  .nav-links {
+  .nav-links-center,
+  .nav-links-actions {
     display: none !important;
   }
   .nav-hamburger {
@@ -234,6 +272,28 @@ button {
   section {
     padding-left: 24px !important;
     padding-right: 24px !important;
+  }
+}
+
+/* Sectors showcase: rail becomes a horizontal scroll strip above the panel */
+@media (max-width: 860px) {
+  .sectors-showcase {
+    grid-template-columns: 1fr !important;
+  }
+  .sectors-rail {
+    flex-direction: row !important;
+    overflow-x: auto;
+    gap: 10px !important;
+    padding-bottom: 8px;
+  }
+  .sectors-rail > div {
+    display: none;
+  }
+  .sectors-rail button {
+    flex-direction: column !important;
+    flex-shrink: 0;
+    text-align: center !important;
+    gap: 8px !important;
   }
 }
 
