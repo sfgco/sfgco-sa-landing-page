@@ -6,9 +6,9 @@ import HoverCard from "./HoverCard";
 
 /**
  * Completed Projects + Investment Opportunities, merged into a single tabbed
- * experience. Entries below are realistic placeholder examples for visual
- * presentation only — replace with real project data (or wire to a CMS) when
- * available.
+ * experience. No real entries have been supplied yet — each tab shows its own
+ * "coming soon" empty state. `PROJECTS`/`OPPORTUNITIES` are the future
+ * CMS/admin-managed data slots: add entries here to have them render as cards.
  */
 type IconKey =
   | "renewable"
@@ -59,67 +59,12 @@ type ProjectCard = {
   iconKey: IconKey;
 };
 
-const PROJECTS: ProjectCard[] = [
-  {
-    title: "محطة طاقة شمسية — المنطقة الشرقية",
-    category: "الطاقة المتجددة",
-    status: "مكتمل",
-    excerpt: "محطة إنتاج طاقة شمسية بقدرة إنتاجية عالية لدعم شبكة الطاقة النظيفة.",
-    iconKey: "renewable",
-  },
-  {
-    title: "مجمع سكني مستدام — الخبر",
-    category: "التطوير العقاري المستدام",
-    status: "مكتمل",
-    excerpt: "تطوير مجمع سكني يعتمد معايير كفاءة الطاقة والاستدامة البيئية.",
-    iconKey: "realEstate",
-  },
-  {
-    title: "منصة رقمية لإدارة الاستثمارات",
-    category: "التقنية والابتكار",
-    status: "مكتمل",
-    excerpt: "حل تقني متكامل لإدارة ومتابعة المحافظ الاستثمارية بكفاءة أعلى.",
-    iconKey: "tech",
-  },
-  {
-    title: "مشروع الزراعة الذكية — القصيم",
-    category: "الزراعة الذكية",
-    status: "مكتمل",
-    excerpt: "تبني تقنيات زراعية حديثة لترشيد استهلاك المياه ورفع الإنتاجية.",
-    iconKey: "agriculture",
-  },
-];
+const PROJECTS: ProjectCard[] = [];
+const OPPORTUNITIES: ProjectCard[] = [];
 
-const OPPORTUNITIES: ProjectCard[] = [
-  {
-    title: "توسعة محطة تحلية مياه",
-    category: "إدارة المياه",
-    status: "الفرص متاحة",
-    excerpt: "فرصة استثمارية في توسعة قدرة تحلية وإعادة استخدام المياه.",
-    iconKey: "water",
-  },
-  {
-    title: "مركز لوجستي متكامل",
-    category: "الخدمات اللوجستية المستدامة",
-    status: "قيد الدراسة",
-    excerpt: "تطوير مركز لوجستي يعتمد حلولاً صديقة للبيئة لسلاسل الإمداد.",
-    iconKey: "logistics",
-  },
-  {
-    title: "حديقة طاقة رياح",
-    category: "الطاقة المتجددة",
-    status: "الفرص متاحة",
-    excerpt: "فرصة استثمارية في مشروع لتوليد الطاقة من الرياح.",
-    iconKey: "renewable",
-  },
-  {
-    title: "مبنى مكتبي بمعايير الاستدامة",
-    category: "التطوير العقاري المستدام",
-    status: "قيد الدراسة",
-    excerpt: "فرصة لتطوير مبنى مكتبي حاصل على معايير اعتماد بيئي عالية.",
-    iconKey: "realEstate",
-  },
-];
+const EMPTY_ICON = (
+  <path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1m4 0h1m-6 4h1m4 0h1m-6 4h1m4 0h1" />
+);
 
 export default function ProjectsSection() {
   const { t } = useTranslation();
@@ -129,7 +74,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      style={{ background: "#fff", padding: "120px 48px" }}
+      style={{ background: "#efe6d8", padding: "120px 48px" }}
     >
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <FadeIn>
@@ -172,8 +117,8 @@ export default function ProjectsSection() {
                 gap: 4,
                 padding: 4,
                 borderRadius: 50,
-                background: "#faf8f5",
-                border: "1.5px solid #ede5d9",
+                background: "#fff",
+                border: "1.5px solid #e0d4c0",
               }}
             >
               {(["completed", "opportunities"] as const).map((key) => (
@@ -205,49 +150,83 @@ export default function ProjectsSection() {
           <FadeIn delay={100}>
             <div
               style={{
-                background: "#faf8f5",
-                border: "1.5px dashed #ddd0be",
+                background: "#fff",
+                border: "1.5px solid #e0d4c0",
                 borderRadius: 24,
-                padding: "56px 40px",
+                padding: "64px 40px",
                 textAlign: "center",
               }}
             >
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#9aaa9e"
-                strokeWidth="1.5"
-                style={{ margin: "0 auto 18px" }}
+              <div
+                style={{
+                  width: 72,
+                  height: 72,
+                  borderRadius: "50%",
+                  background: "rgba(14,99,61,0.08)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "0 auto 22px",
+                }}
               >
-                <path
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#0e633d"
+                  strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1m4 0h1m-6 4h1m4 0h1m-6 4h1m4 0h1"
-                />
-              </svg>
+                >
+                  {EMPTY_ICON}
+                </svg>
+              </div>
               <h3
                 style={{
                   fontFamily: "'cairo', serif",
-                  fontSize: 20,
+                  fontSize: 22,
                   fontWeight: 800,
                   color: "#0a1f14",
-                  marginBottom: 10,
+                  marginBottom: 12,
                 }}
               >
-                {t("projects.emptyTitle")}
+                {tab === "completed"
+                  ? t("projects.emptyTitle")
+                  : t("opportunities.emptyTitle")}
               </h3>
               <p
                 style={{
-                  fontSize: 14,
+                  fontSize: 14.5,
                   color: "#8a988c",
-                  maxWidth: 420,
+                  maxWidth: 440,
                   margin: "0 auto",
+                  lineHeight: 1.8,
                 }}
               >
-                {t("projects.emptyBody")}
+                {tab === "completed"
+                  ? t("projects.emptyBody")
+                  : t("opportunities.emptyBody")}
               </p>
+
+              {tab === "opportunities" && (
+                <div style={{ marginTop: 28 }}>
+                  <Link
+                    to="/contact"
+                    style={{
+                      display: "inline-flex",
+                      background: "#0e633d",
+                      color: "#efe6d8",
+                      padding: "13px 30px",
+                      borderRadius: 50,
+                      fontWeight: 700,
+                      fontSize: 13.5,
+                    }}
+                  >
+                    {t("opportunities.requestBtn")}
+                  </Link>
+                </div>
+              )}
             </div>
           </FadeIn>
         ) : (
@@ -265,7 +244,7 @@ export default function ProjectsSection() {
                   style={{
                     borderRadius: 22,
                     overflow: "hidden",
-                    background: "#faf8f5",
+                    background: "#fff",
                     border: "1.5px solid #ede5d9",
                     height: "100%",
                   }}
@@ -359,27 +338,6 @@ export default function ProjectsSection() {
               </FadeIn>
             ))}
           </div>
-        )}
-
-        {tab === "opportunities" && (
-          <FadeIn delay={200}>
-            <div style={{ textAlign: "center", marginTop: 48 }}>
-              <Link
-                to="/contact"
-                style={{
-                  display: "inline-flex",
-                  background: "#0e633d",
-                  color: "#efe6d8",
-                  padding: "13px 30px",
-                  borderRadius: 50,
-                  fontWeight: 700,
-                  fontSize: 13.5,
-                }}
-              >
-                {t("opportunities.requestBtn")}
-              </Link>
-            </div>
-          </FadeIn>
         )}
       </div>
     </section>

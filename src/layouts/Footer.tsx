@@ -27,11 +27,9 @@ const SOCIAL = [
 ];
 
 const COMPANY_LINKS = [
+  { key: "nav.home", to: "/" },
   { key: "nav.about", to: "/about" },
-  { key: "nav.vision", to: "/vision" },
-  { key: "nav.mission", to: "/mission" },
-  { key: "nav.values", to: "/values" },
-  { key: "nav.strategicGoals", to: "/strategic-goals" },
+  { key: "nav.contact", to: "/contact" },
 ];
 
 const INVEST_LINKS = [

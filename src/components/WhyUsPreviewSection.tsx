@@ -32,12 +32,12 @@ const ICONS: Record<string, React.ReactNode> = {
   ),
 };
 
-/** Homepage "لماذا نحن؟" section — the sole, canonical version of this content (no dedicated page). */
+/** Homepage "لماذا نحن؟" section — icon-left cards, the sole canonical version of this content. */
 export default function WhyUsPreviewSection() {
   const { t } = useTranslation();
 
   return (
-    <section style={{ background: "#fff", padding: "110px 48px" }}>
+    <section style={{ background: "#efe6d8", padding: "110px 48px" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <FadeIn>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
@@ -60,49 +60,50 @@ export default function WhyUsPreviewSection() {
         </FadeIn>
 
         <div
-          className="grid-3-cols"
+          className="grid-2-cols"
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap: 24,
+            gridTemplateColumns: "repeat(2, 1fr)",
+            gap: 22,
           }}
         >
           {KEYS.map((key, idx) => (
-            <FadeIn key={key} delay={idx * 70}>
+            <FadeIn key={key} delay={idx * 60}>
               <HoverCard
+                variant="sm"
+                className="whyus-card"
                 style={{
-                  background: idx % 3 === 1 ? "#0e633d" : "#faf8f5",
-                  borderRadius: 22,
-                  padding: 32,
+                  background: "#fff",
+                  borderRadius: 20,
+                  padding: 28,
                   height: "100%",
-                  border: idx % 3 === 1 ? "none" : "1.5px solid #ede5d9",
-                  boxShadow:
-                    idx % 3 === 1
-                      ? "0 20px 60px rgba(14,99,61,0.25)"
-                      : "0 4px 20px rgba(14,99,61,0.06)",
+                  border: "1.5px solid #ede5d9",
+                  boxShadow: "0 4px 20px rgba(14,99,61,0.06)",
+                  display: "flex",
+                  alignItems: "flex-start",
+                  gap: 20,
                 }}
               >
                 <div
+                  className="whyus-icon"
                   style={{
-                    width: 48,
-                    height: 48,
-                    borderRadius: 14,
-                    background:
-                      idx % 3 === 1
-                        ? "rgba(200,168,75,0.2)"
-                        : "rgba(14,99,61,0.08)",
+                    width: 56,
+                    height: 56,
+                    borderRadius: "50%",
+                    background: "rgba(14,99,61,0.08)",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    marginBottom: 20,
+                    flexShrink: 0,
+                    transition: "transform 0.3s ease",
                   }}
                 >
                   <svg
-                    width="21"
-                    height="21"
+                    width="24"
+                    height="24"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke={idx % 3 === 1 ? "#c8a84b" : "#0e633d"}
+                    stroke="#0e633d"
                     strokeWidth="1.8"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -110,26 +111,28 @@ export default function WhyUsPreviewSection() {
                     {ICONS[key]}
                   </svg>
                 </div>
-                <h3
-                  style={{
-                    fontFamily: "'cairo', serif",
-                    fontSize: 18,
-                    fontWeight: 800,
-                    color: idx % 3 === 1 ? "#efe6d8" : "#0a1f14",
-                    marginBottom: 10,
-                  }}
-                >
-                  {t(`whyUs.items.${key}.title`)}
-                </h3>
-                <p
-                  style={{
-                    fontSize: 13.5,
-                    lineHeight: 1.8,
-                    color: idx % 3 === 1 ? "rgba(239,230,216,0.75)" : "#6b7c6e",
-                  }}
-                >
-                  {t(`whyUs.items.${key}.desc`)}
-                </p>
+                <div>
+                  <h3
+                    style={{
+                      fontFamily: "'cairo', serif",
+                      fontSize: 18,
+                      fontWeight: 800,
+                      color: "#0a1f14",
+                      marginBottom: 8,
+                    }}
+                  >
+                    {t(`whyUs.items.${key}.title`)}
+                  </h3>
+                  <p
+                    style={{
+                      fontSize: 13.5,
+                      lineHeight: 1.8,
+                      color: "#6b7c6e",
+                    }}
+                  >
+                    {t(`whyUs.items.${key}.desc`)}
+                  </p>
+                </div>
               </HoverCard>
             </FadeIn>
           ))}

@@ -6,10 +6,6 @@ import ScrollToTop from "../layouts/ScrollToTop";
 // ── Lazy-loaded pages (code splitting per route) ──────────────────────────────
 const Home = lazy(() => import("../pages/Home"));
 const About = lazy(() => import("../pages/About"));
-const Vision = lazy(() => import("../pages/Vision"));
-const Mission = lazy(() => import("../pages/Mission"));
-const Values = lazy(() => import("../pages/Values"));
-const StrategicGoals = lazy(() => import("../pages/StrategicGoals"));
 const Services = lazy(() => import("../pages/Services"));
 const InvestmentSectors = lazy(() => import("../pages/InvestmentSectors"));
 const Projects = lazy(() => import("../pages/Projects"));
@@ -62,10 +58,10 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: withSuspense(<Home />) },
       { path: "about", element: withSuspense(<About />) },
-      { path: "vision", element: withSuspense(<Vision />) },
-      { path: "mission", element: withSuspense(<Mission />) },
-      { path: "values", element: withSuspense(<Values />) },
-      { path: "strategic-goals", element: withSuspense(<StrategicGoals />) },
+      { path: "vision", element: <Navigate to="/about" replace /> },
+      { path: "mission", element: <Navigate to="/about" replace /> },
+      { path: "values", element: <Navigate to="/about" replace /> },
+      { path: "strategic-goals", element: <Navigate to="/about" replace /> },
       { path: "services", element: withSuspense(<Services />) },
       { path: "investment-sectors", element: withSuspense(<InvestmentSectors />) },
       { path: "why-us", element: <Navigate to="/" replace /> },

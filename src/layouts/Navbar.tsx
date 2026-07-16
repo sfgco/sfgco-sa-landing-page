@@ -96,10 +96,16 @@ export default function Navbar() {
           </div>
         </button>
 
-        {/* Desktop links */}
+        {/* Centered desktop nav links */}
         <div
-          className="nav-links"
-          style={{ display: "flex", gap: 26, alignItems: "center" }}
+          className="nav-links-center"
+          style={{
+            display: "flex",
+            flex: 1,
+            justifyContent: "center",
+            gap: 34,
+            alignItems: "center",
+          }}
         >
           {NAV_LINKS.map((link) => (
             <NavLink
@@ -111,7 +117,13 @@ export default function Navbar() {
               {t(link.key)}
             </NavLink>
           ))}
+        </div>
 
+        {/* Right-side actions: language switcher + Contact CTA */}
+        <div
+          className="nav-links-actions"
+          style={{ display: "flex", gap: 18, alignItems: "center" }}
+        >
           {/* Language switcher */}
           <div
             style={{
