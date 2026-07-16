@@ -12,7 +12,7 @@ export default function Home() {
       <title>SFGCO | شركة مستقبل الاستدامة الخضراء للاستثمار</title>
       <meta
         name="description"
-        content="شركة شركة مستقبل الاستدامة الخضراء للاستثمار (SFGCO) — شركة استثمار سعودية متخصصة في الاستثمار وتطوير المشاريع في القطاعات الاقتصادية المستدامة."
+        content="شركة  مستقبل الاستدامة الخضراء للاستثمار (SFGCO) — شركة استثمار سعودية متخصصة في الاستثمار وتطوير المشاريع في القطاعات الاقتصادية المستدامة."
       />
       <meta property="og:url" content="https://sfgco.sa/" />
       <meta
@@ -22,8 +22,8 @@ export default function Home() {
       <link rel="canonical" href="https://sfgco.sa/" />
 
       <HeroSection />
-      <PartnerLogosStrip />
       <WhyUsPreviewSection />
+      <PartnerLogosStrip />
     </>
   );
 }

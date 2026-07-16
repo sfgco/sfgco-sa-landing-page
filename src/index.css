@@ -200,14 +200,7 @@ button {
   background: #faf8f5 !important;
 }
 
-/* Partner logo carousel — grayscale until hovered */
-.partner-logo-tile img {
-  filter: grayscale(1) opacity(0.55);
-  transition: filter 0.3s ease;
-}
-.partner-logo-tile:hover img {
-  filter: grayscale(0) opacity(1);
-}
+/* Partner logo carousel — full color at all times */
 .partner-logo-tile:hover {
   border-color: #0e633d !important;
 }
