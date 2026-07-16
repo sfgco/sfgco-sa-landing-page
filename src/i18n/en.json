@@ -165,8 +165,8 @@
     ],
     "viewAllBtn": "View All News",
     "backBtn": "Back to News",
-    "emptyTitle": "No news published yet",
-    "emptyBody": "Follow us to stay up to date with the latest from SFGCO as soon as it's published."
+    "emptyTitle": "No news published at this time",
+    "emptyBody": "The company's latest news and updates will be published on this page once available."
   },
   "contact": {
     "badge": "Contact Us",

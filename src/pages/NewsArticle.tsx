@@ -33,17 +33,24 @@ export default function NewsArticle() {
           </Link>
 
           {article ? (
-            <>
+            <div
+              style={{
+                background: "#fff",
+                border: "1.5px solid #e0d4c0",
+                borderRadius: 24,
+                padding: "48px 44px",
+              }}
+            >
               <div style={{ fontSize: 12, color: "#9aaa9e", marginBottom: 14 }}>
-                {article.date} · {article.category}
+                <span dir="ltr">{article.date}</span> · {article.category}
               </div>
               <h1
                 style={{
                   fontFamily: "'cairo', serif",
-                  fontSize: 38,
+                  fontSize: 34,
                   fontWeight: 800,
                   color: "#0a1f14",
-                  marginBottom: 28,
+                  marginBottom: 26,
                   lineHeight: 1.3,
                 }}
               >
@@ -51,7 +58,7 @@ export default function NewsArticle() {
               </h1>
               <p
                 style={{
-                  fontSize: 16.5,
+                  fontSize: 16,
                   lineHeight: 1.95,
                   color: "#3d4d40",
                   whiteSpace: "pre-line",
@@ -59,7 +66,7 @@ export default function NewsArticle() {
               >
                 {article.body}
               </p>
-            </>
+            </div>
           ) : (
             <div style={{ textAlign: "center", padding: "60px 0" }}>
               <h1
