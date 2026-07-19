@@ -16,7 +16,8 @@ export default function Navbar() {
   const NAV_LINKS = [
     { key: "nav.about", to: "/about" },
     { key: "nav.services", to: "/services" },
-    { key: "nav.careers", to: "/careers" },
+    { key: "nav.technologies", to: "/technologies" },
+    { key: "nav.contact", to: "/contact" },
   ];
 
   return (
@@ -31,7 +32,7 @@ export default function Navbar() {
           right: 0,
           zIndex: 1000,
           padding: scrolled ? "12px 48px" : "22px 48px",
-          background: scrolled ? "rgba(10,31,20,0.96)" : "transparent",
+          background: scrolled ? "rgba(11,45,30,0.96)" : "transparent",
           backdropFilter: scrolled ? "blur(20px)" : "none",
           transition: "all 0.35s ease",
           display: "flex",

@@ -1,23 +1,23 @@
 import { useTranslation } from "react-i18next";
-import AboutSection from "../components/AboutSection";
-import MissionVisionGrid from "../components/MissionVisionGrid";
-import IndustriesSection from "../components/IndustriesSection";
-import TeamSection from "../components/TeamSection";
-import Testimonials from "../components/Testimonials";
+import TechEcosystem from "../components/TechEcosystem";
 import FadeIn from "../components/FadeIn";
 
-/** Standalone About page — full company story: mission, vision, industries, team, and client trust. */
-export default function About() {
+/** Standalone Technologies page — page hero + the full grouped tech-stack grid. */
+export default function Technologies() {
   const { t } = useTranslation();
+
   return (
     <>
-      <title>SFGCO Tech | About Us</title>
-      <meta name="description" content={t("pages.about.subtitle")} />
+      <title>SFGCO Tech | Technology Stack</title>
+      <meta
+        name="description"
+        content="The cloud, application, AI, and enterprise platforms SFGCO Tech builds on — AWS, Azure, Google Cloud, React, Python, OpenAI, SAP, Odoo, ERPNext, and more."
+      />
 
       {/* Page hero */}
       <section
         style={{
-          background: "linear-gradient(145deg, #060f08 0%, #0a2a16 35%, #0e633d 100%)",
+          background: "linear-gradient(145deg, #060f08 0%, #0a2a16 30%, #0b2d1e 55%, #1a8050 100%)",
           padding: "160px 48px 100px",
           textAlign: "center",
           position: "relative",
@@ -27,12 +27,12 @@ export default function About() {
         <div
           style={{
             position: "absolute",
-            top: -80,
-            right: -80,
-            width: 400,
-            height: 400,
+            bottom: -80,
+            left: -80,
+            width: 380,
+            height: 380,
             borderRadius: "50%",
-            background: "radial-gradient(circle, rgba(200,168,75,0.08), transparent 65%)",
+            background: "radial-gradient(circle, rgba(200,168,75,0.07), transparent 65%)",
             pointerEvents: "none",
           }}
         />
@@ -47,7 +47,7 @@ export default function About() {
               marginBottom: 20,
             }}
           >
-            SFGCO Tech
+            {t("technologies.badge")}
           </div>
           <h1
             style={{
@@ -60,19 +60,15 @@ export default function About() {
               letterSpacing: -1,
             }}
           >
-            {t("pages.about.title")}
+            {t("pages.technologies.title")}
           </h1>
           <p style={{ fontSize: 18, color: "rgba(239,230,216,0.7)", maxWidth: 520, margin: "0 auto" }}>
-            {t("pages.about.subtitle")}
+            {t("pages.technologies.subtitle")}
           </p>
         </FadeIn>
       </section>
 
-      <AboutSection />
-      <MissionVisionGrid />
-      <IndustriesSection />
-      <TeamSection />
-      <Testimonials />
+      <TechEcosystem />
     </>
   );
 }

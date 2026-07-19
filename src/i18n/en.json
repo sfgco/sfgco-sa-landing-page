@@ -2,113 +2,209 @@
   "nav": {
     "about": "About",
     "services": "Services",
+    "technologies": "Technologies",
     "industries": "Industries",
     "careers": "Careers",
     "contact": "Contact",
     "getStarted": "Get Started"
   },
   "hero": {
-    "badge": "Software & AI Engineering",
-    "title1": "Transforming Ideas into",
-    "titleHighlight": "Intelligent",
-    "title2": "Digital Products",
-    "subtitle": "We build AI-powered software, cloud-native platforms, enterprise ERP solutions, mobile applications, and immersive gaming experiences that help businesses innovate, scale, and succeed. From concept to production, we deliver technology that creates measurable business value.",
-    "consultBtn": "Schedule a Consultation",
+    "badge": "Cloud · AI · Enterprise Technology",
+    "title1": "Building the Future with",
+    "titleHighlight": "Cloud, AI &",
+    "title2": "Enterprise Technology",
+    "subtitle": "SFGCO TECH empowers organizations to accelerate digital transformation through secure cloud infrastructure, AI-powered solutions, enterprise software, cybersecurity, and custom software engineering. We design, build, and scale technology that drives business growth.",
+    "consultBtn": "Get a Free Consultation",
     "servicesBtn": "Explore Our Services",
-    "stat1": "50+",
-    "stat1Label": "Projects Delivered",
-    "stat2": "15+",
-    "stat2Label": "Industries Served",
-    "stat3": "24/7",
-    "stat3Label": "Support & Maintenance",
-    "dashboardTitle": "Project Delivery Dashboard",
+    "stat1": "7",
+    "stat1Label": "Technology Domains",
+    "stat2": "24/7",
+    "stat2Label": "Support & Monitoring",
+    "stat3": "100%",
+    "stat3Label": "Secure by Design",
+    "dashboardTitle": "Digital Transformation Overview",
     "live": "LIVE",
-    "scrollCue": "Discover"
+    "scrollCue": "Discover",
+    "dashboardMainLabel": "Enterprise Readiness Score",
+    "dashboardMainValue": "96%",
+    "dashboardBars": [
+      { "label": "Cloud Infrastructure", "pct": 92 },
+      { "label": "AI & LLM Integration", "pct": 88 },
+      { "label": "ERP & System Integration", "pct": 85 },
+      { "label": "Cybersecurity", "pct": 90 }
+    ],
+    "dashboardFooter1Value": "7+",
+    "dashboardFooter1Label": "Service Domains",
+    "dashboardFooter2Value": "100%",
+    "dashboardFooter2Label": "Secure by Design"
+  },
+  "trustedTech": {
+    "badge": "Technology Partners",
+    "title": "Powered by Industry-Leading Technology",
+    "viewAllBtn": "View All Technologies"
   },
   "about": {
     "badge": "About Us",
     "yearsValue": "5+",
-    "yearsLabel": "Years Engineering the Future",
-    "title": "Engineering the Future with",
-    "titleHighlight": "Innovation",
-    "p1": "We are a technology company specializing in designing, developing, and operating enterprise-grade digital solutions. Our multidisciplinary team combines software engineering, artificial intelligence, cloud architecture, and product design to help organizations accelerate digital transformation.",
-    "p2": "From startups to enterprises, we create scalable, secure, and intelligent solutions tailored to each client's business objectives. Our expertise spans cloud computing, AI, ERP systems, mobile applications, custom software, and interactive gaming experiences.",
+    "yearsLabel": "Years Delivering Enterprise Technology",
+    "title": "Your Technology Partner for",
+    "titleHighlight": "Digital Transformation",
+    "brief": "SFGCO TECH is a technology company delivering secure cloud infrastructure, AI-powered solutions, and enterprise software that help organizations modernize, scale, and innovate faster.",
+    "p1": "SFGCO TECH is a technology company specializing in enterprise software, cloud computing, AI solutions, and digital innovation. We design, develop, and operate digital solutions built to enterprise-grade standards of security, scalability, and performance.",
+    "p2": "We help startups, SMEs, and large enterprises modernize their infrastructure, automate operations, and build scalable digital products using industry-leading technologies and cloud platforms — delivering secure, intelligent, and future-ready solutions that enable businesses to innovate faster and operate more efficiently.",
     "check1": "Agile delivery with measurable, sprint-based KPIs",
-    "check2": "Secure-by-design architecture & data protection practices",
-    "check3": "Dedicated engineering pods for every client engagement",
-    "check4": "24/7 support with SLA-backed maintenance",
-    "discoverBtn": "Explore Our Services"
+    "check2": "Secure-by-design architecture across every engagement",
+    "check3": "Dedicated engineering pods for cloud, AI, and enterprise systems",
+    "check4": "24/7 support backed by SLA commitments",
+    "discoverBtn": "Explore Our Services",
+    "learnMoreBtn": "Learn More",
+    "stats": [
+      { "value": 50, "suffix": "+", "label": "Enterprise Solutions Delivered" },
+      { "value": 15, "suffix": "+", "label": "Cloud & AI Experts" },
+      { "value": 100, "suffix": "%", "label": "Secure Architecture" },
+      { "value": 5, "suffix": "+", "label": "Years of Partnership" }
+    ],
+    "pillarsTitle": "Mission, Vision & Focus",
+    "pillars": [
+      {
+        "title": "Our Mission",
+        "desc": "To deliver secure, intelligent, and future-ready solutions that enable businesses to innovate faster and operate more efficiently."
+      },
+      {
+        "title": "Our Vision",
+        "desc": "To be the trusted enterprise technology partner of choice — recognized for secure, intelligent, and scalable digital transformation across every industry we serve."
+      },
+      {
+        "title": "Digital Transformation Focus",
+        "desc": "We help startups, SMEs, and large enterprises modernize infrastructure, automate operations, and build scalable digital products on industry-leading cloud and AI platforms."
+      },
+      {
+        "title": "Why SFGCO Tech",
+        "desc": "An experienced engineering team, enterprise-grade security, and a long-term partnership model — invested in your growth well beyond launch."
+      }
+    ]
   },
   "services": {
     "badge": "Our Services",
-    "title": "Comprehensive Technology Services",
-    "subtitle": "From AI-powered products to enterprise systems and immersive experiences, we deliver end-to-end technology solutions for forward-thinking businesses.",
-    "cat1": {
-      "title": "Artificial Intelligence",
-      "desc": "Unlock the power of AI to automate operations, improve decision-making, and enhance customer experiences.",
-      "tags": ["Generative AI", "AI Agents", "LLM Integration", "Chatbots & Assistants", "RAG", "Computer Vision"]
+    "title": "Comprehensive Enterprise Technology Services",
+    "subtitle": "From cloud infrastructure to AI and enterprise systems, we deliver end-to-end technology solutions engineered for scale, security, and measurable business value.",
+    "learnMore": "Learn More",
+    "hideDetails": "Hide Details",
+    "viewAllServices": "View All Services",
+    "s1": {
+      "kicker": "Cloud Infrastructure",
+      "title": "Cloud Infrastructure & Configuration",
+      "desc": "We design, deploy, and manage secure, high-performing cloud environments across AWS, Microsoft Azure, and Google Cloud — engineered for resilience, scale, and operational efficiency.",
+      "items": ["Cloud Architecture", "Migration to Cloud", "High Availability", "Disaster Recovery", "Kubernetes & Docker", "CI/CD Pipelines", "Infrastructure as Code", "Monitoring & Optimization"]
     },
-    "cat2": {
-      "title": "Cloud Solutions",
-      "desc": "Design, migrate, and optimize modern cloud infrastructure.",
-      "tags": ["Cloud Architecture", "AWS", "Azure", "Google Cloud", "Kubernetes", "CI/CD Automation"]
+    "s2": {
+      "kicker": "Data & Analytics",
+      "title": "Databases & Data Warehouse",
+      "desc": "We transform raw business data into strategic insight, building scalable, governed data platforms that power confident, data-driven decisions.",
+      "items": ["SQL & NoSQL Databases", "Data Warehousing", "ETL Pipelines", "Data Lakes", "Business Intelligence", "Analytics Dashboards", "Data Governance"]
     },
-    "cat3": {
+    "s3": {
+      "kicker": "Mobile & Web",
+      "title": "Mobile & Web Development",
+      "desc": "We create modern digital experiences — enterprise web applications, mobile apps, and SaaS platforms engineered for performance, usability, and scale.",
+      "items": ["Enterprise Web Applications", "Mobile Apps (iOS & Android)", "SaaS Platforms", "Customer Portals", "Progressive Web Apps", "API Development", "UI/UX Design"]
+    },
+    "s4": {
+      "kicker": "AI & LLMs",
+      "title": "Artificial Intelligence & Large Language Models",
+      "desc": "We help organizations accelerate with artificial intelligence — from LLM-powered assistants to retrieval-augmented systems that increase productivity and elevate customer experience.",
+      "items": ["AI Assistants", "LLM Integration", "RAG Systems", "AI Agents", "Chatbots & Virtual Assistants", "OCR & Document Intelligence", "Computer Vision", "Speech AI"]
+    },
+    "s5": {
+      "kicker": "System Integration",
+      "title": "System Integration",
+      "desc": "We connect every system inside your organization into one integrated platform, linking ERP, CRM, payments, government services, and IoT into a single source of truth.",
+      "items": ["ERP Systems", "CRM Platforms", "Payment Gateways", "Government APIs", "IoT Platforms", "Third-Party APIs", "Enterprise Applications"]
+    },
+    "s6": {
+      "kicker": "Cybersecurity",
+      "title": "Cybersecurity",
+      "desc": "We protect your business with enterprise-grade security — proactive assessment, continuous monitoring, and compliance built into every layer of your digital infrastructure.",
+      "items": ["Security Assessments", "Penetration Testing", "Vulnerability Management", "SOC Integration", "Identity & Access Management", "Security Monitoring", "Compliance", "Cloud Security"]
+    },
+    "s7": {
+      "kicker": "ERP Solutions",
       "title": "ERP Solutions",
-      "desc": "Digitize business operations with enterprise resource planning systems.",
-      "tags": ["Finance & Accounting", "HR & CRM", "Inventory & Procurement", "Manufacturing", "Custom ERP", "ERP Integration"]
-    },
-    "cat4": {
-      "title": "Mobile Applications",
-      "desc": "Build beautiful, scalable mobile experiences.",
-      "tags": ["iOS & Android", "Flutter", "React Native", "Enterprise Mobile", "FinTech Apps", "App Maintenance"]
-    },
-    "cat5": {
-      "title": "Custom Software Development",
-      "desc": "Tailored software engineered around your business.",
-      "tags": ["Enterprise Portals", "SaaS Platforms", "API Development", "Microservices", "Business Automation", "System Integration"]
-    },
-    "cat6": {
-      "title": "Game Development",
-      "desc": "Create engaging gaming experiences across platforms.",
-      "tags": ["Mobile Games", "Unity", "Unreal Engine", "Multiplayer Systems", "AR & VR", "Gamification"]
+      "desc": "We streamline operations with intelligent ERP solutions that automate finance, HR, procurement, inventory, and manufacturing across a single unified platform.",
+      "items": ["ERPNext Implementation", "Odoo Implementation", "SAP Integration", "Microsoft Dynamics Integration", "HR & Finance", "Procurement & Inventory", "Manufacturing", "Custom ERP Development"]
     }
+  },
+  "process": {
+    "badge": "How We Work",
+    "title": "Our Delivery Process",
+    "subtitle": "A disciplined, transparent methodology that takes every engagement from first conversation to long-term support.",
+    "steps": [
+      { "title": "Discovery", "desc": "We learn your business goals, technical constraints, and priorities to define a clear starting point." },
+      { "title": "Strategy", "desc": "We translate objectives into a technical roadmap and a measurable delivery plan." },
+      { "title": "Architecture", "desc": "We design secure, scalable system architecture built for performance and long-term growth." },
+      { "title": "Development", "desc": "Agile sprints with continuous testing, code review, and stakeholder feedback loops." },
+      { "title": "Deployment", "desc": "Production rollout with rigorous QA, staged releases, and zero-downtime cutover." },
+      { "title": "Support", "desc": "Ongoing monitoring, maintenance, and 24/7 support backed by SLA commitments." }
+    ]
   },
   "industries": {
     "badge": "Industries We Serve",
     "title": "Technology Built for Every Sector",
-    "subtitle": "We develop solutions for a wide range of industries.",
-    "list": ["Healthcare", "Government", "Education", "Logistics", "Retail", "Manufacturing", "Agriculture", "Real Estate", "Financial Services", "Energy", "Telecommunications", "Smart Cities", "Sustainability", "Transportation"]
+    "subtitle": "We develop technology solutions tailored to the operational realities of each industry we serve.",
+    "list": ["Government", "Healthcare", "Retail", "Logistics", "Manufacturing", "Education", "Financial Services", "Startups"]
   },
   "whySFGCO": {
-    "badge": "Why Choose Us",
-    "title1": "Technology Built for",
-    "titleHighlight": "Growth",
-    "subtitle": "We combine engineering rigor with deep industry expertise — delivering products that consistently perform while scaling with your business.",
-    "reason1": {
-      "title": "AI-Driven Innovation",
-      "desc": "We integrate intelligent automation into every solution."
-    },
-    "reason2": {
-      "title": "Cloud-Native Architecture",
-      "desc": "Scalable infrastructure designed for performance and resilience."
-    },
-    "reason3": {
-      "title": "Enterprise Experience",
-      "desc": "Extensive experience delivering mission-critical enterprise systems."
-    },
-    "reason4": {
-      "title": "Security First",
-      "desc": "Secure-by-design architecture following industry best practices."
-    },
-    "reason5": {
-      "title": "Agile Delivery",
-      "desc": "Rapid development cycles with continuous client collaboration."
-    },
-    "reason6": {
-      "title": "End-to-End Partnership",
-      "desc": "From strategy and development to deployment and long-term support."
+    "badge": "Why Choose SFGCO Tech",
+    "title1": "Enterprise Technology,",
+    "titleHighlight": "Built to Last",
+    "subtitle": "We combine engineering rigor with deep enterprise experience — delivering technology partnerships that hold up over the long term.",
+    "reason1": { "title": "Experienced Engineering Team", "desc": "Senior engineers with deep expertise across cloud, AI, and enterprise software delivery." },
+    "reason2": { "title": "Cloud & AI Experts", "desc": "Specialists in AWS, Azure, Google Cloud, and modern AI/LLM engineering." },
+    "reason3": { "title": "Enterprise-Grade Solutions", "desc": "Systems built to enterprise standards of scalability, reliability, and governance." },
+    "reason4": { "title": "Secure by Design", "desc": "Security embedded into every architecture decision, not bolted on after the fact." },
+    "reason5": { "title": "Agile Delivery", "desc": "Rapid, transparent sprint cycles with continuous stakeholder collaboration." },
+    "reason6": { "title": "Long-Term Technical Partnership", "desc": "We stay engaged well beyond launch, as your ongoing technology partner." },
+    "reason7": { "title": "End-to-End Digital Transformation", "desc": "From strategy to architecture to deployment — one accountable partner throughout." }
+  },
+  "technologies": {
+    "categories": {
+      "cloudInfra": "Cloud & Infrastructure",
+      "appStack": "Application Stack",
+      "aiAutomation": "AI & Automation",
+      "enterprise": "Enterprise Systems"
     }
+  },
+  "caseStudies": {
+    "badge": "Representative Work",
+    "title": "Technology We Deliver",
+    "subtitle": "Illustrative examples of the type of enterprise engagements we deliver across our core service domains.",
+    "items": [
+      {
+        "title": "AI Assistant & LLM Platform",
+        "desc": "An enterprise-grade AI assistant built on retrieval-augmented generation, deployed to automate customer support and internal knowledge access.",
+        "tags": ["LLM Integration", "RAG", "24/7 Automation"]
+      },
+      {
+        "title": "Enterprise ERP Implementation",
+        "desc": "A unified ERP rollout covering finance, HR, procurement, and inventory — replacing fragmented legacy systems with one governed platform.",
+        "tags": ["ERPNext / Odoo", "Multi-Module", "Process Automation"]
+      },
+      {
+        "title": "Cloud Migration & Modernization",
+        "desc": "A phased migration from on-premise infrastructure to a resilient multi-cloud architecture with zero-downtime cutover.",
+        "tags": ["Multi-Cloud", "High Availability", "CI/CD"]
+      },
+      {
+        "title": "Cross-Platform Mobile Application",
+        "desc": "A customer-facing mobile application built for iOS and Android, backed by a scalable API layer and enterprise-grade security.",
+        "tags": ["iOS & Android", "API-First", "Scalable Backend"]
+      },
+      {
+        "title": "Cybersecurity Transformation Program",
+        "desc": "An enterprise-wide security uplift covering vulnerability management, identity governance, and continuous monitoring.",
+        "tags": ["IAM", "SOC Integration", "Continuous Monitoring"]
+      }
+    ]
   },
   "testimonials": {
     "badge": "Client Voices",
@@ -117,31 +213,44 @@
   "team": {
     "badge": "Leadership",
     "title": "The Minds Behind the Mission",
-    "subtitle": "A world-class team combining decades of software engineering experience with deep industry expertise.",
+    "subtitle": "A world-class team combining decades of software engineering experience with deep enterprise technology expertise.",
     "recognition": "What We Bring"
-  },
-  "process": {
-    "badge": "How It Works",
-    "title": "Our Delivery Process"
   },
   "cta": {
     "badge": "Let's Build Together",
-    "title1": "Ready to Build",
-    "titleHighlight": "What's Next?",
-    "subtitle": "Join the businesses partnering with SFGCO Tech to build AI-powered products, cloud platforms, and enterprise systems. Our team is ready to craft your personalized technology strategy.",
-    "emailPlaceholder": "Enter your email address",
-    "scheduleBtn": "Schedule a Consultation",
+    "title1": "Let's Build Your",
+    "titleHighlight": "Next Project",
+    "subtitle": "Whether you're launching a startup, modernizing enterprise infrastructure, or implementing AI across your business, SFGCO TECH is your trusted technology partner. Contact us today to discuss your next project.",
+    "consultBtn": "Get a Free Consultation",
     "perk1": "No commitment required",
     "perk2": "Personalized strategy session",
-    "perk3": "Fully confidential",
+    "perk3": "Response within 24 hours",
     "emailLabel": "Email Us",
     "callLabel": "Call Us",
-    "officeLabel": "Head Office"
+    "webLabel": "Website"
+  },
+  "contact": {
+    "infoTitle": "Get in Touch",
+    "form": {
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Your name",
+      "nameError": "Please enter your name.",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "you@company.com",
+      "emailError": "Please enter a valid email address.",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "How can we help?",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "messageError": "Please enter a message.",
+      "submitBtn": "Send Message",
+      "successMsg": "Opening your email client with your message..."
+    }
   },
   "footer": {
-    "tagline": "Engineering AI-powered software, cloud platforms, and enterprise systems that help businesses innovate, scale, and succeed.",
+    "tagline": "Engineering secure cloud infrastructure, AI-powered solutions, enterprise software, and cybersecurity that help businesses innovate, scale, and succeed.",
     "newsletterTitle": "Stay Ahead in Technology",
-    "newsletterSub": "Monthly insights on AI, cloud engineering, and product development.",
+    "newsletterSub": "Monthly insights on AI, cloud engineering, and enterprise technology.",
     "newsletterPlaceholder": "your@email.com",
     "subscribeBtn": "Subscribe",
     "copyright": "© 2026 SFGCO Tech. All rights reserved.",
@@ -150,11 +259,15 @@
   "pages": {
     "about": {
       "title": "About SFGCO Tech",
-      "subtitle": "Engineering intelligent digital products since 2020"
+      "subtitle": "Your technology partner for digital transformation"
     },
     "services": {
       "title": "Our Services",
-      "subtitle": "Comprehensive technology solutions across AI, cloud, ERP, mobile, custom software, and gaming"
+      "subtitle": "Comprehensive technology solutions across cloud infrastructure, data, mobile & web, AI, system integration, cybersecurity, and ERP"
+    },
+    "technologies": {
+      "title": "Our Technology Stack",
+      "subtitle": "The proven, industry-leading platforms we build on — chosen for reliability at enterprise scale."
     },
     "contact": {
       "title": "Contact Us",

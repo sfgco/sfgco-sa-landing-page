@@ -12,7 +12,7 @@ export default function Testimonials() {
   const { t } = useTranslation();
 
   return (
-    <section style={{ background:'#0e633d', padding:'120px 48px', position:'relative', overflow:'hidden' }}>
+    <section style={{ background:'linear-gradient(155deg, #0a4a2e 0%, #0e633d 55%, #0b2d1e 100%)', padding:'120px 48px', position:'relative', overflow:'hidden' }}>
       <div style={{ position:'absolute', top:-80, right:-80, width:400, height:400, borderRadius:'50%', background:'radial-gradient(circle, rgba(200,168,75,0.1), transparent 65%)', pointerEvents:'none' }} />
       <div style={{ position:'absolute', bottom:-60, left:-60, width:350, height:350, borderRadius:'50%', background:'radial-gradient(circle, rgba(239,230,216,0.05), transparent 65%)', pointerEvents:'none' }} />
 

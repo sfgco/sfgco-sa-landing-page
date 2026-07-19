@@ -17,12 +17,13 @@ const FOOTER_COLS: {
   {
     headKey: "Services",
     links: [
-      { label: "Artificial Intelligence", to: "/services" },
-      { label: "Cloud Solutions", to: "/services" },
+      { label: "Cloud Infrastructure", to: "/services" },
+      { label: "Databases & Data Warehouse", to: "/services" },
+      { label: "Mobile & Web Development", to: "/services" },
+      { label: "Artificial Intelligence & LLMs", to: "/services" },
+      { label: "System Integration", to: "/services" },
+      { label: "Cybersecurity", to: "/services" },
       { label: "ERP Solutions", to: "/services" },
-      { label: "Mobile Applications", to: "/services" },
-      { label: "Custom Software", to: "/services" },
-      { label: "Game Development", to: "/services" },
     ],
   },
   {

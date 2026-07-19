@@ -14,6 +14,8 @@
   --secondary: #efe6d8;
   --secondary-dark: #e0d4c0;
   --dark: #0a1f14;
+  --deep: #0b2d1e;
+  --deep-light: #123d29;
   --text: #1a2e20;
   --text-muted: #5a7062;
   --text-light: #9aaa9e;
@@ -88,12 +90,66 @@ button { font-family: inherit; cursor: pointer; }
   to { transform: translateX(-50%); }
 }
 
+@keyframes marqueeRtl {
+  from { transform: translateX(0); }
+  to { transform: translateX(50%); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes drawLine {
+  from { stroke-dashoffset: 240; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes drift {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(14px, -10px); }
+  100% { transform: translate(0, 0); }
+}
+
 .animate-fade-in-up {
   animation: fadeInUp 0.7s ease forwards;
 }
 
 .animate-fade-in {
   animation: fadeIn 0.5s ease forwards;
+}
+
+/* Section eyebrow label */
+.eyebrow {
+  color: var(--primary);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+/* Logo / tech marquee track */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+[dir="rtl"] .marquee-track {
+  animation-name: marqueeRtl;
+}
+.marquee-pause:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+  .animate-fade-in-up, .animate-fade-in { animation: none; }
 }
 
 /* Hover card utilities */
@@ -142,6 +198,22 @@ button { font-family: inherit; cursor: pointer; }
 @media (max-width: 768px) {
   .nav-links    { display: none !important; }
   .nav-hamburger { display: block !important; }
+}
+
+/* Generic responsive grid helpers used across the new sections */
+@media (max-width: 900px) {
+  .grid-2-col { grid-template-columns: 1fr !important; }
+  .service-block { flex-direction: column !important; }
+  .service-block-art { order: -1; width: 100%; }
+}
+@media (max-width: 860px) {
+  .grid-3-col { grid-template-columns: repeat(2, 1fr) !important; }
+  .grid-4-col { grid-template-columns: repeat(2, 1fr) !important; }
+  .grid-6-col, .grid-7-col, .grid-8-col { grid-template-columns: repeat(3, 1fr) !important; }
+}
+@media (max-width: 560px) {
+  .grid-3-col, .grid-4-col, .grid-6-col, .grid-7-col, .grid-8-col { grid-template-columns: repeat(2, 1fr) !important; }
+  section { padding-left: 24px !important; padding-right: 24px !important; }
 }
 
 /* Scrollbar */

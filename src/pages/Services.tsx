@@ -1,19 +1,22 @@
 import { useTranslation } from "react-i18next";
-import ServicesSection from "../components/ServicesSection";
+import ServiceCardGrid from "../components/ServiceCardGrid";
 import ProcessSection from "../components/ProcessSection";
+import CaseStudies from "../components/CaseStudies";
 import FadeIn from "../components/FadeIn";
 
-/** Standalone Services page — page hero + ServicesSection + ProcessSection. */
+/** Standalone Services page — page hero + all 7 expandable service cards + process + case studies. */
 export default function Services() {
   const { t } = useTranslation();
 
   return (
     <>
+      <title>SFGCO Tech | Services</title>
+      <meta name="description" content={t("pages.services.subtitle")} />
+
       {/* Page hero */}
       <section
         style={{
-          background:
-            "linear-gradient(145deg, #060f08 0%, #0a2a16 35%, #1a8050 100%)",
+          background: "linear-gradient(145deg, #060f08 0%, #0a2a16 30%, #0b2d1e 55%, #1a8050 100%)",
           padding: "160px 48px 100px",
           textAlign: "center",
           position: "relative",
@@ -28,8 +31,7 @@ export default function Services() {
             width: 380,
             height: 380,
             borderRadius: "50%",
-            background:
-              "radial-gradient(circle, rgba(200,168,75,0.07), transparent 65%)",
+            background: "radial-gradient(circle, rgba(200,168,75,0.07), transparent 65%)",
             pointerEvents: "none",
           }}
         />
@@ -59,21 +61,20 @@ export default function Services() {
           >
             {t("pages.services.title")}
           </h1>
-          <p
-            style={{
-              fontSize: 18,
-              color: "rgba(239,230,216,0.7)",
-              maxWidth: 520,
-              margin: "0 auto",
-            }}
-          >
+          <p style={{ fontSize: 18, color: "rgba(239,230,216,0.7)", maxWidth: 520, margin: "0 auto" }}>
             {t("pages.services.subtitle")}
           </p>
         </FadeIn>
       </section>
 
-      <ServicesSection />
+      <section id="services" style={{ background: "#fff", padding: "104px 48px" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <ServiceCardGrid expandable />
+        </div>
+      </section>
+
       <ProcessSection />
+      <CaseStudies />
     </>
   );
 }

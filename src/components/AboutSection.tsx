@@ -1,16 +1,19 @@
 import { useTranslation } from "react-i18next";
 import FadeIn from "./FadeIn";
+import Counter from "./Counter";
+import Icon from "./Icon";
 
-/** About / Mission section with stats card and key credentials. */
+interface Stat {
+  value: number;
+  suffix: string;
+  label: string;
+}
+
+/** About / Mission section with animated stats card and key credentials. */
 export default function AboutSection() {
   const { t } = useTranslation();
 
-  const stats = [
-    { n: "50+", l: "Specialists" },
-    { n: "150+", l: "Projects Delivered" },
-    { n: "15+", l: "Industries Served" },
-    { n: "97%", l: "Client Retention" },
-  ];
+  const stats = t("about.stats", { returnObjects: true }) as Stat[];
 
   const checks = [
     t("about.check1"),
@@ -20,11 +23,9 @@ export default function AboutSection() {
   ];
 
   return (
-    <section
-      id="about"
-      style={{ background: "#efe6d8", padding: "120px 48px" }}
-    >
+    <section id="about" style={{ background: "#efe6d8", padding: "120px 48px" }}>
       <div
+        className="grid-2-col"
         style={{
           maxWidth: 1200,
           margin: "0 auto",
@@ -39,13 +40,13 @@ export default function AboutSection() {
           <div style={{ position: "relative" }}>
             <div
               style={{
-                background: "linear-gradient(150deg, #0a2a16, #0e633d)",
+                background: "linear-gradient(150deg, #0a2a16, #0b2d1e 55%, #0e633d)",
                 borderRadius: 28,
                 padding: 48,
                 color: "#fff",
                 position: "relative",
                 overflow: "hidden",
-                boxShadow: "0 32px 80px rgba(14,99,61,0.25)",
+                boxShadow: "0 32px 80px rgba(11,45,30,0.3)",
               }}
             >
               <div
@@ -73,62 +74,38 @@ export default function AboutSection() {
                 }}
               />
 
-              <div
-                style={{
-                  fontFamily: "'Playfair Display', serif",
-                  fontSize: 64,
-                  fontWeight: 800,
-                  lineHeight: 1,
-                  color: "#c8a84b",
-                }}
+              {/* Abstract network motif */}
+              <svg
+                style={{ position: "absolute", top: 20, right: 24, opacity: 0.5 }}
+                width="90"
+                height="90"
+                viewBox="0 0 90 90"
               >
+                <circle cx="45" cy="45" r="6" fill="#c8a84b" />
+                <circle cx="15" cy="20" r="4" fill="rgba(239,230,216,0.5)" />
+                <circle cx="75" cy="18" r="4" fill="rgba(239,230,216,0.5)" />
+                <circle cx="18" cy="72" r="4" fill="rgba(239,230,216,0.5)" />
+                <line x1="45" y1="45" x2="15" y2="20" stroke="rgba(200,168,75,0.4)" strokeWidth="1" />
+                <line x1="45" y1="45" x2="75" y2="18" stroke="rgba(200,168,75,0.4)" strokeWidth="1" />
+                <line x1="45" y1="45" x2="18" y2="72" stroke="rgba(200,168,75,0.4)" strokeWidth="1" />
+              </svg>
+
+              <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 64, fontWeight: 800, lineHeight: 1, color: "#c8a84b" }}>
                 {t("about.yearsValue")}
               </div>
-              <div
-                style={{
-                  fontSize: 16,
-                  marginTop: 6,
-                  color: "rgba(239,230,216,0.75)",
-                }}
-              >
+              <div style={{ fontSize: 16, marginTop: 6, color: "rgba(239,230,216,0.75)" }}>
                 {t("about.yearsLabel")}
               </div>
 
-              <div
-                style={{
-                  marginTop: 40,
-                  paddingTop: 36,
-                  borderTop: "1px solid rgba(255,255,255,0.1)",
-                }}
-              >
-                <div
-                  style={{
-                    display: "grid",
-                    gridTemplateColumns: "1fr 1fr",
-                    gap: 28,
-                  }}
-                >
+              <div style={{ marginTop: 40, paddingTop: 36, borderTop: "1px solid rgba(255,255,255,0.1)" }}>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 28 }}>
                   {stats.map((s) => (
-                    <div key={s.l}>
-                      <div
-                        style={{
-                          fontFamily: "'Playfair Display', serif",
-                          fontSize: 30,
-                          fontWeight: 800,
-                          color: "#fff",
-                        }}
-                      >
-                        {s.n}
+                    <div key={s.label}>
+                      <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 30, fontWeight: 800, color: "#fff" }}>
+                        <Counter end={s.value} suffix={s.suffix} />
                       </div>
-                      <div
-                        style={{
-                          fontSize: 11,
-                          color: "rgba(239,230,216,0.6)",
-                          marginTop: 4,
-                          letterSpacing: 0.5,
-                        }}
-                      >
-                        {s.l}
+                      <div style={{ fontSize: 11, color: "rgba(239,230,216,0.6)", marginTop: 4, letterSpacing: 0.5 }}>
+                        {s.label}
                       </div>
                     </div>
                   ))}
@@ -160,34 +137,14 @@ export default function AboutSection() {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
+                  color: "#fff",
                 }}
               >
-                <svg
-                  width="20"
-                  height="20"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="#fff"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                  />
-                </svg>
+                <Icon name="shieldCheck" size={20} />
               </div>
               <div>
-                <div
-                  style={{ fontWeight: 700, fontSize: 13, color: "#0a1f14" }}
-                >
-                  Client Satisfaction
-                </div>
-                <div
-                  style={{ fontSize: 12, color: "#0e633d", fontWeight: 700 }}
-                >
-                  98% · Top Rated
-                </div>
+                <div style={{ fontWeight: 700, fontSize: 13, color: "#0a1f14" }}>Secure by Design</div>
+                <div style={{ fontSize: 12, color: "#0e633d", fontWeight: 700 }}>Enterprise-Grade</div>
               </div>
             </div>
 
@@ -203,26 +160,10 @@ export default function AboutSection() {
                 boxShadow: "0 12px 36px rgba(200,168,75,0.4)",
               }}
             >
-              <div
-                style={{
-                  fontFamily: "'Playfair Display', serif",
-                  fontWeight: 800,
-                  fontSize: 20,
-                  color: "#0a1f14",
-                  lineHeight: 1,
-                }}
-              >
-                15+
+              <div style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: 20, color: "#0a1f14", lineHeight: 1 }}>
+                8
               </div>
-              <div
-                style={{
-                  fontSize: 9,
-                  fontWeight: 700,
-                  letterSpacing: 1.5,
-                  color: "#0a1f14",
-                  marginTop: 3,
-                }}
-              >
+              <div style={{ fontSize: 9, fontWeight: 700, letterSpacing: 1.5, color: "#0a1f14", marginTop: 3 }}>
                 INDUSTRIES SERVED
               </div>
             </div>
@@ -231,67 +172,20 @@ export default function AboutSection() {
 
         {/* ── Right: text ── */}
         <FadeIn delay={150}>
-          <div
-            style={{
-              color: "#0e633d",
-              fontSize: 11,
-              fontWeight: 700,
-              letterSpacing: 2.5,
-              textTransform: "uppercase",
-              marginBottom: 18,
-            }}
-          >
-            {t("about.badge")}
-          </div>
-          <h2
-            style={{
-              fontSize: 50,
-              fontWeight: 800,
-              color: "#0a1f14",
-              lineHeight: 1.13,
-              marginBottom: 24,
-            }}
-          >
-            {t("about.title")}
-            <br />
-            <span style={{ color: "#0e633d" }}>
-              {t("about.titleHighlight")}
-            </span>
+          <div className="eyebrow">{t("about.badge")}</div>
+          <h2 style={{ fontSize: 50, fontWeight: 800, color: "#0a1f14", lineHeight: 1.13, marginBottom: 24 }}>
+            {t("about.title")} <span style={{ color: "#0e633d" }}>{t("about.titleHighlight")}</span>
           </h2>
-          <p
-            style={{
-              fontSize: 16,
-              color: "#5a7062",
-              lineHeight: 1.85,
-              marginBottom: 20,
-            }}
-          >
+          <p style={{ fontSize: 16, color: "#5a7062", lineHeight: 1.85, marginBottom: 20 }}>
             {t("about.p1")}
           </p>
-          <p
-            style={{
-              fontSize: 16,
-              color: "#5a7062",
-              lineHeight: 1.85,
-              marginBottom: 40,
-            }}
-          >
+          <p style={{ fontSize: 16, color: "#5a7062", lineHeight: 1.85, marginBottom: 40 }}>
             {t("about.p2")}
           </p>
 
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: 14,
-              marginBottom: 44,
-            }}
-          >
+          <div style={{ display: "flex", flexDirection: "column", gap: 14, marginBottom: 44 }}>
             {checks.map((item) => (
-              <div
-                key={item}
-                style={{ display: "flex", alignItems: "flex-start", gap: 12 }}
-              >
+              <div key={item} style={{ display: "flex", alignItems: "flex-start", gap: 12 }}>
                 <div
                   style={{
                     width: 22,
@@ -303,23 +197,12 @@ export default function AboutSection() {
                     justifyContent: "center",
                     flexShrink: 0,
                     marginTop: 2,
+                    color: "#fff",
                   }}
                 >
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <path
-                      d="M2 5l2.5 2.5 3.5-4"
-                      stroke="#fff"
-                      strokeWidth="1.6"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                  <Icon name="check" size={11} strokeWidth={2.4} />
                 </div>
-                <span
-                  style={{ fontSize: 15, color: "#2d3d32", fontWeight: 500 }}
-                >
-                  {item}
-                </span>
+                <span style={{ fontSize: 15, color: "#2d3d32", fontWeight: 500 }}>{item}</span>
               </div>
             ))}
           </div>
@@ -340,31 +223,16 @@ export default function AboutSection() {
               boxShadow: "0 8px 32px rgba(14,99,61,0.25)",
             }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLAnchorElement).style.background =
-                "#0a4a2e";
-              (e.currentTarget as HTMLAnchorElement).style.transform =
-                "translateY(-2px)";
+              (e.currentTarget as HTMLAnchorElement).style.background = "#0a4a2e";
+              (e.currentTarget as HTMLAnchorElement).style.transform = "translateY(-2px)";
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLAnchorElement).style.background =
-                "#0e633d";
-              (e.currentTarget as HTMLAnchorElement).style.transform =
-                "translateY(0)";
+              (e.currentTarget as HTMLAnchorElement).style.background = "#0e633d";
+              (e.currentTarget as HTMLAnchorElement).style.transform = "translateY(0)";
             }}
           >
             {t("about.discoverBtn")}
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
+            <Icon name="arrow" size={16} strokeWidth={2.5} />
           </a>
         </FadeIn>
       </div>

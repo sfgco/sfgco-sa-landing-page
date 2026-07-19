@@ -1,13 +1,14 @@
 import { useTranslation } from "react-i18next";
 import FadeIn from "./FadeIn";
 import HoverCard from "./HoverCard";
+import Icon from "./Icon";
 
 const MEMBERS = [
   {
     initials: "AK",
     name: "Ahmed Khalid",
     role: "Chief Technology Officer",
-    bg: "#2a1049",
+    bg: "#0b2d1e",
     bio: "Ex-Toptal AI lead. Built scalable ML systems and cloud platforms for global clients.",
   },
   {
@@ -21,24 +22,24 @@ const MEMBERS = [
     initials: "AM",
     name: "Ahmed Mamdouh",
     role: "Software Engineering",
-    bg: "#0e2763",
+    bg: "#0a4a2e",
     bio: "backed by extensive experience in software engineering and cloud-native architecture.",
   },
   {
     initials: "AM",
     name: "Abulrahman ",
     role: "Software Engineering",
-    bg: "#0e2763",
+    bg: "#123d29",
     bio: "frontend developer with expertise in building responsive web applications.",
   },
 ];
 
-const HIGHLIGHTS = [
-  "🤖 AI & Machine Learning",
-  "☁️ Cloud-Native Engineering",
-  "🏢 Enterprise ERP Delivery",
-  "📱 Mobile & Cross-Platform Apps",
-  "🎮 Interactive & Game Development",
+const HIGHLIGHTS: { icon: React.ComponentProps<typeof Icon>["name"]; label: string }[] = [
+  { icon: "brain", label: "AI & LLM Integration" },
+  { icon: "cloud", label: "Cloud Infrastructure" },
+  { icon: "grid", label: "ERP Solutions" },
+  { icon: "shield", label: "Cybersecurity" },
+  { icon: "devices", label: "Mobile & Web Development" },
 ];
 
 /** Leadership team grid with awards strip. */
@@ -207,10 +208,13 @@ export default function TeamSection() {
             </div>
             {HIGHLIGHTS.map((item) => (
               <div
-                key={item}
-                style={{ fontSize: 13, fontWeight: 600, color: "#2d3d32" }}
+                key={item.label}
+                style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, fontWeight: 600, color: "#2d3d32" }}
               >
-                {item}
+                <span style={{ color: "#0e633d", display: "flex" }}>
+                  <Icon name={item.icon} size={16} />
+                </span>
+                {item.label}
               </div>
             ))}
           </div>
